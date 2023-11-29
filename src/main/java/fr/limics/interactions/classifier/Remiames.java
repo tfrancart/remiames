@@ -1,0 +1,12 @@
+package fr.limics.interactions.classifier;
+
+public class Remiames {
+
+	public static String NAMESPACE = "http://www.limics.org/remiames_ontology#";
+	
+	public static String INTERACTION = NAMESPACE+"Interaction";
+	
+	public static String ADMINISTRATION = NAMESPACE+"Administration";
+	
+	
+}
