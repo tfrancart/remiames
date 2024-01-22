@@ -1,0 +1,23 @@
+PREFIX ruim: <http://data.esante.gouv.fr/ansm/medicament/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+CONSTRUCT {
+	?s ?p ?o .
+}
+WHERE {
+	?s ?p ?o .
+	# exclude imports statement that is causing trouble with classifiers
+	FILTER(?o != <http://datashapes.org/graphql>)
+	{
+		{
+			?s rdfs:subClassOf ?type .
+			FILTER(?type NOT IN (ruim:Presentation, ruim:Element, ruim:ExpressionDeDosage, ruim:Evenement, ruim:Autorisation))
+		}
+		UNION
+		{
+			?s ?p2 ?o2 .
+			FILTER NOT EXISTS { ?s rdfs:subClassOf ?anything . }
+		}
+	}
+}
