@@ -8,5 +8,7 @@ public class Remiames {
 	
 	public static String ADMINISTRATION = NAMESPACE+"Administration";
 	
+	public static String PATIENT = NAMESPACE+"patient";
 	
+	public static String IDENTIFIANT_SEJOUR = NAMESPACE+"identifiant_sejour";
 }

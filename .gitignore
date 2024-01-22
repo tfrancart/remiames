@@ -1,0 +1,11 @@
+/target/
+
+.settings/
+
+.classpath
+
+.project
+
+interactions-classifier.log
+
+output.ttl

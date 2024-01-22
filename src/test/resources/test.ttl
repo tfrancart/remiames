@@ -25,6 +25,7 @@
 @prefix cls_et_grp: <http://www.limics.org/remiames_ontology/classes_et_groupes_substances#> .
 
 <http://www.limics.org/remiames_ontology/data> a owl:Ontology;
+  dct:abstract "A test file to test inference"@en;
 .
 
 adm:Administration_GS_IAM_10012 a owl:Class;

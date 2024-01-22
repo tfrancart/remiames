@@ -3,13 +3,16 @@
 
   <appender name="FILE" class="ch.qos.logback.core.FileAppender">
     <file>interactions-classifier.log</file>
-
+	<append>false</append>
     <encoder>
       <pattern>%date %level [%thread] %logger{10} [%file:%line] -%kvp- %msg%n</pattern>
     </encoder>
   </appender>
 
   <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+  	<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+         <level>INFO</level>
+    </filter>
     <encoder>
       <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} -%kvp- %msg%n</pattern>
     </encoder>
@@ -18,6 +21,8 @@
   <logger name="org.apache.http" level="INFO" />
   <logger name="org.eclipse.rdf4j.rio" level="INFO" />
   <logger name="org.semanticweb.owlapi" level="INFO" />
+  <!--  This emits a lots of log in the inference explanation process -->
+  <logger name="uk.ac.manchester.cs.owlapi.modularity.SyntacticLocalityModuleExtractor" level="WARN" />
 
   <root level="debug">
     <appender-ref ref="FILE" />

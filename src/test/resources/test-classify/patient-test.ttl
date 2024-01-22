@@ -1,0 +1,134 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix adm: <http://www.limics.org/remiames_ontology/administrations#> .
+@prefix r: <http://www.limics.org/remiames_ontology#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix data: <http://www.limics.org/remiames_ontology/data#> .
+@prefix ruim: <http://data.esante.gouv.fr/ansm/medicament/> .
+@prefix cls_et_grp: <http://www.limics.org/remiames_ontology/classes_et_groupes_substances#> .
+
+<http://www.limics.org/remiames_ontology/patient-test> a owl:Ontology;
+  owl:imports 
+    <http://www.limics.org/remiames_ontology>,
+    <http://www.limics.org/remiames_ontology/classes_et_groupes_substances>,
+    <http://www.limics.org/remiames_ontology/administrations>,
+    <http://www.limics.org/remiames_ontology/thesaurus_interactions>
+.
+
+
+# Should trigger http://www.limics.org/remiames_ontology/thesaurus_interactions#IAM_10008-1
+data:sejour_untel_jour_1 a r:AdministrationsPatient ;
+  rdfs:label "Liste des administrations du jour 1 du sejour de Mr Untel" ;
+  r:administration data:adm_1, data:adm_2 ;
+  r:patient data:MrUntel ;
+.
+
+data:adm_1 a r:Administration ;
+  # ASPEGIC 500MG BUV SACH
+  # qui contient du Substance_00005, qui est classé dans cls_et_grp:GS_IAM_10012
+  # acide acetylsalicylique
+  r:ucd data:adm_1_ucd ;
+.
+data:adm_1_ucd a <http://data.esante.gouv.fr/ansm/medicament/UCD_3400890072977> .
+
+data:adm_2 a r:Administration ;
+  # DIAMOX 500MG INJ FL
+  # qui contient du Substance_01006, qui est classé dans cls_et_grp:GS_IAM_10008
+  # acetazolamide
+  r:ucd data:adm_2_ucd ;
+.
+data:adm_2_ucd a <http://data.esante.gouv.fr/ansm/medicament/UCD_3400890263665> .
+
+
+
+ruim:UCD_3400890072977
+        rdf:type                    owl:Class;
+        rdfs:label                  "ASPEGIC 500MG BUV SACH"@fr;
+        rdfs:subClassOf             ruim:SpecialitePharmaceutique_61162942 , ruim:UniteCommuneDeDispensation;
+        ruim:codeUCD13              "3400890072977";
+        ruim:codeUCD7               "9007297";
+        ruim:presenteDans           ruim:Presentation_3400934736155 , ruim:Presentation_3400931226895;
+        ruim:uniteDeDispensationDe  ruim:SpecialitePharmaceutique_61162942 .
+
+ruim:UCD_3400890263665
+        rdf:type                    owl:Class;
+        rdfs:label                  "DIAMOX 500MG INJ FL"@fr;
+        rdfs:subClassOf             ruim:SpecialitePharmaceutique_63463588 , ruim:UniteCommuneDeDispensation;
+        ruim:codeUCD13              "3400890263665";
+        ruim:codeUCD7               "9026366";
+        ruim:presenteDans           ruim:Presentation_3400955337355;
+        ruim:uniteDeDispensationDe  ruim:SpecialitePharmaceutique_63463588 .
+
+
+ruim:SpecialitePharmaceutique_61162942
+        rdf:type                       owl:Class;
+        rdfs:label                     "ASPEGIC 500 mg, poudre pour solution buvable en sachet-dose"@fr;
+        rdfs:subClassOf                ruim:SpecialitePharmaceutique;
+        rdfs:subClassOf                [ rdf:type            owl:Restriction;
+                                         owl:onProperty      ruim:contientSubstanceActive;
+                                         owl:someValuesFrom  ruim:Substance_03107
+                                       ];
+        rdfs:subClassOf                [ rdf:type            owl:Restriction;
+                                         owl:onProperty      ruim:contientFractionTherapeutique;
+                                         owl:someValuesFrom  ruim:Substance_00005
+                                       ];
+        ruim:CIS                       "61162942";
+        ruim:aPourPresentation         ruim:Presentation_3400931226895 , ruim:Presentation_3400934736155;
+        ruim:aPourUniteDeDispensation  ruim:UCD_3400890072977;
+        ruim:actif                     true;
+        ruim:classificationATC         <http://data.esante.gouv.fr/whocc/atc/N02BA01>;
+        ruim:codeATC                   "N02BA01";
+        ruim:concernePar               ruim:Autorisation_61162942-19960108-AMM , ruim:Autorisation_61162942-19740417-Auto;
+        ruim:dateDebut                 "1996-01-08"^^xsd:date;
+        ruim:fractionTherapeutique     ruim:Substance_00005;
+        ruim:seComposeDe               ruim:Element_61162942-1;
+        ruim:statutCourant             ruim:StatutSpecialite_1;
+        ruim:substanceActive           ruim:Substance_03107;
+        ruim:substancePortantLeDosage  ruim:Substance_00005;
+        ruim:substancePortantLeDosageConnue
+                true;
+        ruim:typeProcedureCourante     ruim:TypeProcedure_1 .
+
+
+ruim:SpecialitePharmaceutique_63463588
+        rdf:type                       owl:Class;
+        rdfs:label                     "DIAMOX 500 mg, poudre et solvant pour préparation injectable"@fr;
+        rdfs:subClassOf                ruim:SpecialitePharmaceutique;
+        rdfs:subClassOf                [ rdf:type            owl:Restriction;
+                                         owl:onProperty      ruim:contientSubstanceActive;
+                                         owl:someValuesFrom  ruim:Substance_01006
+                                       ];
+        ruim:CIS                       "63463588";
+        ruim:aPourPresentation         ruim:Presentation_3400955337355 , ruim:Presentation_3400930305331;
+        ruim:aPourUniteDeDispensation  ruim:UCD_3400890263726 , ruim:UCD_3400890263665;
+        ruim:actif                     true;
+        ruim:classificationATC         <http://data.esante.gouv.fr/whocc/atc/S01EC01>;
+        ruim:codeATC                   "S01EC01";
+        ruim:concernePar               ruim:Autorisation_63463588-19860620-AMM;
+        ruim:dateDebut                 "1986-06-20"^^xsd:date;
+        ruim:seComposeDe               ruim:Element_63463588-2 , ruim:Element_63463588-1;
+        ruim:statutCourant             ruim:StatutSpecialite_1;
+        ruim:substanceActive           ruim:Substance_01006;
+        ruim:substancePortantLeDosage  ruim:Substance_01006;
+        ruim:substancePortantLeDosageConnue
+                true;
+        ruim:typeProcedureCourante     ruim:TypeProcedure_1 .
+
+
+ruim:Substance_01006 rdfs:subClassOf cls_et_grp:GS_IAM_10008 .
+
+ruim:Substance_00005 rdfs:subClassOf cls_et_grp:GS_IAM_10012 .
+
+ruim:Substance_03107 rdfs:subClassOf cls_et_grp:GS_IAM_10012 .
+
+ruim:contientSubstanceActive a owl:ObjectProperty ;
+  rdfs:subPropertyOf ruim:contientSubstance
+.
+
+ruim:contientFractionTherapeutique a owl:ObjectProperty ;
+  rdfs:subPropertyOf ruim:contientSubstance
+.
+
+ruim:contientSubstance a owl:ObjectProperty ;
+.

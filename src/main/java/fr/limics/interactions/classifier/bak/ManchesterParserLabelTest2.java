@@ -1,4 +1,4 @@
-package fr.limics.interactions.classifier;
+package fr.limics.interactions.classifier.bak;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

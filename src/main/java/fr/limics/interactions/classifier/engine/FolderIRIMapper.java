@@ -1,4 +1,4 @@
-package fr.limics.interactions.classifier;
+package fr.limics.interactions.classifier.engine;
 
 import java.io.File;
 import java.io.IOException;
@@ -13,7 +13,7 @@ import org.slf4j.LoggerFactory;
 
 public class FolderIRIMapper implements OWLOntologyIRIMapper {
 	
-	private Logger log = LoggerFactory.getLogger(Classifier.class.getName());
+	private Logger log = LoggerFactory.getLogger(ClassifierEngine.class.getName());
 	
 	private File ontologiesFolder;
 	private List<File> filenames;
