@@ -1,0 +1,358 @@
+@prefix : <http://www.limics.org/remiames_ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix remiames: <http://www.limics.org/remiames_ontology#> .
+@base <http://www.limics.org/remiames_ontology#> .
+
+<http://www.limics.org/remiames_ontology> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.limics.org/remiames_ontology/chapeau
+<http://www.limics.org/remiames_ontology/chapeau> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.limics.org/remiames_ontology/conduiteATenir
+<http://www.limics.org/remiames_ontology/conduiteATenir> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.limics.org/remiames_ontology/natureDuRisque
+<http://www.limics.org/remiames_ontology/natureDuRisque> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.limics.org/remiames_ontology#administration
+remiames:administration rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf owl:topObjectProperty ;
+                        rdfs:domain remiames:AdministrationsPatient ;
+                        rdfs:range remiames:Administration .
+
+
+###  http://www.limics.org/remiames_ontology#dose
+remiames:dose rdf:type owl:ObjectProperty ;
+              rdfs:domain remiames:Administration .
+
+
+###  http://www.limics.org/remiames_ontology#niveau
+remiames:niveau rdf:type owl:ObjectProperty ;
+                rdfs:domain remiames:Interaction ;
+                rdfs:range remiames:NiveauDeContrainte .
+
+
+###  http://www.limics.org/remiames_ontology#patient
+remiames:patient rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdfs:domain remiames:AdministrationsPatient ;
+                 rdfs:range remiames:Patient .
+
+
+###  http://www.limics.org/remiames_ontology#substance
+remiames:substance rdf:type owl:ObjectProperty ;
+                   rdfs:range remiames:Substance .
+
+
+###  http://www.limics.org/remiames_ontology#ucd
+remiames:ucd rdf:type owl:ObjectProperty ;
+             rdfs:domain remiames:Administration ;
+             rdfs:range remiames:UCD .
+
+
+###  http://www.limics.org/remiames_ontology#voie
+remiames:voie rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain remiames:Administration ;
+              rdfs:range remiames:Voie .
+
+
+###  http://www.limics.org/remiames_ontology/antecedent_angio-oedemeSousIEC
+<http://www.limics.org/remiames_ontology/antecedent_angio-oedemeSousIEC> rdf:type owl:ObjectProperty ;
+                                                                         rdfs:subPropertyOf <http://www.limics.org/remiames_ontology/antecedents> ;
+                                                                         rdfs:domain remiames:Patient ;
+                                                                         rdfs:range <http://www.limics.org/remiames_ontology/Valeur> .
+
+
+###  http://www.limics.org/remiames_ontology/antecedent_ulcereGastroDuoDenale
+<http://www.limics.org/remiames_ontology/antecedent_ulcereGastroDuoDenale> rdf:type owl:ObjectProperty ;
+                                                                           rdfs:subPropertyOf <http://www.limics.org/remiames_ontology/antecedents> .
+
+
+###  http://www.limics.org/remiames_ontology/antecedents
+<http://www.limics.org/remiames_ontology/antecedents> rdf:type owl:ObjectProperty ;
+                                                      rdfs:subPropertyOf <http://www.limics.org/remiames_ontology/caracteristiquePatient> .
+
+
+###  http://www.limics.org/remiames_ontology/caracteristiquePatient
+<http://www.limics.org/remiames_ontology/caracteristiquePatient> rdf:type owl:ObjectProperty .
+
+
+###  http://www.limics.org/remiames_ontology/diabete
+<http://www.limics.org/remiames_ontology/diabete> rdf:type owl:ObjectProperty ;
+                                                  rdfs:subPropertyOf <http://www.limics.org/remiames_ontology/caracteristiquePatient> ;
+                                                  rdfs:domain remiames:Patient ;
+                                                  rdfs:range <http://www.limics.org/remiames_ontology/Valeur> .
+
+
+###  http://www.limics.org/remiames_ontology/enAgeDeProcreer
+<http://www.limics.org/remiames_ontology/enAgeDeProcreer> rdf:type owl:ObjectProperty ;
+                                                          rdfs:subPropertyOf <http://www.limics.org/remiames_ontology/caracteristiquePatient> ;
+                                                          rdfs:domain remiames:Patient ;
+                                                          rdfs:range <http://www.limics.org/remiames_ontology/Valeur> .
+
+
+###  http://www.limics.org/remiames_ontology/enfant
+<http://www.limics.org/remiames_ontology/enfant> rdf:type owl:ObjectProperty ;
+                                                 rdfs:subPropertyOf <http://www.limics.org/remiames_ontology/caracteristiquePatient> ;
+                                                 rdfs:domain remiames:Patient ;
+                                                 rdfs:range <http://www.limics.org/remiames_ontology/Valeur> .
+
+
+###  http://www.limics.org/remiames_ontology/hypokaliemie
+<http://www.limics.org/remiames_ontology/hypokaliemie> rdf:type owl:ObjectProperty ;
+                                                       rdfs:subPropertyOf <http://www.limics.org/remiames_ontology/caracteristiquePatient> ;
+                                                       rdfs:domain remiames:Patient ;
+                                                       rdfs:range <http://www.limics.org/remiames_ontology/Valeur> .
+
+
+###  http://www.limics.org/remiames_ontology/insuffisanceHepatique_legere
+<http://www.limics.org/remiames_ontology/insuffisanceHepatique_legere> rdf:type owl:ObjectProperty ;
+                                                                       rdfs:subPropertyOf <http://www.limics.org/remiames_ontology/insuffisanceHepatique_niveau_indetermine> .
+
+
+###  http://www.limics.org/remiames_ontology/insuffisanceHepatique_moderee
+<http://www.limics.org/remiames_ontology/insuffisanceHepatique_moderee> rdf:type owl:ObjectProperty ;
+                                                                        rdfs:subPropertyOf <http://www.limics.org/remiames_ontology/insuffisanceHepatique_legere> .
+
+
+###  http://www.limics.org/remiames_ontology/insuffisanceHepatique_niveau_indetermine
+<http://www.limics.org/remiames_ontology/insuffisanceHepatique_niveau_indetermine> rdf:type owl:ObjectProperty ;
+                                                                                   rdfs:subPropertyOf <http://www.limics.org/remiames_ontology/caracteristiquePatient> ;
+                                                                                   rdfs:domain remiames:Patient ;
+                                                                                   rdfs:range <http://www.limics.org/remiames_ontology/Valeur> .
+
+
+###  http://www.limics.org/remiames_ontology/insuffisanceHepatique_severe
+<http://www.limics.org/remiames_ontology/insuffisanceHepatique_severe> rdf:type owl:ObjectProperty ;
+                                                                       rdfs:subPropertyOf <http://www.limics.org/remiames_ontology/insuffisanceHepatique_moderee> .
+
+
+###  http://www.limics.org/remiames_ontology/insuffisanceRenale
+<http://www.limics.org/remiames_ontology/insuffisanceRenale> rdf:type owl:ObjectProperty ;
+                                                             rdfs:subPropertyOf <http://www.limics.org/remiames_ontology/caracteristiquePatient> ;
+                                                             rdfs:domain remiames:Patient ;
+                                                             rdfs:range <http://www.limics.org/remiames_ontology/Valeur> .
+
+
+###  http://www.limics.org/remiames_ontology/sujetAge
+<http://www.limics.org/remiames_ontology/sujetAge> rdf:type owl:ObjectProperty ;
+                                                   rdfs:subPropertyOf <http://www.limics.org/remiames_ontology/caracteristiquePatient> ;
+                                                   rdfs:domain remiames:Patient ;
+                                                   rdfs:range <http://www.limics.org/remiames_ontology/Valeur> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.limics.org/remiames_ontology/literal_qtt_jour_mg
+<http://www.limics.org/remiames_ontology/literal_qtt_jour_mg> rdf:type owl:DatatypeProperty ;
+                                                              rdfs:domain remiames:Administration ;
+                                                              rdfs:range xsd:decimal ;
+                                                              rdfs:comment "Quantité journalière de la substance en mg" .
+
+
+###  http://www.limics.org/remiames_ontology/literal_qtt_prise_mg
+<http://www.limics.org/remiames_ontology/literal_qtt_prise_mg> rdf:type owl:DatatypeProperty ;
+                                                               rdfs:domain remiames:Administration ;
+                                                               rdfs:range xsd:decimal ;
+                                                               rdfs:comment "Quantité maximale en une seule prise de la substance" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.limics.org/remiames_ontology#APEC
+remiames:APEC rdf:type owl:Class ;
+              rdfs:subClassOf remiames:NiveauDeContrainte ;
+              rdfs:label "A prendre en compte"@fr .
+
+
+###  http://www.limics.org/remiames_ontology#ASDEC
+remiames:ASDEC rdf:type owl:Class ;
+               rdfs:subClassOf remiames:NiveauDeContrainte ;
+               rdfs:label "Déconseillé"@fr .
+
+
+###  http://www.limics.org/remiames_ontology#Administration
+remiames:Administration rdf:type owl:Class ;
+                        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                          owl:onProperty remiames:substance ;
+                                          owl:someValuesFrom remiames:Substance
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty remiames:ucd ;
+                                          owl:someValuesFrom remiames:UCD
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty remiames:voie ;
+                                          owl:someValuesFrom remiames:Voie
+                                        ] .
+
+
+###  http://www.limics.org/remiames_ontology#AdministrationsPatient
+remiames:AdministrationsPatient rdf:type owl:Class .
+
+
+###  http://www.limics.org/remiames_ontology#CI
+remiames:CI rdf:type owl:Class ;
+            rdfs:subClassOf remiames:NiveauDeContrainte ;
+            rdfs:label "Contre-Indication"@fr .
+
+
+###  http://www.limics.org/remiames_ontology#ClasseInteraction
+remiames:ClasseInteraction rdf:type owl:Class ;
+                           rdfs:subClassOf remiames:Substance ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty remiames:voie ;
+                                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onClass remiames:Voie
+                                           ] .
+
+
+###  http://www.limics.org/remiames_ontology#GroupeSubstance
+remiames:GroupeSubstance rdf:type owl:Class ;
+                         rdfs:subClassOf remiames:Substance .
+
+
+###  http://www.limics.org/remiames_ontology#Interaction
+remiames:Interaction rdf:type owl:Class ;
+                     rdfs:subClassOf remiames:AdministrationsPatient .
+
+
+###  http://www.limics.org/remiames_ontology#NiveauDeContrainte
+remiames:NiveauDeContrainte rdf:type owl:Class .
+
+
+###  http://www.limics.org/remiames_ontology#PE
+remiames:PE rdf:type owl:Class ;
+            rdfs:subClassOf remiames:NiveauDeContrainte ;
+            rdfs:label "Précaution d'emploi"@fr .
+
+
+###  http://www.limics.org/remiames_ontology#Patient
+remiames:Patient rdf:type owl:Class .
+
+
+###  http://www.limics.org/remiames_ontology#Sejour
+remiames:Sejour rdf:type owl:Class .
+
+
+###  http://www.limics.org/remiames_ontology#Substance
+remiames:Substance rdf:type owl:Class .
+
+
+###  http://www.limics.org/remiames_ontology#SubstanceANSM
+remiames:SubstanceANSM rdf:type owl:Class ;
+                       rdfs:subClassOf remiames:Substance .
+
+
+###  http://www.limics.org/remiames_ontology#UCD
+remiames:UCD rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty remiames:substance ;
+                               owl:allValuesFrom remiames:SubstanceANSM
+                             ] .
+
+
+###  http://www.limics.org/remiames_ontology#Voie
+remiames:Voie rdf:type owl:Class .
+
+
+###  http://www.limics.org/remiames_ontology#Voie_BuccoDentaire
+remiames:Voie_BuccoDentaire rdf:type owl:Class ;
+                            rdfs:subClassOf <http://www.limics.org/remiames_ontology/VoieTopique> .
+
+
+###  http://www.limics.org/remiames_ontology#Voie_Orale
+remiames:Voie_Orale rdf:type owl:Class ;
+                    rdfs:subClassOf <http://www.limics.org/remiames_ontology/VoieSystemique> .
+
+
+###  http://www.limics.org/remiames_ontology#Voie_SousCutanee
+remiames:Voie_SousCutanee rdf:type owl:Class ;
+                          rdfs:subClassOf <http://www.limics.org/remiames_ontology/VoieSystemique> .
+
+
+###  http://www.limics.org/remiames_ontology/InteractionAvecCaracteristiquePatient
+<http://www.limics.org/remiames_ontology/InteractionAvecCaracteristiquePatient> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf remiames:Interaction ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <http://www.limics.org/remiames_ontology/caracteristiquePatient> ;
+                                                                                                  owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                                                                ] .
+
+
+###  http://www.limics.org/remiames_ontology/InteractionAvecCaracteristiquePatientCertaineOuPotentielle
+<http://www.limics.org/remiames_ontology/InteractionAvecCaracteristiquePatientCertaineOuPotentielle> rdf:type owl:Class ;
+                                                                                                     rdfs:subClassOf <http://www.limics.org/remiames_ontology/InteractionAvecCaracteristiquePatient> ,
+                                                                                                                     [ rdf:type owl:Restriction ;
+                                                                                                                       owl:onProperty <http://www.limics.org/remiames_ontology/caracteristiquePatient> ;
+                                                                                                                       owl:someValuesFrom <http://www.limics.org/remiames_ontology/ValeurCertaineOuPotentielle>
+                                                                                                                     ] .
+
+
+###  http://www.limics.org/remiames_ontology/Valeur
+<http://www.limics.org/remiames_ontology/Valeur> rdf:type owl:Class .
+
+
+###  http://www.limics.org/remiames_ontology/ValeurCertaineOuPotentielle
+<http://www.limics.org/remiames_ontology/ValeurCertaineOuPotentielle> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <http://www.limics.org/remiames_ontology/Valeur> .
+
+
+###  http://www.limics.org/remiames_ontology/VoieSystemique
+<http://www.limics.org/remiames_ontology/VoieSystemique> rdf:type owl:Class ;
+                                                         rdfs:subClassOf remiames:Voie .
+
+
+###  http://www.limics.org/remiames_ontology/VoieTopique
+<http://www.limics.org/remiames_ontology/VoieTopique> rdf:type owl:Class ;
+                                                      rdfs:subClassOf remiames:Voie .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.limics.org/remiames_ontology/Inconnu
+<http://www.limics.org/remiames_ontology/Inconnu> rdf:type owl:NamedIndividual ,
+                                                           <http://www.limics.org/remiames_ontology/Valeur> ,
+                                                           <http://www.limics.org/remiames_ontology/ValeurCertaineOuPotentielle> .
+
+
+###  http://www.limics.org/remiames_ontology/Non
+<http://www.limics.org/remiames_ontology/Non> rdf:type owl:NamedIndividual ,
+                                                       <http://www.limics.org/remiames_ontology/Valeur> .
+
+
+###  http://www.limics.org/remiames_ontology/Oui
+<http://www.limics.org/remiames_ontology/Oui> rdf:type owl:NamedIndividual ,
+                                                       <http://www.limics.org/remiames_ontology/Valeur> ,
+                                                       <http://www.limics.org/remiames_ontology/ValeurCertaineOuPotentielle> .
+
+
+###  http://www.limics.org/remiames_ontology/Possible
+<http://www.limics.org/remiames_ontology/Possible> rdf:type owl:NamedIndividual ,
+                                                            <http://www.limics.org/remiames_ontology/Valeur> ,
+                                                            <http://www.limics.org/remiames_ontology/ValeurCertaineOuPotentielle> .
+
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi

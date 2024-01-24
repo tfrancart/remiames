@@ -1,0 +1,3129 @@
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix xls2rdf: <https://xls2rdf.sparna.fr/vocabulary#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cls_et_grp: <http://www.limics.org/remiames_ontology/classes_et_groupes_substances#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix r: <http://www.limics.org/remiames_ontology#> .
+@prefix ruim: <http://data.esante.gouv.fr/ansm/medicament/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+
+<http://www.limics.org/remiames_ontology/substances_ansm> a owl:Ontology;
+  owl:imports <http://www.limics.org/remiames_ontology/classes_et_groupes_substances> ;
+  rdfs:label "Classification des substances ANSM dans les groupes substances"@fr .
+
+ruim:Substance_97144 rdfs:subClassOf cls_et_grp:GS_IAM_10002 .
+
+ruim:Substance_99176 rdfs:subClassOf cls_et_grp:GS_IAM_10003 .
+
+ruim:Substance_37304 rdfs:subClassOf cls_et_grp:GS_IAM_10004 .
+
+ruim:Substance_00191 rdfs:subClassOf cls_et_grp:GS_IAM_10005 .
+
+ruim:Substance_63130 rdfs:subClassOf cls_et_grp:GS_IAM_10005 .
+
+ruim:Substance_62180 rdfs:subClassOf cls_et_grp:GS_IAM_10006 .
+
+ruim:Substance_00998 rdfs:subClassOf cls_et_grp:GS_IAM_10007 .
+
+ruim:Substance_01006 rdfs:subClassOf cls_et_grp:GS_IAM_10008 .
+
+ruim:Substance_11079 rdfs:subClassOf cls_et_grp:GS_IAM_10009, cls_et_grp:GS_IAM_10868 .
+
+ruim:Substance_25715 rdfs:subClassOf cls_et_grp:GS_IAM_10010 .
+
+ruim:Substance_00005 rdfs:subClassOf cls_et_grp:GS_IAM_10012 .
+
+ruim:Substance_00411 rdfs:subClassOf cls_et_grp:GS_IAM_10012 .
+
+ruim:Substance_03107 rdfs:subClassOf cls_et_grp:GS_IAM_10012 .
+
+ruim:Substance_03582 rdfs:subClassOf cls_et_grp:GS_IAM_10012 .
+
+ruim:Substance_01221 rdfs:subClassOf cls_et_grp:GS_IAM_10012 .
+
+ruim:Substance_24982 rdfs:subClassOf cls_et_grp:GS_IAM_10013 .
+
+ruim:Substance_35532 rdfs:subClassOf cls_et_grp:GS_IAM_10013 .
+
+ruim:Substance_17270 rdfs:subClassOf cls_et_grp:GS_IAM_10013 .
+
+ruim:Substance_03146 rdfs:subClassOf cls_et_grp:GS_IAM_10014 .
+
+ruim:Substance_01123 rdfs:subClassOf cls_et_grp:GS_IAM_10014 .
+
+ruim:Substance_01023 rdfs:subClassOf cls_et_grp:GS_IAM_10015 .
+
+ruim:Substance_03641 rdfs:subClassOf cls_et_grp:GS_IAM_10015 .
+
+ruim:Substance_01182 rdfs:subClassOf cls_et_grp:GS_IAM_10015 .
+
+ruim:Substance_03348 rdfs:subClassOf cls_et_grp:GS_IAM_10015, cls_et_grp:GS_IAM_10042 .
+
+ruim:Substance_00067 rdfs:subClassOf cls_et_grp:GS_IAM_10015 .
+
+ruim:Substance_00767 rdfs:subClassOf cls_et_grp:GS_IAM_10016 .
+
+ruim:Substance_81716 rdfs:subClassOf cls_et_grp:GS_IAM_10017 .
+
+ruim:Substance_62139 rdfs:subClassOf cls_et_grp:GS_IAM_10017 .
+
+ruim:Substance_13104 rdfs:subClassOf cls_et_grp:GS_IAM_10018 .
+
+ruim:Substance_90673 rdfs:subClassOf cls_et_grp:GS_IAM_10019 .
+
+ruim:Substance_05390 rdfs:subClassOf cls_et_grp:GS_IAM_10019 .
+
+ruim:Substance_17162 rdfs:subClassOf cls_et_grp:GS_IAM_10019 .
+
+ruim:Substance_67056 rdfs:subClassOf cls_et_grp:GS_IAM_10019 .
+
+ruim:Substance_76079 rdfs:subClassOf cls_et_grp:GS_IAM_10019 .
+
+ruim:Substance_01040 rdfs:subClassOf cls_et_grp:GS_IAM_10020 .
+
+ruim:Substance_04913 rdfs:subClassOf cls_et_grp:GS_IAM_10021 .
+
+ruim:Substance_02160 rdfs:subClassOf cls_et_grp:GS_IAM_10021 .
+
+ruim:Substance_41859 rdfs:subClassOf cls_et_grp:GS_IAM_10021 .
+
+ruim:Substance_24277 rdfs:subClassOf cls_et_grp:GS_IAM_10022 .
+
+ruim:Substance_86008 rdfs:subClassOf cls_et_grp:GS_IAM_10022 .
+
+ruim:Substance_00937 rdfs:subClassOf cls_et_grp:GS_IAM_10023 .
+
+ruim:Substance_00938 rdfs:subClassOf cls_et_grp:GS_IAM_10023 .
+
+ruim:Substance_05131 rdfs:subClassOf cls_et_grp:GS_IAM_10024 .
+
+ruim:Substance_05455 rdfs:subClassOf cls_et_grp:GS_IAM_10024 .
+
+ruim:Substance_01056 rdfs:subClassOf cls_et_grp:GS_IAM_10025 .
+
+ruim:Substance_03844 rdfs:subClassOf cls_et_grp:GS_IAM_10026 .
+
+ruim:Substance_01061 rdfs:subClassOf cls_et_grp:GS_IAM_10026 .
+
+ruim:Substance_04943 rdfs:subClassOf cls_et_grp:GS_IAM_10026 .
+
+ruim:Substance_05452 rdfs:subClassOf cls_et_grp:GS_IAM_10026 .
+
+ruim:Substance_01062 rdfs:subClassOf cls_et_grp:GS_IAM_10027 .
+
+ruim:Substance_26221 rdfs:subClassOf cls_et_grp:GS_IAM_10028 .
+
+ruim:Substance_67602 rdfs:subClassOf cls_et_grp:GS_IAM_10029 .
+
+ruim:Substance_44842 rdfs:subClassOf cls_et_grp:GS_IAM_10029 .
+
+ruim:Substance_99915 rdfs:subClassOf cls_et_grp:GS_IAM_10030 .
+
+ruim:Substance_16182 rdfs:subClassOf cls_et_grp:GS_IAM_10030 .
+
+ruim:Substance_99549 rdfs:subClassOf cls_et_grp:GS_IAM_10030 .
+
+ruim:Substance_45087 rdfs:subClassOf cls_et_grp:GS_IAM_10030 .
+
+ruim:Substance_37314 rdfs:subClassOf cls_et_grp:GS_IAM_10030 .
+
+ruim:Substance_03385 rdfs:subClassOf cls_et_grp:GS_IAM_10031 .
+
+ruim:Substance_39065 rdfs:subClassOf cls_et_grp:GS_IAM_10032 .
+
+ruim:Substance_87268 rdfs:subClassOf cls_et_grp:GS_IAM_10032 .
+
+ruim:Substance_00981 rdfs:subClassOf cls_et_grp:GS_IAM_10033 .
+
+ruim:Substance_05562 rdfs:subClassOf cls_et_grp:GS_IAM_10034 .
+
+ruim:Substance_25252 rdfs:subClassOf cls_et_grp:GS_IAM_10034 .
+
+ruim:Substance_27265 rdfs:subClassOf cls_et_grp:GS_IAM_10034 .
+
+ruim:Substance_41881 rdfs:subClassOf cls_et_grp:GS_IAM_10035 .
+
+ruim:Substance_98588 rdfs:subClassOf cls_et_grp:GS_IAM_10035 .
+
+ruim:Substance_08578 rdfs:subClassOf cls_et_grp:GS_IAM_10036 .
+
+ruim:Substance_80114 rdfs:subClassOf cls_et_grp:GS_IAM_10037 .
+
+ruim:Substance_58472 rdfs:subClassOf cls_et_grp:GS_IAM_10038 .
+
+ruim:Substance_56132 rdfs:subClassOf cls_et_grp:GS_IAM_10038 .
+
+ruim:Substance_01080 rdfs:subClassOf cls_et_grp:GS_IAM_10039 .
+
+ruim:Substance_04280 rdfs:subClassOf cls_et_grp:GS_IAM_10039 .
+
+ruim:Substance_04862 rdfs:subClassOf cls_et_grp:GS_IAM_10039 .
+
+ruim:Substance_61992 rdfs:subClassOf cls_et_grp:GS_IAM_10040 .
+
+ruim:Substance_38188 rdfs:subClassOf cls_et_grp:GS_IAM_10041 .
+
+ruim:Substance_17295 rdfs:subClassOf cls_et_grp:GS_IAM_10043 .
+
+ruim:Substance_00988 rdfs:subClassOf cls_et_grp:GS_IAM_10044 .
+
+ruim:Substance_05922 rdfs:subClassOf cls_et_grp:GS_IAM_10045 .
+
+ruim:Substance_06166 rdfs:subClassOf cls_et_grp:GS_IAM_10045 .
+
+ruim:Substance_60310 rdfs:subClassOf cls_et_grp:GS_IAM_10046 .
+
+ruim:Substance_05762 rdfs:subClassOf cls_et_grp:GS_IAM_10047 .
+
+ruim:Substance_01090 rdfs:subClassOf cls_et_grp:GS_IAM_10047 .
+
+ruim:Substance_70278 rdfs:subClassOf cls_et_grp:GS_IAM_10048 .
+
+ruim:Substance_49479 rdfs:subClassOf cls_et_grp:GS_IAM_10048 .
+
+ruim:Substance_62086 rdfs:subClassOf cls_et_grp:GS_IAM_10049 .
+
+ruim:Substance_32273 rdfs:subClassOf cls_et_grp:GS_IAM_10050 .
+
+ruim:Substance_16458 rdfs:subClassOf cls_et_grp:GS_IAM_10050 .
+
+ruim:Substance_01097 rdfs:subClassOf cls_et_grp:GS_IAM_10051 .
+
+ruim:Substance_20863 rdfs:subClassOf cls_et_grp:GS_IAM_10052 .
+
+ruim:Substance_50149 rdfs:subClassOf cls_et_grp:GS_IAM_10053 .
+
+ruim:Substance_64860 rdfs:subClassOf cls_et_grp:GS_IAM_10053 .
+
+ruim:Substance_04124 rdfs:subClassOf cls_et_grp:GS_IAM_10054 .
+
+ruim:Substance_93262 rdfs:subClassOf cls_et_grp:GS_IAM_10054 .
+
+ruim:Substance_71699 rdfs:subClassOf cls_et_grp:GS_IAM_10054 .
+
+ruim:Substance_03602 rdfs:subClassOf cls_et_grp:GS_IAM_10054 .
+
+ruim:Substance_00923 rdfs:subClassOf cls_et_grp:GS_IAM_10054 .
+
+ruim:Substance_13112 rdfs:subClassOf cls_et_grp:GS_IAM_10055 .
+
+ruim:Substance_56894 rdfs:subClassOf cls_et_grp:GS_IAM_10056 .
+
+ruim:Substance_01106 rdfs:subClassOf cls_et_grp:GS_IAM_10057 .
+
+ruim:Substance_00868 rdfs:subClassOf cls_et_grp:GS_IAM_10058 .
+
+ruim:Substance_00042 rdfs:subClassOf cls_et_grp:GS_IAM_10059 .
+
+ruim:Substance_01110 rdfs:subClassOf cls_et_grp:GS_IAM_10060 .
+
+ruim:Substance_95484 rdfs:subClassOf cls_et_grp:GS_IAM_10061 .
+
+ruim:Substance_22273 rdfs:subClassOf cls_et_grp:GS_IAM_10062 .
+
+ruim:Substance_00280 rdfs:subClassOf cls_et_grp:GS_IAM_10062 .
+
+ruim:Substance_03149 rdfs:subClassOf cls_et_grp:GS_IAM_10063 .
+
+ruim:Substance_96013 rdfs:subClassOf cls_et_grp:GS_IAM_10063 .
+
+ruim:Substance_01961 rdfs:subClassOf cls_et_grp:GS_IAM_10064 .
+
+ruim:Substance_01130 rdfs:subClassOf cls_et_grp:GS_IAM_10065 .
+
+ruim:Substance_05386 rdfs:subClassOf cls_et_grp:GS_IAM_10066 .
+
+ruim:Substance_09231 rdfs:subClassOf cls_et_grp:GS_IAM_10067 .
+
+ruim:Substance_01140 rdfs:subClassOf cls_et_grp:GS_IAM_10068 .
+
+ruim:Substance_00788 rdfs:subClassOf cls_et_grp:GS_IAM_10068 .
+
+ruim:Substance_93748 rdfs:subClassOf cls_et_grp:GS_IAM_10069 .
+
+ruim:Substance_39727 rdfs:subClassOf cls_et_grp:GS_IAM_10069 .
+
+ruim:Substance_00877 rdfs:subClassOf cls_et_grp:GS_IAM_10070 .
+
+ruim:Substance_28165 rdfs:subClassOf cls_et_grp:GS_IAM_10071 .
+
+ruim:Substance_00872 rdfs:subClassOf cls_et_grp:GS_IAM_10071 .
+
+ruim:Substance_05248 rdfs:subClassOf cls_et_grp:GS_IAM_10071 .
+
+ruim:Substance_01150 rdfs:subClassOf cls_et_grp:GS_IAM_10072 .
+
+ruim:Substance_03158 rdfs:subClassOf cls_et_grp:GS_IAM_10073 .
+
+ruim:Substance_03155 rdfs:subClassOf cls_et_grp:GS_IAM_10073 .
+
+ruim:Substance_84525 rdfs:subClassOf cls_et_grp:GS_IAM_10073 .
+
+ruim:Substance_16948 rdfs:subClassOf cls_et_grp:GS_IAM_10074 .
+
+ruim:Substance_69478 rdfs:subClassOf cls_et_grp:GS_IAM_10075 .
+
+ruim:Substance_45102 rdfs:subClassOf cls_et_grp:GS_IAM_10075 .
+
+ruim:Substance_65595 rdfs:subClassOf cls_et_grp:GS_IAM_10076 .
+
+ruim:Substance_00050 rdfs:subClassOf cls_et_grp:GS_IAM_10077 .
+
+ruim:Substance_61321 rdfs:subClassOf cls_et_grp:GS_IAM_10078 .
+
+ruim:Substance_26824 rdfs:subClassOf cls_et_grp:GS_IAM_10079 .
+
+ruim:Substance_00052 rdfs:subClassOf cls_et_grp:GS_IAM_10079 .
+
+ruim:Substance_84452 rdfs:subClassOf cls_et_grp:GS_IAM_10080 .
+
+ruim:Substance_61676 rdfs:subClassOf cls_et_grp:GS_IAM_10081 .
+
+ruim:Substance_96835 rdfs:subClassOf cls_et_grp:GS_IAM_10082 .
+
+ruim:Substance_06247 rdfs:subClassOf cls_et_grp:GS_IAM_10083 .
+
+ruim:Substance_32069 rdfs:subClassOf cls_et_grp:GS_IAM_10084 .
+
+ruim:Substance_44594 rdfs:subClassOf cls_et_grp:GS_IAM_10084 .
+
+ruim:Substance_00057 rdfs:subClassOf cls_et_grp:GS_IAM_10085 .
+
+ruim:Substance_31969 rdfs:subClassOf cls_et_grp:GS_IAM_10085 .
+
+ruim:Substance_51171 rdfs:subClassOf cls_et_grp:GS_IAM_10085 .
+
+ruim:Substance_26023 rdfs:subClassOf cls_et_grp:GS_IAM_10086 .
+
+ruim:Substance_87658 rdfs:subClassOf cls_et_grp:GS_IAM_10087 .
+
+ruim:Substance_27570 rdfs:subClassOf cls_et_grp:GS_IAM_10087 .
+
+ruim:Substance_00762 rdfs:subClassOf cls_et_grp:GS_IAM_10088 .
+
+ruim:Substance_19809 rdfs:subClassOf cls_et_grp:GS_IAM_10089 .
+
+ruim:Substance_92464 rdfs:subClassOf cls_et_grp:GS_IAM_10089 .
+
+ruim:Substance_03009 rdfs:subClassOf cls_et_grp:GS_IAM_10090 .
+
+ruim:Substance_06492 rdfs:subClassOf cls_et_grp:GS_IAM_10091 .
+
+ruim:Substance_34378 rdfs:subClassOf cls_et_grp:GS_IAM_10091 .
+
+ruim:Substance_04150 rdfs:subClassOf cls_et_grp:GS_IAM_10092 .
+
+ruim:Substance_58336 rdfs:subClassOf cls_et_grp:GS_IAM_10092 .
+
+ruim:Substance_03753 rdfs:subClassOf cls_et_grp:GS_IAM_10092 .
+
+ruim:Substance_10321 rdfs:subClassOf cls_et_grp:GS_IAM_10092 .
+
+ruim:Substance_92375 rdfs:subClassOf cls_et_grp:GS_IAM_10093 .
+
+ruim:Substance_28231 rdfs:subClassOf cls_et_grp:GS_IAM_10094 .
+
+ruim:Substance_46333 rdfs:subClassOf cls_et_grp:GS_IAM_10095 .
+
+ruim:Substance_88044 rdfs:subClassOf cls_et_grp:GS_IAM_10096 .
+
+ruim:Substance_01200 rdfs:subClassOf cls_et_grp:GS_IAM_10097 .
+
+ruim:Substance_25329 rdfs:subClassOf cls_et_grp:GS_IAM_10098 .
+
+ruim:Substance_75817 rdfs:subClassOf cls_et_grp:GS_IAM_10098 .
+
+ruim:Substance_96646 rdfs:subClassOf cls_et_grp:GS_IAM_10099 .
+
+ruim:Substance_69332 rdfs:subClassOf cls_et_grp:GS_IAM_10099 .
+
+ruim:Substance_43303 rdfs:subClassOf cls_et_grp:GS_IAM_10100 .
+
+ruim:Substance_96035 rdfs:subClassOf cls_et_grp:GS_IAM_10100 .
+
+ruim:Substance_48539 rdfs:subClassOf cls_et_grp:GS_IAM_10100 .
+
+ruim:Substance_79481 rdfs:subClassOf cls_et_grp:GS_IAM_10101 .
+
+ruim:Substance_00812 rdfs:subClassOf cls_et_grp:GS_IAM_10102 .
+
+ruim:Substance_50858 rdfs:subClassOf cls_et_grp:GS_IAM_10103 .
+
+ruim:Substance_82142 rdfs:subClassOf cls_et_grp:GS_IAM_10104 .
+
+ruim:Substance_21658 rdfs:subClassOf cls_et_grp:GS_IAM_10104 .
+
+ruim:Substance_66638 rdfs:subClassOf cls_et_grp:GS_IAM_10105 .
+
+ruim:Substance_92394 rdfs:subClassOf cls_et_grp:GS_IAM_10106 .
+
+ruim:Substance_38434 rdfs:subClassOf cls_et_grp:GS_IAM_10107 .
+
+ruim:Substance_14049 rdfs:subClassOf cls_et_grp:GS_IAM_10108 .
+
+ruim:Substance_94401 rdfs:subClassOf cls_et_grp:GS_IAM_10109 .
+
+ruim:Substance_36836 rdfs:subClassOf cls_et_grp:GS_IAM_10109 .
+
+ruim:Substance_01215 rdfs:subClassOf cls_et_grp:GS_IAM_10110 .
+
+ruim:Substance_00443 rdfs:subClassOf cls_et_grp:GS_IAM_10111 .
+
+ruim:Substance_04766 rdfs:subClassOf cls_et_grp:GS_IAM_10112 .
+
+ruim:Substance_24735 rdfs:subClassOf cls_et_grp:GS_IAM_10112 .
+
+ruim:Substance_04771 rdfs:subClassOf cls_et_grp:GS_IAM_10112 .
+
+ruim:Substance_01810 rdfs:subClassOf cls_et_grp:GS_IAM_10113 .
+
+ruim:Substance_05331 rdfs:subClassOf cls_et_grp:GS_IAM_10114 .
+
+ruim:Substance_05033 rdfs:subClassOf cls_et_grp:GS_IAM_10114 .
+
+ruim:Substance_04478 rdfs:subClassOf cls_et_grp:GS_IAM_10114 .
+
+ruim:Substance_05332 rdfs:subClassOf cls_et_grp:GS_IAM_10114 .
+
+ruim:Substance_00445 rdfs:subClassOf cls_et_grp:GS_IAM_10115 .
+
+ruim:Substance_04730 rdfs:subClassOf cls_et_grp:GS_IAM_10115 .
+
+ruim:Substance_01261 rdfs:subClassOf cls_et_grp:GS_IAM_10115 .
+
+ruim:Substance_04184 rdfs:subClassOf cls_et_grp:GS_IAM_10115 .
+
+ruim:Substance_04509 rdfs:subClassOf cls_et_grp:GS_IAM_10115 .
+
+ruim:Substance_22466 rdfs:subClassOf cls_et_grp:GS_IAM_10116 .
+
+ruim:Substance_36349 rdfs:subClassOf cls_et_grp:GS_IAM_10116 .
+
+ruim:Substance_70202 rdfs:subClassOf cls_et_grp:GS_IAM_10117 .
+
+ruim:Substance_10803 rdfs:subClassOf cls_et_grp:GS_IAM_10118 .
+
+ruim:Substance_01274 rdfs:subClassOf cls_et_grp:GS_IAM_10119 .
+
+ruim:Substance_00073 rdfs:subClassOf cls_et_grp:GS_IAM_10120 .
+
+ruim:Substance_07436 rdfs:subClassOf cls_et_grp:GS_IAM_10121 .
+
+ruim:Substance_35143 rdfs:subClassOf cls_et_grp:GS_IAM_10122 .
+
+ruim:Substance_41518 rdfs:subClassOf cls_et_grp:GS_IAM_10122 .
+
+ruim:Substance_02952 rdfs:subClassOf cls_et_grp:GS_IAM_10123 .
+
+ruim:Substance_55004 rdfs:subClassOf cls_et_grp:GS_IAM_10123 .
+
+ruim:Substance_01281 rdfs:subClassOf cls_et_grp:GS_IAM_10124 .
+
+ruim:Substance_24567 rdfs:subClassOf cls_et_grp:GS_IAM_10125 .
+
+ruim:Substance_67851 rdfs:subClassOf cls_et_grp:GS_IAM_10126 .
+
+ruim:Substance_03131 rdfs:subClassOf cls_et_grp:GS_IAM_10127 .
+
+ruim:Substance_08234 rdfs:subClassOf cls_et_grp:GS_IAM_10127 .
+
+ruim:Substance_98233 rdfs:subClassOf cls_et_grp:GS_IAM_10127 .
+
+ruim:Substance_00132 rdfs:subClassOf cls_et_grp:GS_IAM_10127 .
+
+ruim:Substance_39881 rdfs:subClassOf cls_et_grp:GS_IAM_10127 .
+
+ruim:Substance_97193 rdfs:subClassOf cls_et_grp:GS_IAM_10127 .
+
+ruim:Substance_11422 rdfs:subClassOf cls_et_grp:GS_IAM_10127 .
+
+ruim:Substance_98525 rdfs:subClassOf cls_et_grp:GS_IAM_10128 .
+
+ruim:Substance_39357 rdfs:subClassOf cls_et_grp:GS_IAM_10129 .
+
+ruim:Substance_74217 rdfs:subClassOf cls_et_grp:GS_IAM_10129 .
+
+ruim:Substance_36680 rdfs:subClassOf cls_et_grp:GS_IAM_10130 .
+
+ruim:Substance_87288 rdfs:subClassOf cls_et_grp:GS_IAM_10130 .
+
+ruim:Substance_62942 rdfs:subClassOf cls_et_grp:GS_IAM_10131 .
+
+ruim:Substance_20052 rdfs:subClassOf cls_et_grp:GS_IAM_10131 .
+
+ruim:Substance_49951 rdfs:subClassOf cls_et_grp:GS_IAM_10132 .
+
+ruim:Substance_59605 rdfs:subClassOf cls_et_grp:GS_IAM_10132 .
+
+ruim:Substance_00134 rdfs:subClassOf cls_et_grp:GS_IAM_10132 .
+
+ruim:Substance_42955 rdfs:subClassOf cls_et_grp:GS_IAM_10132 .
+
+ruim:Substance_39511 rdfs:subClassOf cls_et_grp:GS_IAM_10132 .
+
+ruim:Substance_94576 rdfs:subClassOf cls_et_grp:GS_IAM_10133 .
+
+ruim:Substance_00907 rdfs:subClassOf cls_et_grp:GS_IAM_10134 .
+
+ruim:Substance_92297 rdfs:subClassOf cls_et_grp:GS_IAM_10135 .
+
+ruim:Substance_00328 rdfs:subClassOf cls_et_grp:GS_IAM_10135 .
+
+ruim:Substance_03178 rdfs:subClassOf cls_et_grp:GS_IAM_10136 .
+
+ruim:Substance_24381 rdfs:subClassOf cls_et_grp:GS_IAM_10137 .
+
+ruim:Substance_00569 rdfs:subClassOf cls_et_grp:GS_IAM_10138 .
+
+ruim:Substance_54459 rdfs:subClassOf cls_et_grp:GS_IAM_10139 .
+
+ruim:Substance_21888 rdfs:subClassOf cls_et_grp:GS_IAM_10139 .
+
+ruim:Substance_17194 rdfs:subClassOf cls_et_grp:GS_IAM_10140 .
+
+ruim:Substance_01354 rdfs:subClassOf cls_et_grp:GS_IAM_10141 .
+
+ruim:Substance_01317 rdfs:subClassOf cls_et_grp:GS_IAM_10142 .
+
+ruim:Substance_97952 rdfs:subClassOf cls_et_grp:GS_IAM_10143 .
+
+ruim:Substance_32131 rdfs:subClassOf cls_et_grp:GS_IAM_10144 .
+
+ruim:Substance_97435 rdfs:subClassOf cls_et_grp:GS_IAM_10145 .
+
+ruim:Substance_98546 rdfs:subClassOf cls_et_grp:GS_IAM_10145 .
+
+ruim:Substance_03418 rdfs:subClassOf cls_et_grp:GS_IAM_10146 .
+
+ruim:Substance_00420 rdfs:subClassOf cls_et_grp:GS_IAM_10147 .
+
+ruim:Substance_03093 rdfs:subClassOf cls_et_grp:GS_IAM_10147 .
+
+ruim:Substance_04196 rdfs:subClassOf cls_et_grp:GS_IAM_10147 .
+
+ruim:Substance_28321 rdfs:subClassOf cls_et_grp:GS_IAM_10148 .
+
+ruim:Substance_00359 rdfs:subClassOf cls_et_grp:GS_IAM_10148 .
+
+ruim:Substance_08112 rdfs:subClassOf cls_et_grp:GS_IAM_10149 .
+
+ruim:Substance_00428 rdfs:subClassOf cls_et_grp:GS_IAM_10150 .
+
+ruim:Substance_00430 rdfs:subClassOf cls_et_grp:GS_IAM_10150 .
+
+ruim:Substance_04781 rdfs:subClassOf cls_et_grp:GS_IAM_10150 .
+
+ruim:Substance_72723 rdfs:subClassOf cls_et_grp:GS_IAM_10150 .
+
+ruim:Substance_09706 rdfs:subClassOf cls_et_grp:GS_IAM_10150 .
+
+ruim:Substance_00432 rdfs:subClassOf cls_et_grp:GS_IAM_10150 .
+
+ruim:Substance_00433 rdfs:subClassOf cls_et_grp:GS_IAM_10150 .
+
+ruim:Substance_15095 rdfs:subClassOf cls_et_grp:GS_IAM_10151 .
+
+ruim:Substance_00436 rdfs:subClassOf cls_et_grp:GS_IAM_10151 .
+
+ruim:Substance_36098 rdfs:subClassOf cls_et_grp:GS_IAM_10152 .
+
+ruim:Substance_73594 rdfs:subClassOf cls_et_grp:GS_IAM_10153 .
+
+ruim:Substance_03102 rdfs:subClassOf cls_et_grp:GS_IAM_10154 .
+
+ruim:Substance_91877 rdfs:subClassOf cls_et_grp:GS_IAM_10155 .
+
+ruim:Substance_00437 rdfs:subClassOf cls_et_grp:GS_IAM_10156 .
+
+ruim:Substance_21053 rdfs:subClassOf cls_et_grp:GS_IAM_10157 .
+
+ruim:Substance_01351 rdfs:subClassOf cls_et_grp:GS_IAM_10158 .
+
+ruim:Substance_05865 rdfs:subClassOf cls_et_grp:GS_IAM_10159 .
+
+ruim:Substance_08011 rdfs:subClassOf cls_et_grp:GS_IAM_10160 .
+
+ruim:Substance_00403 rdfs:subClassOf cls_et_grp:GS_IAM_10161 .
+
+ruim:Substance_24316 rdfs:subClassOf cls_et_grp:GS_IAM_10161 .
+
+ruim:Substance_18380 rdfs:subClassOf cls_et_grp:GS_IAM_10162 .
+
+ruim:Substance_96827 rdfs:subClassOf cls_et_grp:GS_IAM_10162 .
+
+ruim:Substance_27222 rdfs:subClassOf cls_et_grp:GS_IAM_10163 .
+
+ruim:Substance_53707 rdfs:subClassOf cls_et_grp:GS_IAM_10164 .
+
+ruim:Substance_16514 rdfs:subClassOf cls_et_grp:GS_IAM_10164 .
+
+ruim:Substance_49212 rdfs:subClassOf cls_et_grp:GS_IAM_10164 .
+
+ruim:Substance_09146 rdfs:subClassOf cls_et_grp:GS_IAM_10165 .
+
+ruim:Substance_11456 rdfs:subClassOf cls_et_grp:GS_IAM_10166 .
+
+ruim:Substance_06379 rdfs:subClassOf cls_et_grp:GS_IAM_10167 .
+
+ruim:Substance_00503 rdfs:subClassOf cls_et_grp:GS_IAM_10168 .
+
+ruim:Substance_63303 rdfs:subClassOf cls_et_grp:GS_IAM_10168 .
+
+ruim:Substance_00837 rdfs:subClassOf cls_et_grp:GS_IAM_10169 .
+
+ruim:Substance_73366 rdfs:subClassOf cls_et_grp:GS_IAM_10169 .
+
+ruim:Substance_62399 rdfs:subClassOf cls_et_grp:GS_IAM_10170 .
+
+ruim:Substance_28107 rdfs:subClassOf cls_et_grp:GS_IAM_10170 .
+
+ruim:Substance_98532 rdfs:subClassOf cls_et_grp:GS_IAM_10171 .
+
+ruim:Substance_21156 rdfs:subClassOf cls_et_grp:GS_IAM_10171 .
+
+ruim:Substance_35232 rdfs:subClassOf cls_et_grp:GS_IAM_10172 .
+
+ruim:Substance_30925 rdfs:subClassOf cls_et_grp:GS_IAM_10172 .
+
+ruim:Substance_63854 rdfs:subClassOf cls_et_grp:GS_IAM_10173 .
+
+ruim:Substance_78429 rdfs:subClassOf cls_et_grp:GS_IAM_10174 .
+
+ruim:Substance_07958 rdfs:subClassOf cls_et_grp:GS_IAM_10174 .
+
+ruim:Substance_58842 rdfs:subClassOf cls_et_grp:GS_IAM_10175 .
+
+ruim:Substance_77804 rdfs:subClassOf cls_et_grp:GS_IAM_10176 .
+
+ruim:Substance_22114 rdfs:subClassOf cls_et_grp:GS_IAM_10177 .
+
+ruim:Substance_49585 rdfs:subClassOf cls_et_grp:GS_IAM_10178 .
+
+ruim:Substance_04204 rdfs:subClassOf cls_et_grp:GS_IAM_10179 .
+
+ruim:Substance_00447 rdfs:subClassOf cls_et_grp:GS_IAM_10180 .
+
+ruim:Substance_01393 rdfs:subClassOf cls_et_grp:GS_IAM_10181 .
+
+ruim:Substance_01400 rdfs:subClassOf cls_et_grp:GS_IAM_10182 .
+
+ruim:Substance_02245 rdfs:subClassOf cls_et_grp:GS_IAM_10183 .
+
+ruim:Substance_03779 rdfs:subClassOf cls_et_grp:GS_IAM_10184 .
+
+ruim:Substance_21497 rdfs:subClassOf cls_et_grp:GS_IAM_10184 .
+
+ruim:Substance_04133 rdfs:subClassOf cls_et_grp:GS_IAM_10184 .
+
+ruim:Substance_03193 rdfs:subClassOf cls_et_grp:GS_IAM_10185 .
+
+ruim:Substance_01430 rdfs:subClassOf cls_et_grp:GS_IAM_10186 .
+
+ruim:Substance_00489 rdfs:subClassOf cls_et_grp:GS_IAM_10186 .
+
+ruim:Substance_01434 rdfs:subClassOf cls_et_grp:GS_IAM_10187 .
+
+ruim:Substance_03188 rdfs:subClassOf cls_et_grp:GS_IAM_10188 .
+
+ruim:Substance_63291 rdfs:subClassOf cls_et_grp:GS_IAM_10189 .
+
+ruim:Substance_50260 rdfs:subClassOf cls_et_grp:GS_IAM_10189 .
+
+ruim:Substance_01525 rdfs:subClassOf cls_et_grp:GS_IAM_10189 .
+
+ruim:Substance_85054 rdfs:subClassOf cls_et_grp:GS_IAM_10189 .
+
+ruim:Substance_15911 rdfs:subClassOf cls_et_grp:GS_IAM_10190 .
+
+ruim:Substance_27705 rdfs:subClassOf cls_et_grp:GS_IAM_10190 .
+
+ruim:Substance_74522 rdfs:subClassOf cls_et_grp:GS_IAM_10191 .
+
+ruim:Substance_07289 rdfs:subClassOf cls_et_grp:GS_IAM_10192 .
+
+ruim:Substance_26649 rdfs:subClassOf cls_et_grp:GS_IAM_10193 .
+
+ruim:Substance_15755 rdfs:subClassOf cls_et_grp:GS_IAM_10194 .
+
+ruim:Substance_76788 rdfs:subClassOf cls_et_grp:GS_IAM_10194 .
+
+ruim:Substance_72059 rdfs:subClassOf cls_et_grp:GS_IAM_10195 .
+
+ruim:Substance_00587 rdfs:subClassOf cls_et_grp:GS_IAM_10196 .
+
+ruim:Substance_05543 rdfs:subClassOf cls_et_grp:GS_IAM_10196 .
+
+ruim:Substance_97362 rdfs:subClassOf cls_et_grp:GS_IAM_10197 .
+
+ruim:Substance_81461 rdfs:subClassOf cls_et_grp:GS_IAM_10197 .
+
+ruim:Substance_03666 rdfs:subClassOf cls_et_grp:GS_IAM_10198 .
+
+ruim:Substance_11650 rdfs:subClassOf cls_et_grp:GS_IAM_10199 .
+
+ruim:Substance_66431 rdfs:subClassOf cls_et_grp:GS_IAM_10200 .
+
+ruim:Substance_79482 rdfs:subClassOf cls_et_grp:GS_IAM_10200 .
+
+ruim:Substance_53028 rdfs:subClassOf cls_et_grp:GS_IAM_10201 .
+
+ruim:Substance_62835 rdfs:subClassOf cls_et_grp:GS_IAM_10201 .
+
+ruim:Substance_00873 rdfs:subClassOf cls_et_grp:GS_IAM_10202 .
+
+ruim:Substance_29250 rdfs:subClassOf cls_et_grp:GS_IAM_10203 .
+
+ruim:Substance_57088 rdfs:subClassOf cls_et_grp:GS_IAM_10203 .
+
+ruim:Substance_54506 rdfs:subClassOf cls_et_grp:GS_IAM_10203 .
+
+ruim:Substance_44025 rdfs:subClassOf cls_et_grp:GS_IAM_10204 .
+
+ruim:Substance_97330 rdfs:subClassOf cls_et_grp:GS_IAM_10205 .
+
+ruim:Substance_24563 rdfs:subClassOf cls_et_grp:GS_IAM_10206 .
+
+ruim:Substance_39398 rdfs:subClassOf cls_et_grp:GS_IAM_10207 .
+
+ruim:Substance_00912 rdfs:subClassOf cls_et_grp:GS_IAM_10208 .
+
+ruim:Substance_48296 rdfs:subClassOf cls_et_grp:GS_IAM_10209 .
+
+ruim:Substance_00917 rdfs:subClassOf cls_et_grp:GS_IAM_10209 .
+
+ruim:Substance_97838 rdfs:subClassOf cls_et_grp:GS_IAM_10209 .
+
+ruim:Substance_02963 rdfs:subClassOf cls_et_grp:GS_IAM_10209 .
+
+ruim:Substance_00461 rdfs:subClassOf cls_et_grp:GS_IAM_10210 .
+
+ruim:Substance_94880 rdfs:subClassOf cls_et_grp:GS_IAM_10211 .
+
+ruim:Substance_01493 rdfs:subClassOf cls_et_grp:GS_IAM_10212 .
+
+ruim:Substance_00463 rdfs:subClassOf cls_et_grp:GS_IAM_10213 .
+
+ruim:Substance_00464 rdfs:subClassOf cls_et_grp:GS_IAM_10214 .
+
+ruim:Substance_01498 rdfs:subClassOf cls_et_grp:GS_IAM_10215 .
+
+ruim:Substance_54693 rdfs:subClassOf cls_et_grp:GS_IAM_10216 .
+
+ruim:Substance_52920 rdfs:subClassOf cls_et_grp:GS_IAM_10216 .
+
+ruim:Substance_01507 rdfs:subClassOf cls_et_grp:GS_IAM_10217 .
+
+ruim:Substance_20441 rdfs:subClassOf cls_et_grp:GS_IAM_10218 .
+
+ruim:Substance_01362 rdfs:subClassOf cls_et_grp:GS_IAM_10219 .
+
+ruim:Substance_13835 rdfs:subClassOf cls_et_grp:GS_IAM_10219 .
+
+ruim:Substance_74798 rdfs:subClassOf cls_et_grp:GS_IAM_10220 .
+
+ruim:Substance_56996 rdfs:subClassOf cls_et_grp:GS_IAM_10221 .
+
+ruim:Substance_39792 rdfs:subClassOf cls_et_grp:GS_IAM_10222 .
+
+ruim:Substance_74765 rdfs:subClassOf cls_et_grp:GS_IAM_10224 .
+
+ruim:Substance_04815 rdfs:subClassOf cls_et_grp:GS_IAM_10224 .
+
+ruim:Substance_00467 rdfs:subClassOf cls_et_grp:GS_IAM_10224 .
+
+ruim:Substance_03782 rdfs:subClassOf cls_et_grp:GS_IAM_10224 .
+
+ruim:Substance_00468 rdfs:subClassOf cls_et_grp:GS_IAM_10224 .
+
+ruim:Substance_98173 rdfs:subClassOf cls_et_grp:GS_IAM_10224 .
+
+ruim:Substance_25936 rdfs:subClassOf cls_et_grp:GS_IAM_10224 .
+
+ruim:Substance_00469 rdfs:subClassOf cls_et_grp:GS_IAM_10225 .
+
+ruim:Substance_50447 rdfs:subClassOf cls_et_grp:GS_IAM_10226 .
+
+ruim:Substance_01526 rdfs:subClassOf cls_et_grp:GS_IAM_10227 .
+
+ruim:Substance_04823 rdfs:subClassOf cls_et_grp:GS_IAM_10228 .
+
+ruim:Substance_05409 rdfs:subClassOf cls_et_grp:GS_IAM_10229 .
+
+ruim:Substance_00471 rdfs:subClassOf cls_et_grp:GS_IAM_10230 .
+
+ruim:Substance_46435 rdfs:subClassOf cls_et_grp:GS_IAM_10231 .
+
+ruim:Substance_08846 rdfs:subClassOf cls_et_grp:GS_IAM_10232 .
+
+ruim:Substance_05760 rdfs:subClassOf cls_et_grp:GS_IAM_10232 .
+
+ruim:Substance_01539 rdfs:subClassOf cls_et_grp:GS_IAM_10233 .
+
+ruim:Substance_22380 rdfs:subClassOf cls_et_grp:GS_IAM_10233 .
+
+ruim:Substance_05777 rdfs:subClassOf cls_et_grp:GS_IAM_10234 .
+
+ruim:Substance_01556 rdfs:subClassOf cls_et_grp:GS_IAM_10235 .
+
+ruim:Substance_77405 rdfs:subClassOf cls_et_grp:GS_IAM_10235 .
+
+ruim:Substance_01561 rdfs:subClassOf cls_et_grp:GS_IAM_10236 .
+
+ruim:Substance_32109 rdfs:subClassOf cls_et_grp:GS_IAM_10237 .
+
+ruim:Substance_03197 rdfs:subClassOf cls_et_grp:GS_IAM_10237 .
+
+ruim:Substance_00987 rdfs:subClassOf cls_et_grp:GS_IAM_10238 .
+
+ruim:Substance_01574 rdfs:subClassOf cls_et_grp:GS_IAM_10239 .
+
+ruim:Substance_83321 rdfs:subClassOf cls_et_grp:GS_IAM_10240 .
+
+ruim:Substance_82447 rdfs:subClassOf cls_et_grp:GS_IAM_10240 .
+
+ruim:Substance_44109 rdfs:subClassOf cls_et_grp:GS_IAM_10241 .
+
+ruim:Substance_95704 rdfs:subClassOf cls_et_grp:GS_IAM_10241 .
+
+ruim:Substance_00141 rdfs:subClassOf cls_et_grp:GS_IAM_10242 .
+
+ruim:Substance_77015 rdfs:subClassOf cls_et_grp:GS_IAM_10243 .
+
+ruim:Substance_43031 rdfs:subClassOf cls_et_grp:GS_IAM_10244 .
+
+ruim:Substance_89443 rdfs:subClassOf cls_et_grp:GS_IAM_10245 .
+
+ruim:Substance_45221 rdfs:subClassOf cls_et_grp:GS_IAM_10245 .
+
+ruim:Substance_62595 rdfs:subClassOf cls_et_grp:GS_IAM_10246 .
+
+ruim:Substance_70130 rdfs:subClassOf cls_et_grp:GS_IAM_10247 .
+
+ruim:Substance_00945 rdfs:subClassOf cls_et_grp:GS_IAM_10248 .
+
+ruim:Substance_00836 rdfs:subClassOf cls_et_grp:GS_IAM_10249 .
+
+ruim:Substance_27287 rdfs:subClassOf cls_et_grp:GS_IAM_10250 .
+
+ruim:Substance_83503 rdfs:subClassOf cls_et_grp:GS_IAM_10250 .
+
+ruim:Substance_05525 rdfs:subClassOf cls_et_grp:GS_IAM_10251 .
+
+ruim:Substance_46167 rdfs:subClassOf cls_et_grp:GS_IAM_10252 .
+
+ruim:Substance_59568 rdfs:subClassOf cls_et_grp:GS_IAM_10253 .
+
+ruim:Substance_38015 rdfs:subClassOf cls_et_grp:GS_IAM_10253 .
+
+ruim:Substance_28847 rdfs:subClassOf cls_et_grp:GS_IAM_10254 .
+
+ruim:Substance_39005 rdfs:subClassOf cls_et_grp:GS_IAM_10254 .
+
+ruim:Substance_44781 rdfs:subClassOf cls_et_grp:GS_IAM_10255 .
+
+ruim:Substance_19755 rdfs:subClassOf cls_et_grp:GS_IAM_10256 .
+
+ruim:Substance_54643 rdfs:subClassOf cls_et_grp:GS_IAM_10257 .
+
+ruim:Substance_01578 rdfs:subClassOf cls_et_grp:GS_IAM_10257 .
+
+ruim:Substance_54962 rdfs:subClassOf cls_et_grp:GS_IAM_10258 .
+
+ruim:Substance_87487 rdfs:subClassOf cls_et_grp:GS_IAM_10259 .
+
+ruim:Substance_95296 rdfs:subClassOf cls_et_grp:GS_IAM_10260 .
+
+ruim:Substance_01584 rdfs:subClassOf cls_et_grp:GS_IAM_10261 .
+
+ruim:Substance_68391 rdfs:subClassOf cls_et_grp:GS_IAM_10262 .
+
+ruim:Substance_43009 rdfs:subClassOf cls_et_grp:GS_IAM_10263 .
+
+ruim:Substance_70512 rdfs:subClassOf cls_et_grp:GS_IAM_10264, cls_et_grp:GS_IAM_10265 .
+
+ruim:Substance_01593 rdfs:subClassOf cls_et_grp:GS_IAM_10264, cls_et_grp:GS_IAM_10265 .
+
+ruim:Substance_51765 rdfs:subClassOf cls_et_grp:GS_IAM_10266 .
+
+ruim:Substance_72602 rdfs:subClassOf cls_et_grp:GS_IAM_10267 .
+
+ruim:Substance_03306 rdfs:subClassOf cls_et_grp:GS_IAM_10268 .
+
+ruim:Substance_45293 rdfs:subClassOf cls_et_grp:GS_IAM_10269 .
+
+ruim:Substance_13582 rdfs:subClassOf cls_et_grp:GS_IAM_10269 .
+
+ruim:Substance_27380 rdfs:subClassOf cls_et_grp:GS_IAM_10270 .
+
+ruim:Substance_00482 rdfs:subClassOf cls_et_grp:GS_IAM_10271 .
+
+ruim:Substance_03675 rdfs:subClassOf cls_et_grp:GS_IAM_10272 .
+
+ruim:Substance_01608 rdfs:subClassOf cls_et_grp:GS_IAM_10272 .
+
+ruim:Substance_04429 rdfs:subClassOf cls_et_grp:GS_IAM_10272 .
+
+ruim:Substance_73377 rdfs:subClassOf cls_et_grp:GS_IAM_10272 .
+
+ruim:Substance_03673 rdfs:subClassOf cls_et_grp:GS_IAM_10272 .
+
+ruim:Substance_03218 rdfs:subClassOf cls_et_grp:GS_IAM_10273 .
+
+ruim:Substance_30646 rdfs:subClassOf cls_et_grp:GS_IAM_10274 .
+
+ruim:Substance_93236 rdfs:subClassOf cls_et_grp:GS_IAM_10274 .
+
+ruim:Substance_76710 rdfs:subClassOf cls_et_grp:GS_IAM_10275 .
+
+ruim:Substance_44152 rdfs:subClassOf cls_et_grp:GS_IAM_10276 .
+
+ruim:Substance_31269 rdfs:subClassOf cls_et_grp:GS_IAM_10276 .
+
+ruim:Substance_23779 rdfs:subClassOf cls_et_grp:GS_IAM_10277 .
+
+ruim:Substance_17426 rdfs:subClassOf cls_et_grp:GS_IAM_10277 .
+
+ruim:Substance_02968 rdfs:subClassOf cls_et_grp:GS_IAM_10277 .
+
+ruim:Substance_06625 rdfs:subClassOf cls_et_grp:GS_IAM_10277 .
+
+ruim:Substance_03229 rdfs:subClassOf cls_et_grp:GS_IAM_10278 .
+
+ruim:Substance_73427 rdfs:subClassOf cls_et_grp:GS_IAM_10278 .
+
+ruim:Substance_04906 rdfs:subClassOf cls_et_grp:GS_IAM_10279 .
+
+ruim:Substance_01637 rdfs:subClassOf cls_et_grp:GS_IAM_10280 .
+
+ruim:Substance_04414 rdfs:subClassOf cls_et_grp:GS_IAM_10281 .
+
+ruim:Substance_22364 rdfs:subClassOf cls_et_grp:GS_IAM_10282 .
+
+ruim:Substance_48613 rdfs:subClassOf cls_et_grp:GS_IAM_10282 .
+
+ruim:Substance_99970 rdfs:subClassOf cls_et_grp:GS_IAM_10282 .
+
+ruim:Substance_36592 rdfs:subClassOf cls_et_grp:GS_IAM_10282 .
+
+ruim:Substance_00037 rdfs:subClassOf cls_et_grp:GS_IAM_10282 .
+
+ruim:Substance_10627 rdfs:subClassOf cls_et_grp:GS_IAM_10283 .
+
+ruim:Substance_49665 rdfs:subClassOf cls_et_grp:GS_IAM_10284 .
+
+ruim:Substance_01663 rdfs:subClassOf cls_et_grp:GS_IAM_10285 .
+
+ruim:Substance_01672 rdfs:subClassOf cls_et_grp:GS_IAM_10286 .
+
+ruim:Substance_01674 rdfs:subClassOf cls_et_grp:GS_IAM_10287 .
+
+ruim:Substance_88236 rdfs:subClassOf cls_et_grp:GS_IAM_10287 .
+
+ruim:Substance_99154 rdfs:subClassOf cls_et_grp:GS_IAM_10288 .
+
+ruim:Substance_06987 rdfs:subClassOf cls_et_grp:GS_IAM_10288 .
+
+ruim:Substance_03790 rdfs:subClassOf cls_et_grp:GS_IAM_10289 .
+
+ruim:Substance_81034 rdfs:subClassOf cls_et_grp:GS_IAM_10289 .
+
+ruim:Substance_00915 rdfs:subClassOf cls_et_grp:GS_IAM_10290 .
+
+ruim:Substance_01691 rdfs:subClassOf cls_et_grp:GS_IAM_10291 .
+
+ruim:Substance_51371 rdfs:subClassOf cls_et_grp:GS_IAM_10292 .
+
+ruim:Substance_04979 rdfs:subClassOf cls_et_grp:GS_IAM_10293 .
+
+ruim:Substance_09414 rdfs:subClassOf cls_et_grp:GS_IAM_10294 .
+
+ruim:Substance_02678 rdfs:subClassOf cls_et_grp:GS_IAM_10295 .
+
+ruim:Substance_01738 rdfs:subClassOf cls_et_grp:GS_IAM_10296 .
+
+ruim:Substance_01743 rdfs:subClassOf cls_et_grp:GS_IAM_10297 .
+
+ruim:Substance_00604 rdfs:subClassOf cls_et_grp:GS_IAM_10298 .
+
+ruim:Substance_01745 rdfs:subClassOf cls_et_grp:GS_IAM_10298 .
+
+ruim:Substance_01747 rdfs:subClassOf cls_et_grp:GS_IAM_10299 .
+
+ruim:Substance_05376 rdfs:subClassOf cls_et_grp:GS_IAM_10300 .
+
+ruim:Substance_38643 rdfs:subClassOf cls_et_grp:GS_IAM_10300 .
+
+ruim:Substance_68669 rdfs:subClassOf cls_et_grp:GS_IAM_10301 .
+
+ruim:Substance_00984 rdfs:subClassOf cls_et_grp:GS_IAM_10302 .
+
+ruim:Substance_33803 rdfs:subClassOf cls_et_grp:GS_IAM_10303 .
+
+ruim:Substance_70320 rdfs:subClassOf cls_et_grp:GS_IAM_10303 .
+
+ruim:Substance_05249 rdfs:subClassOf cls_et_grp:GS_IAM_10304 .
+
+ruim:Substance_00087 rdfs:subClassOf cls_et_grp:GS_IAM_10305 .
+
+ruim:Substance_09301 rdfs:subClassOf cls_et_grp:GS_IAM_10306 .
+
+ruim:Substance_55340 rdfs:subClassOf cls_et_grp:GS_IAM_10306 .
+
+ruim:Substance_19558 rdfs:subClassOf cls_et_grp:GS_IAM_10307 .
+
+ruim:Substance_01755 rdfs:subClassOf cls_et_grp:GS_IAM_10307 .
+
+ruim:Substance_03236 rdfs:subClassOf cls_et_grp:GS_IAM_10308 .
+
+ruim:Substance_19414 rdfs:subClassOf cls_et_grp:GS_IAM_10309 .
+
+ruim:Substance_01756 rdfs:subClassOf cls_et_grp:GS_IAM_10309 .
+
+ruim:Substance_66876 rdfs:subClassOf cls_et_grp:GS_IAM_10309 .
+
+ruim:Substance_28372 rdfs:subClassOf cls_et_grp:GS_IAM_10309 .
+
+ruim:Substance_00939 rdfs:subClassOf cls_et_grp:GS_IAM_10309 .
+
+ruim:Substance_07055 rdfs:subClassOf cls_et_grp:GS_IAM_10309 .
+
+ruim:Substance_03225 rdfs:subClassOf cls_et_grp:GS_IAM_10310 .
+
+ruim:Substance_78319 rdfs:subClassOf cls_et_grp:GS_IAM_10311 .
+
+ruim:Substance_46472 rdfs:subClassOf cls_et_grp:GS_IAM_10311 .
+
+ruim:Substance_01758 rdfs:subClassOf cls_et_grp:GS_IAM_10312 .
+
+ruim:Substance_18867 rdfs:subClassOf cls_et_grp:GS_IAM_10313 .
+
+ruim:Substance_72101 rdfs:subClassOf cls_et_grp:GS_IAM_10314 .
+
+ruim:Substance_80476 rdfs:subClassOf cls_et_grp:GS_IAM_10314 .
+
+ruim:Substance_01765 rdfs:subClassOf cls_et_grp:GS_IAM_10315 .
+
+ruim:Substance_12870 rdfs:subClassOf cls_et_grp:GS_IAM_10316 .
+
+ruim:Substance_03929 rdfs:subClassOf cls_et_grp:GS_IAM_10317 .
+
+ruim:Substance_11144 rdfs:subClassOf cls_et_grp:GS_IAM_10317 .
+
+ruim:Substance_17256 rdfs:subClassOf cls_et_grp:GS_IAM_10318 .
+
+ruim:Substance_58382 rdfs:subClassOf cls_et_grp:GS_IAM_10319 .
+
+ruim:Substance_65817 rdfs:subClassOf cls_et_grp:GS_IAM_10319 .
+
+ruim:Substance_27173 rdfs:subClassOf cls_et_grp:GS_IAM_10320 .
+
+ruim:Substance_83586 rdfs:subClassOf cls_et_grp:GS_IAM_10320 .
+
+ruim:Substance_94549 rdfs:subClassOf cls_et_grp:GS_IAM_10321 .
+
+ruim:Substance_03682 rdfs:subClassOf cls_et_grp:GS_IAM_10322 .
+
+ruim:Substance_08050 rdfs:subClassOf cls_et_grp:GS_IAM_10323 .
+
+ruim:Substance_30195 rdfs:subClassOf cls_et_grp:GS_IAM_10323 .
+
+ruim:Substance_08351 rdfs:subClassOf cls_et_grp:GS_IAM_10324 .
+
+ruim:Substance_87471 rdfs:subClassOf cls_et_grp:GS_IAM_10325 .
+
+ruim:Substance_85141 rdfs:subClassOf cls_et_grp:GS_IAM_10326 .
+
+ruim:Substance_04278 rdfs:subClassOf cls_et_grp:GS_IAM_10327 .
+
+ruim:Substance_00493 rdfs:subClassOf cls_et_grp:GS_IAM_10327 .
+
+ruim:Substance_40628 rdfs:subClassOf cls_et_grp:GS_IAM_10328 .
+
+ruim:Substance_62172 rdfs:subClassOf cls_et_grp:GS_IAM_10329 .
+
+ruim:Substance_39476 rdfs:subClassOf cls_et_grp:GS_IAM_10330 .
+
+ruim:Substance_92529 rdfs:subClassOf cls_et_grp:GS_IAM_10330 .
+
+ruim:Substance_89617 rdfs:subClassOf cls_et_grp:GS_IAM_10331 .
+
+ruim:Substance_21825 rdfs:subClassOf cls_et_grp:GS_IAM_10331 .
+
+ruim:Substance_27179 rdfs:subClassOf cls_et_grp:GS_IAM_10332 .
+
+ruim:Substance_01339 rdfs:subClassOf cls_et_grp:GS_IAM_10333 .
+
+ruim:Substance_04281 rdfs:subClassOf cls_et_grp:GS_IAM_10334 .
+
+ruim:Substance_21374 rdfs:subClassOf cls_et_grp:GS_IAM_10335 .
+
+ruim:Substance_27387 rdfs:subClassOf cls_et_grp:GS_IAM_10336 .
+
+ruim:Substance_56421 rdfs:subClassOf cls_et_grp:GS_IAM_10336 .
+
+ruim:Substance_52977 rdfs:subClassOf cls_et_grp:GS_IAM_10337 .
+
+ruim:Substance_32693 rdfs:subClassOf cls_et_grp:GS_IAM_10337 .
+
+ruim:Substance_00374 rdfs:subClassOf cls_et_grp:GS_IAM_10338 .
+
+ruim:Substance_03245 rdfs:subClassOf cls_et_grp:GS_IAM_10338 .
+
+ruim:Substance_26259 rdfs:subClassOf cls_et_grp:GS_IAM_10338 .
+
+ruim:Substance_01785 rdfs:subClassOf cls_et_grp:GS_IAM_10338 .
+
+ruim:Substance_98195 rdfs:subClassOf cls_et_grp:GS_IAM_10338 .
+
+ruim:Substance_89971 rdfs:subClassOf cls_et_grp:GS_IAM_10339 .
+
+ruim:Substance_78924 rdfs:subClassOf cls_et_grp:GS_IAM_10339 .
+
+ruim:Substance_61493 rdfs:subClassOf cls_et_grp:GS_IAM_10340 .
+
+ruim:Substance_10471 rdfs:subClassOf cls_et_grp:GS_IAM_10341 .
+
+ruim:Substance_61112 rdfs:subClassOf cls_et_grp:GS_IAM_10342 .
+
+ruim:Substance_17407 rdfs:subClassOf cls_et_grp:GS_IAM_10342 .
+
+ruim:Substance_44234 rdfs:subClassOf cls_et_grp:GS_IAM_10342 .
+
+ruim:Substance_00742 rdfs:subClassOf cls_et_grp:GS_IAM_10343 .
+
+ruim:Substance_01580 rdfs:subClassOf cls_et_grp:GS_IAM_10344 .
+
+ruim:Substance_27020 rdfs:subClassOf cls_et_grp:GS_IAM_10344 .
+
+ruim:Substance_01786 rdfs:subClassOf cls_et_grp:GS_IAM_10344 .
+
+ruim:Substance_71064 rdfs:subClassOf cls_et_grp:GS_IAM_10344 .
+
+ruim:Substance_04287 rdfs:subClassOf cls_et_grp:GS_IAM_10344 .
+
+ruim:Substance_00959 rdfs:subClassOf cls_et_grp:GS_IAM_10345 .
+
+ruim:Substance_34630 rdfs:subClassOf cls_et_grp:GS_IAM_10345 .
+
+ruim:Substance_01778 rdfs:subClassOf cls_et_grp:GS_IAM_10346 .
+
+ruim:Substance_03082 rdfs:subClassOf cls_et_grp:GS_IAM_10347 .
+
+ruim:Substance_01789 rdfs:subClassOf cls_et_grp:GS_IAM_10348 .
+
+ruim:Substance_24075 rdfs:subClassOf cls_et_grp:GS_IAM_10349 .
+
+ruim:Substance_01802 rdfs:subClassOf cls_et_grp:GS_IAM_10350 .
+
+ruim:Substance_01807 rdfs:subClassOf cls_et_grp:GS_IAM_10351 .
+
+ruim:Substance_01813 rdfs:subClassOf cls_et_grp:GS_IAM_10352 .
+
+ruim:Substance_04216 rdfs:subClassOf cls_et_grp:GS_IAM_10353 .
+
+ruim:Substance_01522 rdfs:subClassOf cls_et_grp:GS_IAM_10353 .
+
+ruim:Substance_00934 rdfs:subClassOf cls_et_grp:GS_IAM_10354 .
+
+ruim:Substance_01853 rdfs:subClassOf cls_et_grp:GS_IAM_10355 .
+
+ruim:Substance_08610 rdfs:subClassOf cls_et_grp:GS_IAM_10356 .
+
+ruim:Substance_36376 rdfs:subClassOf cls_et_grp:GS_IAM_10357 .
+
+ruim:Substance_26376 rdfs:subClassOf cls_et_grp:GS_IAM_10358 .
+
+ruim:Substance_00713 rdfs:subClassOf cls_et_grp:GS_IAM_10358 .
+
+ruim:Substance_47493 rdfs:subClassOf cls_et_grp:GS_IAM_10359 .
+
+ruim:Substance_93935 rdfs:subClassOf cls_et_grp:GS_IAM_10360 .
+
+ruim:Substance_00155 rdfs:subClassOf cls_et_grp:GS_IAM_10361 .
+
+ruim:Substance_78154 rdfs:subClassOf cls_et_grp:GS_IAM_10361 .
+
+ruim:Substance_00248 rdfs:subClassOf cls_et_grp:GS_IAM_10361 .
+
+ruim:Substance_74480 rdfs:subClassOf cls_et_grp:GS_IAM_10361 .
+
+ruim:Substance_03806 rdfs:subClassOf cls_et_grp:GS_IAM_10362 .
+
+ruim:Substance_94553 rdfs:subClassOf cls_et_grp:GS_IAM_10363 .
+
+ruim:Substance_39306 rdfs:subClassOf cls_et_grp:GS_IAM_10364 .
+
+ruim:Substance_73242 rdfs:subClassOf cls_et_grp:GS_IAM_10365 .
+
+ruim:Substance_04034 rdfs:subClassOf cls_et_grp:GS_IAM_10366 .
+
+ruim:Substance_72087 rdfs:subClassOf cls_et_grp:GS_IAM_10367 .
+
+ruim:Substance_52114 rdfs:subClassOf cls_et_grp:GS_IAM_10367 .
+
+ruim:Substance_65723 rdfs:subClassOf cls_et_grp:GS_IAM_10367 .
+
+ruim:Substance_89276 rdfs:subClassOf cls_et_grp:GS_IAM_10368 .
+
+ruim:Substance_55410 rdfs:subClassOf cls_et_grp:GS_IAM_10369 .
+
+ruim:Substance_56173 rdfs:subClassOf cls_et_grp:GS_IAM_10370 .
+
+ruim:Substance_03902 rdfs:subClassOf cls_et_grp:GS_IAM_10371 .
+
+ruim:Substance_00291 rdfs:subClassOf cls_et_grp:GS_IAM_10372 .
+
+ruim:Substance_64768 rdfs:subClassOf cls_et_grp:GS_IAM_10372 .
+
+ruim:Substance_03314 rdfs:subClassOf cls_et_grp:GS_IAM_10373 .
+
+ruim:Substance_01901 rdfs:subClassOf cls_et_grp:GS_IAM_10374 .
+
+ruim:Substance_17477 rdfs:subClassOf cls_et_grp:GS_IAM_10374 .
+
+ruim:Substance_00510 rdfs:subClassOf cls_et_grp:GS_IAM_10375 .
+
+ruim:Substance_02997 rdfs:subClassOf cls_et_grp:GS_IAM_10375 .
+
+ruim:Substance_44739 rdfs:subClassOf cls_et_grp:GS_IAM_10375 .
+
+ruim:Substance_00304 rdfs:subClassOf cls_et_grp:GS_IAM_10375 .
+
+ruim:Substance_00509 rdfs:subClassOf cls_et_grp:GS_IAM_10375 .
+
+ruim:Substance_00512 rdfs:subClassOf cls_et_grp:GS_IAM_10375 .
+
+ruim:Substance_62325 rdfs:subClassOf cls_et_grp:GS_IAM_10375 .
+
+ruim:Substance_34855 rdfs:subClassOf cls_et_grp:GS_IAM_10375 .
+
+ruim:Substance_27099 rdfs:subClassOf cls_et_grp:GS_IAM_10375 .
+
+ruim:Substance_93951 rdfs:subClassOf cls_et_grp:GS_IAM_10376 .
+
+ruim:Substance_39396 rdfs:subClassOf cls_et_grp:GS_IAM_10376 .
+
+ruim:Substance_66219 rdfs:subClassOf cls_et_grp:GS_IAM_10377 .
+
+ruim:Substance_55222 rdfs:subClassOf cls_et_grp:GS_IAM_10377 .
+
+ruim:Substance_26382 rdfs:subClassOf cls_et_grp:GS_IAM_10378 .
+
+ruim:Substance_85211 rdfs:subClassOf cls_et_grp:GS_IAM_10379 .
+
+ruim:Substance_97368 rdfs:subClassOf cls_et_grp:GS_IAM_10379 .
+
+ruim:Substance_03226 rdfs:subClassOf cls_et_grp:GS_IAM_10380 .
+
+ruim:Substance_11279 rdfs:subClassOf cls_et_grp:GS_IAM_10381 .
+
+ruim:Substance_03315 rdfs:subClassOf cls_et_grp:GS_IAM_10382 .
+
+ruim:Substance_45009 rdfs:subClassOf cls_et_grp:GS_IAM_10383 .
+
+ruim:Substance_03818 rdfs:subClassOf cls_et_grp:GS_IAM_10384 .
+
+ruim:Substance_70502 rdfs:subClassOf cls_et_grp:GS_IAM_10384 .
+
+ruim:Substance_03459 rdfs:subClassOf cls_et_grp:GS_IAM_10385 .
+
+ruim:Substance_27488 rdfs:subClassOf cls_et_grp:GS_IAM_10386 .
+
+ruim:Substance_27929 rdfs:subClassOf cls_et_grp:GS_IAM_10386 .
+
+ruim:Substance_00802 rdfs:subClassOf cls_et_grp:GS_IAM_10387 .
+
+ruim:Substance_04546 rdfs:subClassOf cls_et_grp:GS_IAM_10388 .
+
+ruim:Substance_85033 rdfs:subClassOf cls_et_grp:GS_IAM_10388 .
+
+ruim:Substance_04188 rdfs:subClassOf cls_et_grp:GS_IAM_10388 .
+
+ruim:Substance_00702 rdfs:subClassOf cls_et_grp:GS_IAM_10388 .
+
+ruim:Substance_04143 rdfs:subClassOf cls_et_grp:GS_IAM_10388 .
+
+ruim:Substance_01931 rdfs:subClassOf cls_et_grp:GS_IAM_10389 .
+
+ruim:Substance_48800 rdfs:subClassOf cls_et_grp:GS_IAM_10390 .
+
+ruim:Substance_07560 rdfs:subClassOf cls_et_grp:GS_IAM_10390 .
+
+ruim:Substance_00571 rdfs:subClassOf cls_et_grp:GS_IAM_10391 .
+
+ruim:Substance_89752 rdfs:subClassOf cls_et_grp:GS_IAM_10391 .
+
+ruim:Substance_04916 rdfs:subClassOf cls_et_grp:GS_IAM_10391 .
+
+ruim:Substance_01935 rdfs:subClassOf cls_et_grp:GS_IAM_10392 .
+
+ruim:Substance_03302 rdfs:subClassOf cls_et_grp:GS_IAM_10392 .
+
+ruim:Substance_00528 rdfs:subClassOf cls_et_grp:GS_IAM_10392 .
+
+ruim:Substance_11630 rdfs:subClassOf cls_et_grp:GS_IAM_10393 .
+
+ruim:Substance_00594 rdfs:subClassOf cls_et_grp:GS_IAM_10394 .
+
+ruim:Substance_17590 rdfs:subClassOf cls_et_grp:GS_IAM_10394 .
+
+ruim:Substance_06092 rdfs:subClassOf cls_et_grp:GS_IAM_10395 .
+
+ruim:Substance_41788 rdfs:subClassOf cls_et_grp:GS_IAM_10396 .
+
+ruim:Substance_80889 rdfs:subClassOf cls_et_grp:GS_IAM_10397 .
+
+ruim:Substance_55705 rdfs:subClassOf cls_et_grp:GS_IAM_10397 .
+
+ruim:Substance_23046 rdfs:subClassOf cls_et_grp:GS_IAM_10398 .
+
+ruim:Substance_71082 rdfs:subClassOf cls_et_grp:GS_IAM_10399 .
+
+ruim:Substance_94100 rdfs:subClassOf cls_et_grp:GS_IAM_10400 .
+
+ruim:Substance_31174 rdfs:subClassOf cls_et_grp:GS_IAM_10400 .
+
+ruim:Substance_69062 rdfs:subClassOf cls_et_grp:GS_IAM_10401 .
+
+ruim:Substance_39196 rdfs:subClassOf cls_et_grp:GS_IAM_10402 .
+
+ruim:Substance_64036 rdfs:subClassOf cls_et_grp:GS_IAM_10402 .
+
+ruim:Substance_47020 rdfs:subClassOf cls_et_grp:GS_IAM_10403 .
+
+ruim:Substance_06292 rdfs:subClassOf cls_et_grp:GS_IAM_10404 .
+
+ruim:Substance_36521 rdfs:subClassOf cls_et_grp:GS_IAM_10405 .
+
+ruim:Substance_35029 rdfs:subClassOf cls_et_grp:GS_IAM_10405 .
+
+ruim:Substance_01958 rdfs:subClassOf cls_et_grp:GS_IAM_10406 .
+
+ruim:Substance_28886 rdfs:subClassOf cls_et_grp:GS_IAM_10407 .
+
+ruim:Substance_32833 rdfs:subClassOf cls_et_grp:GS_IAM_10407 .
+
+ruim:Substance_59696 rdfs:subClassOf cls_et_grp:GS_IAM_10408 .
+
+ruim:Substance_08476 rdfs:subClassOf cls_et_grp:GS_IAM_10408 .
+
+ruim:Substance_78568 rdfs:subClassOf cls_et_grp:GS_IAM_10409 .
+
+ruim:Substance_40424 rdfs:subClassOf cls_et_grp:GS_IAM_10410 .
+
+ruim:Substance_38050 rdfs:subClassOf cls_et_grp:GS_IAM_10410 .
+
+ruim:Substance_26942 rdfs:subClassOf cls_et_grp:GS_IAM_10411, cls_et_grp:GS_IAM_11015 .
+
+ruim:Substance_47604 rdfs:subClassOf cls_et_grp:GS_IAM_10412 .
+
+ruim:Substance_00525 rdfs:subClassOf cls_et_grp:GS_IAM_10412 .
+
+ruim:Substance_86688 rdfs:subClassOf cls_et_grp:GS_IAM_10413 .
+
+ruim:Substance_01976 rdfs:subClassOf cls_et_grp:GS_IAM_10414 .
+
+ruim:Substance_00527 rdfs:subClassOf cls_et_grp:GS_IAM_10415 .
+
+ruim:Substance_71861 rdfs:subClassOf cls_et_grp:GS_IAM_10416 .
+
+ruim:Substance_03332 rdfs:subClassOf cls_et_grp:GS_IAM_10417 .
+
+ruim:Substance_46310 rdfs:subClassOf cls_et_grp:GS_IAM_10418 .
+
+ruim:Substance_00532 rdfs:subClassOf cls_et_grp:GS_IAM_10419 .
+
+ruim:Substance_20884 rdfs:subClassOf cls_et_grp:GS_IAM_10420 .
+
+ruim:Substance_16648 rdfs:subClassOf cls_et_grp:GS_IAM_10421 .
+
+ruim:Substance_02006 rdfs:subClassOf cls_et_grp:GS_IAM_10422 .
+
+ruim:Substance_82838 rdfs:subClassOf cls_et_grp:GS_IAM_10424 .
+
+ruim:Substance_00989 rdfs:subClassOf cls_et_grp:GS_IAM_10424 .
+
+ruim:Substance_10676 rdfs:subClassOf cls_et_grp:GS_IAM_10425 .
+
+ruim:Substance_22338 rdfs:subClassOf cls_et_grp:GS_IAM_10426 .
+
+ruim:Substance_02019 rdfs:subClassOf cls_et_grp:GS_IAM_10426 .
+
+ruim:Substance_04261 rdfs:subClassOf cls_et_grp:GS_IAM_10427 .
+
+ruim:Substance_04971 rdfs:subClassOf cls_et_grp:GS_IAM_10428 .
+
+ruim:Substance_02024 rdfs:subClassOf cls_et_grp:GS_IAM_10429 .
+
+ruim:Substance_04388 rdfs:subClassOf cls_et_grp:GS_IAM_10430 .
+
+ruim:Substance_62296 rdfs:subClassOf cls_et_grp:GS_IAM_10430 .
+
+ruim:Substance_02064 rdfs:subClassOf cls_et_grp:GS_IAM_10431 .
+
+ruim:Substance_02067 rdfs:subClassOf cls_et_grp:GS_IAM_10432 .
+
+ruim:Substance_17345 rdfs:subClassOf cls_et_grp:GS_IAM_10432 .
+
+ruim:Substance_00545 rdfs:subClassOf cls_et_grp:GS_IAM_10432 .
+
+ruim:Substance_00546 rdfs:subClassOf cls_et_grp:GS_IAM_10432 .
+
+ruim:Substance_00773 rdfs:subClassOf cls_et_grp:GS_IAM_10432 .
+
+ruim:Substance_09665 rdfs:subClassOf cls_et_grp:GS_IAM_10432 .
+
+ruim:Substance_25114 rdfs:subClassOf cls_et_grp:GS_IAM_10433 .
+
+ruim:Substance_06776 rdfs:subClassOf cls_et_grp:GS_IAM_10433 .
+
+ruim:Substance_05285 rdfs:subClassOf cls_et_grp:GS_IAM_10434 .
+
+ruim:Substance_75804 rdfs:subClassOf cls_et_grp:GS_IAM_10435 .
+
+ruim:Substance_02076 rdfs:subClassOf cls_et_grp:GS_IAM_10436 .
+
+ruim:Substance_02077 rdfs:subClassOf cls_et_grp:GS_IAM_10437 .
+
+ruim:Substance_02082 rdfs:subClassOf cls_et_grp:GS_IAM_10438 .
+
+ruim:Substance_03346 rdfs:subClassOf cls_et_grp:GS_IAM_10438 .
+
+ruim:Substance_03344 rdfs:subClassOf cls_et_grp:GS_IAM_10438 .
+
+ruim:Substance_02087 rdfs:subClassOf cls_et_grp:GS_IAM_10439 .
+
+ruim:Substance_36622 rdfs:subClassOf cls_et_grp:GS_IAM_10440 .
+
+ruim:Substance_75140 rdfs:subClassOf cls_et_grp:GS_IAM_10441 .
+
+ruim:Substance_29909 rdfs:subClassOf cls_et_grp:GS_IAM_10442 .
+
+ruim:Substance_02092 rdfs:subClassOf cls_et_grp:GS_IAM_10442 .
+
+ruim:Substance_97217 rdfs:subClassOf cls_et_grp:GS_IAM_10443 .
+
+ruim:Substance_70793 rdfs:subClassOf cls_et_grp:GS_IAM_10444 .
+
+ruim:Substance_00029 rdfs:subClassOf cls_et_grp:GS_IAM_10445 .
+
+ruim:Substance_21510 rdfs:subClassOf cls_et_grp:GS_IAM_10446 .
+
+ruim:Substance_83696 rdfs:subClassOf cls_et_grp:GS_IAM_10447 .
+
+ruim:Substance_60707 rdfs:subClassOf cls_et_grp:GS_IAM_10448 .
+
+ruim:Substance_68227 rdfs:subClassOf cls_et_grp:GS_IAM_10448 .
+
+ruim:Substance_01983 rdfs:subClassOf cls_et_grp:GS_IAM_10449 .
+
+ruim:Substance_49385 rdfs:subClassOf cls_et_grp:GS_IAM_10449 .
+
+ruim:Substance_05767 rdfs:subClassOf cls_et_grp:GS_IAM_10450 .
+
+ruim:Substance_47920 rdfs:subClassOf cls_et_grp:GS_IAM_10451 .
+
+ruim:Substance_05167 rdfs:subClassOf cls_et_grp:GS_IAM_10452 .
+
+ruim:Substance_33543 rdfs:subClassOf cls_et_grp:GS_IAM_10453 .
+
+ruim:Substance_00819 rdfs:subClassOf cls_et_grp:GS_IAM_10454 .
+
+ruim:Substance_22336 rdfs:subClassOf cls_et_grp:GS_IAM_10454 .
+
+ruim:Substance_67519 rdfs:subClassOf cls_et_grp:GS_IAM_10455 .
+
+ruim:Substance_15954 rdfs:subClassOf cls_et_grp:GS_IAM_10455 .
+
+ruim:Substance_02099 rdfs:subClassOf cls_et_grp:GS_IAM_10456 .
+
+ruim:Substance_32044 rdfs:subClassOf cls_et_grp:GS_IAM_10457 .
+
+ruim:Substance_63795 rdfs:subClassOf cls_et_grp:GS_IAM_10457 .
+
+ruim:Substance_33218 rdfs:subClassOf cls_et_grp:GS_IAM_10459 .
+
+ruim:Substance_22787 rdfs:subClassOf cls_et_grp:GS_IAM_10460 .
+
+ruim:Substance_44461 rdfs:subClassOf cls_et_grp:GS_IAM_10461 .
+
+ruim:Substance_20351 rdfs:subClassOf cls_et_grp:GS_IAM_10462 .
+
+ruim:Substance_09476 rdfs:subClassOf cls_et_grp:GS_IAM_10463 .
+
+ruim:Substance_06756 rdfs:subClassOf cls_et_grp:GS_IAM_10464 .
+
+ruim:Substance_02277 rdfs:subClassOf cls_et_grp:GS_IAM_10465 .
+
+ruim:Substance_98385 rdfs:subClassOf cls_et_grp:GS_IAM_10466 .
+
+ruim:Substance_69676 rdfs:subClassOf cls_et_grp:GS_IAM_10467 .
+
+ruim:Substance_15988 rdfs:subClassOf cls_et_grp:GS_IAM_10467 .
+
+ruim:Substance_39488 rdfs:subClassOf cls_et_grp:GS_IAM_10468 .
+
+ruim:Substance_51144 rdfs:subClassOf cls_et_grp:GS_IAM_10468 .
+
+ruim:Substance_24630 rdfs:subClassOf cls_et_grp:GS_IAM_10469 .
+
+ruim:Substance_92781 rdfs:subClassOf cls_et_grp:GS_IAM_10469 .
+
+ruim:Substance_35248 rdfs:subClassOf cls_et_grp:GS_IAM_10470 .
+
+ruim:Substance_84517 rdfs:subClassOf cls_et_grp:GS_IAM_10470 .
+
+ruim:Substance_28777 rdfs:subClassOf cls_et_grp:GS_IAM_10471 .
+
+ruim:Substance_75951 rdfs:subClassOf cls_et_grp:GS_IAM_10471 .
+
+ruim:Substance_72525 rdfs:subClassOf cls_et_grp:GS_IAM_10472 .
+
+ruim:Substance_04985 rdfs:subClassOf cls_et_grp:GS_IAM_10473 .
+
+ruim:Substance_02096 rdfs:subClassOf cls_et_grp:GS_IAM_10474 .
+
+ruim:Substance_02427 rdfs:subClassOf cls_et_grp:GS_IAM_10474 .
+
+ruim:Substance_35195 rdfs:subClassOf cls_et_grp:GS_IAM_10475 .
+
+ruim:Substance_92723 rdfs:subClassOf cls_et_grp:GS_IAM_10476 .
+
+ruim:Substance_02596 rdfs:subClassOf cls_et_grp:GS_IAM_10477 .
+
+ruim:Substance_47580 rdfs:subClassOf cls_et_grp:GS_IAM_10478 .
+
+ruim:Substance_25037 rdfs:subClassOf cls_et_grp:GS_IAM_10479 .
+
+ruim:Substance_02293 rdfs:subClassOf cls_et_grp:GS_IAM_10480 .
+
+ruim:Substance_77898 rdfs:subClassOf cls_et_grp:GS_IAM_10481 .
+
+ruim:Substance_39467 rdfs:subClassOf cls_et_grp:GS_IAM_10482 .
+
+ruim:Substance_80978 rdfs:subClassOf cls_et_grp:GS_IAM_10483 .
+
+ruim:Substance_49189 rdfs:subClassOf cls_et_grp:GS_IAM_10483 .
+
+ruim:Substance_86088 rdfs:subClassOf cls_et_grp:GS_IAM_10484 .
+
+ruim:Substance_02685 rdfs:subClassOf cls_et_grp:GS_IAM_10484 .
+
+ruim:Substance_31416 rdfs:subClassOf cls_et_grp:GS_IAM_10485 .
+
+ruim:Substance_20915 rdfs:subClassOf cls_et_grp:GS_IAM_10486 .
+
+ruim:Substance_73952 rdfs:subClassOf cls_et_grp:GS_IAM_10486 .
+
+ruim:Substance_45263 rdfs:subClassOf cls_et_grp:GS_IAM_10487 .
+
+ruim:Substance_97324 rdfs:subClassOf cls_et_grp:GS_IAM_10487 .
+
+ruim:Substance_18034 rdfs:subClassOf cls_et_grp:GS_IAM_10488 .
+
+ruim:Substance_27925 rdfs:subClassOf cls_et_grp:GS_IAM_10488 .
+
+ruim:Substance_11789 rdfs:subClassOf cls_et_grp:GS_IAM_10489 .
+
+ruim:Substance_02693 rdfs:subClassOf cls_et_grp:GS_IAM_10490 .
+
+ruim:Substance_03865 rdfs:subClassOf cls_et_grp:GS_IAM_10491 .
+
+ruim:Substance_28348 rdfs:subClassOf cls_et_grp:GS_IAM_10492 .
+
+ruim:Substance_07111 rdfs:subClassOf cls_et_grp:GS_IAM_10492 .
+
+ruim:Substance_02699 rdfs:subClassOf cls_et_grp:GS_IAM_10493 .
+
+ruim:Substance_06088 rdfs:subClassOf cls_et_grp:GS_IAM_10494 .
+
+ruim:Substance_46883 rdfs:subClassOf cls_et_grp:GS_IAM_10495 .
+
+ruim:Substance_99008 rdfs:subClassOf cls_et_grp:GS_IAM_10496 .
+
+ruim:Substance_23247 rdfs:subClassOf cls_et_grp:GS_IAM_10497 .
+
+ruim:Substance_45847 rdfs:subClassOf cls_et_grp:GS_IAM_10497 .
+
+ruim:Substance_91389 rdfs:subClassOf cls_et_grp:GS_IAM_10498 .
+
+ruim:Substance_00941 rdfs:subClassOf cls_et_grp:GS_IAM_10499 .
+
+ruim:Substance_00935 rdfs:subClassOf cls_et_grp:GS_IAM_10499 .
+
+ruim:Substance_03133 rdfs:subClassOf cls_et_grp:GS_IAM_10500 .
+
+ruim:Substance_22692 rdfs:subClassOf cls_et_grp:GS_IAM_10501 .
+
+ruim:Substance_00823 rdfs:subClassOf cls_et_grp:GS_IAM_10502 .
+
+ruim:Substance_00952 rdfs:subClassOf cls_et_grp:GS_IAM_10503 .
+
+ruim:Substance_15401 rdfs:subClassOf cls_et_grp:GS_IAM_10503 .
+
+ruim:Substance_00946 rdfs:subClassOf cls_et_grp:GS_IAM_10504 .
+
+ruim:Substance_86786 rdfs:subClassOf cls_et_grp:GS_IAM_10505 .
+
+ruim:Substance_17878 rdfs:subClassOf cls_et_grp:GS_IAM_10506 .
+
+ruim:Substance_37011 rdfs:subClassOf cls_et_grp:GS_IAM_10507 .
+
+ruim:Substance_77082 rdfs:subClassOf cls_et_grp:GS_IAM_10508 .
+
+ruim:Substance_36755 rdfs:subClassOf cls_et_grp:GS_IAM_10508 .
+
+ruim:Substance_23957 rdfs:subClassOf cls_et_grp:GS_IAM_10509 .
+
+ruim:Substance_76541 rdfs:subClassOf cls_et_grp:GS_IAM_10510 .
+
+ruim:Substance_54913 rdfs:subClassOf cls_et_grp:GS_IAM_10511 .
+
+ruim:Substance_39890 rdfs:subClassOf cls_et_grp:GS_IAM_10511 .
+
+ruim:Substance_21873 rdfs:subClassOf cls_et_grp:GS_IAM_10512 .
+
+ruim:Substance_64391 rdfs:subClassOf cls_et_grp:GS_IAM_10513 .
+
+ruim:Substance_36746 rdfs:subClassOf cls_et_grp:GS_IAM_10514 .
+
+ruim:Substance_18812 rdfs:subClassOf cls_et_grp:GS_IAM_10515 .
+
+ruim:Substance_08152 rdfs:subClassOf cls_et_grp:GS_IAM_10516 .
+
+ruim:Substance_03885 rdfs:subClassOf cls_et_grp:GS_IAM_10517 .
+
+ruim:Substance_60077 rdfs:subClassOf cls_et_grp:GS_IAM_10518 .
+
+ruim:Substance_81234 rdfs:subClassOf cls_et_grp:GS_IAM_10518 .
+
+ruim:Substance_00568 rdfs:subClassOf cls_et_grp:GS_IAM_10519 .
+
+ruim:Substance_02726 rdfs:subClassOf cls_et_grp:GS_IAM_10520 .
+
+ruim:Substance_05097 rdfs:subClassOf cls_et_grp:GS_IAM_10520 .
+
+ruim:Substance_05047 rdfs:subClassOf cls_et_grp:GS_IAM_10520 .
+
+ruim:Substance_00196 rdfs:subClassOf cls_et_grp:GS_IAM_10521 .
+
+ruim:Substance_00382 rdfs:subClassOf cls_et_grp:GS_IAM_10522, cls_et_grp:GS_IAM_10920 .
+
+ruim:Substance_05431 rdfs:subClassOf cls_et_grp:GS_IAM_10523 .
+
+ruim:Substance_56635 rdfs:subClassOf cls_et_grp:GS_IAM_10523 .
+
+ruim:Substance_05432 rdfs:subClassOf cls_et_grp:GS_IAM_10523 .
+
+ruim:Substance_94968 rdfs:subClassOf cls_et_grp:GS_IAM_10524 .
+
+ruim:Substance_02739 rdfs:subClassOf cls_et_grp:GS_IAM_10525 .
+
+ruim:Substance_89043 rdfs:subClassOf cls_et_grp:GS_IAM_10525 .
+
+ruim:Substance_74148 rdfs:subClassOf cls_et_grp:GS_IAM_10526 .
+
+ruim:Substance_05596 rdfs:subClassOf cls_et_grp:GS_IAM_10527 .
+
+ruim:Substance_60255 rdfs:subClassOf cls_et_grp:GS_IAM_10528 .
+
+ruim:Substance_15304 rdfs:subClassOf cls_et_grp:GS_IAM_10528 .
+
+ruim:Substance_61297 rdfs:subClassOf cls_et_grp:GS_IAM_10529 .
+
+ruim:Substance_31554 rdfs:subClassOf cls_et_grp:GS_IAM_10530 .
+
+ruim:Substance_04403 rdfs:subClassOf cls_et_grp:GS_IAM_10530 .
+
+ruim:Substance_05002 rdfs:subClassOf cls_et_grp:GS_IAM_10530 .
+
+ruim:Substance_40454 rdfs:subClassOf cls_et_grp:GS_IAM_10530 .
+
+ruim:Substance_05006 rdfs:subClassOf cls_et_grp:GS_IAM_10530 .
+
+ruim:Substance_62449 rdfs:subClassOf cls_et_grp:GS_IAM_10530 .
+
+ruim:Substance_03876 rdfs:subClassOf cls_et_grp:GS_IAM_10530 .
+
+ruim:Substance_04402 rdfs:subClassOf cls_et_grp:GS_IAM_10530 .
+
+ruim:Substance_03874 rdfs:subClassOf cls_et_grp:GS_IAM_10530 .
+
+ruim:Substance_01041 rdfs:subClassOf cls_et_grp:GS_IAM_10531 .
+
+ruim:Substance_73705 rdfs:subClassOf cls_et_grp:GS_IAM_10532 .
+
+ruim:Substance_24676 rdfs:subClassOf cls_et_grp:GS_IAM_10532 .
+
+ruim:Substance_81723 rdfs:subClassOf cls_et_grp:GS_IAM_10533 .
+
+ruim:Substance_05726 rdfs:subClassOf cls_et_grp:GS_IAM_10534 .
+
+ruim:Substance_53145 rdfs:subClassOf cls_et_grp:GS_IAM_10535 .
+
+ruim:Substance_56568 rdfs:subClassOf cls_et_grp:GS_IAM_10536 .
+
+ruim:Substance_12016 rdfs:subClassOf cls_et_grp:GS_IAM_10536 .
+
+ruim:Substance_00561 rdfs:subClassOf cls_et_grp:GS_IAM_10537 .
+
+ruim:Substance_79562 rdfs:subClassOf cls_et_grp:GS_IAM_10538 .
+
+ruim:Substance_48528 rdfs:subClassOf cls_et_grp:GS_IAM_10539 .
+
+ruim:Substance_00829 rdfs:subClassOf cls_et_grp:GS_IAM_10540 .
+
+ruim:Substance_44214 rdfs:subClassOf cls_et_grp:GS_IAM_10540 .
+
+ruim:Substance_24296 rdfs:subClassOf cls_et_grp:GS_IAM_10541 .
+
+ruim:Substance_86235 rdfs:subClassOf cls_et_grp:GS_IAM_10542 .
+
+ruim:Substance_02742 rdfs:subClassOf cls_et_grp:GS_IAM_10543 .
+
+ruim:Substance_94926 rdfs:subClassOf cls_et_grp:GS_IAM_10544 .
+
+ruim:Substance_45338 rdfs:subClassOf cls_et_grp:GS_IAM_10545 .
+
+ruim:Substance_25754 rdfs:subClassOf cls_et_grp:GS_IAM_10545 .
+
+ruim:Substance_04415 rdfs:subClassOf cls_et_grp:GS_IAM_10546 .
+
+ruim:Substance_03013 rdfs:subClassOf cls_et_grp:GS_IAM_10547 .
+
+ruim:Substance_53763 rdfs:subClassOf cls_et_grp:GS_IAM_10548 .
+
+ruim:Substance_03011 rdfs:subClassOf cls_et_grp:GS_IAM_10549 .
+
+ruim:Substance_03402 rdfs:subClassOf cls_et_grp:GS_IAM_10550 .
+
+ruim:Substance_01990 rdfs:subClassOf cls_et_grp:GS_IAM_10550 .
+
+ruim:Substance_91424 rdfs:subClassOf cls_et_grp:GS_IAM_10551 .
+
+ruim:Substance_05541 rdfs:subClassOf cls_et_grp:GS_IAM_10552 .
+
+ruim:Substance_02576 rdfs:subClassOf cls_et_grp:GS_IAM_10553 .
+
+ruim:Substance_00557 rdfs:subClassOf cls_et_grp:GS_IAM_10554 .
+
+ruim:Substance_29547 rdfs:subClassOf cls_et_grp:GS_IAM_10555 .
+
+ruim:Substance_69862 rdfs:subClassOf cls_et_grp:GS_IAM_10555 .
+
+ruim:Substance_37441 rdfs:subClassOf cls_et_grp:GS_IAM_10556 .
+
+ruim:Substance_02590 rdfs:subClassOf cls_et_grp:GS_IAM_10557 .
+
+ruim:Substance_25288 rdfs:subClassOf cls_et_grp:GS_IAM_10558 .
+
+ruim:Substance_60308 rdfs:subClassOf cls_et_grp:GS_IAM_10559 .
+
+ruim:Substance_03921 rdfs:subClassOf cls_et_grp:GS_IAM_10560 .
+
+ruim:Substance_05007 rdfs:subClassOf cls_et_grp:GS_IAM_10561 .
+
+ruim:Substance_02615 rdfs:subClassOf cls_et_grp:GS_IAM_10562 .
+
+ruim:Substance_02618 rdfs:subClassOf cls_et_grp:GS_IAM_10563 .
+
+ruim:Substance_59983 rdfs:subClassOf cls_et_grp:GS_IAM_10564 .
+
+ruim:Substance_60167 rdfs:subClassOf cls_et_grp:GS_IAM_10564 .
+
+ruim:Substance_02640 rdfs:subClassOf cls_et_grp:GS_IAM_10565 .
+
+ruim:Substance_04442 rdfs:subClassOf cls_et_grp:GS_IAM_10566 .
+
+ruim:Substance_05669 rdfs:subClassOf cls_et_grp:GS_IAM_10566 .
+
+ruim:Substance_00210 rdfs:subClassOf cls_et_grp:GS_IAM_10566 .
+
+ruim:Substance_24321 rdfs:subClassOf cls_et_grp:GS_IAM_10566 .
+
+ruim:Substance_47784 rdfs:subClassOf cls_et_grp:GS_IAM_10567 .
+
+ruim:Substance_02660 rdfs:subClassOf cls_et_grp:GS_IAM_10568 .
+
+ruim:Substance_05042 rdfs:subClassOf cls_et_grp:GS_IAM_10568 .
+
+ruim:Substance_02345 rdfs:subClassOf cls_et_grp:GS_IAM_10569 .
+
+ruim:Substance_27453 rdfs:subClassOf cls_et_grp:GS_IAM_10570 .
+
+ruim:Substance_02350 rdfs:subClassOf cls_et_grp:GS_IAM_10571 .
+
+ruim:Substance_02355 rdfs:subClassOf cls_et_grp:GS_IAM_10572 .
+
+ruim:Substance_34537 rdfs:subClassOf cls_et_grp:GS_IAM_10572 .
+
+ruim:Substance_03409 rdfs:subClassOf cls_et_grp:GS_IAM_10573 .
+
+ruim:Substance_18063 rdfs:subClassOf cls_et_grp:GS_IAM_10574 .
+
+ruim:Substance_12225 rdfs:subClassOf cls_et_grp:GS_IAM_10575 .
+
+ruim:Substance_05407 rdfs:subClassOf cls_et_grp:GS_IAM_10575 .
+
+ruim:Substance_07032 rdfs:subClassOf cls_et_grp:GS_IAM_10576 .
+
+ruim:Substance_03697 rdfs:subClassOf cls_et_grp:GS_IAM_10576 .
+
+ruim:Substance_02361 rdfs:subClassOf cls_et_grp:GS_IAM_10576 .
+
+ruim:Substance_03927 rdfs:subClassOf cls_et_grp:GS_IAM_10576 .
+
+ruim:Substance_10655 rdfs:subClassOf cls_et_grp:GS_IAM_10577 .
+
+ruim:Substance_00726 rdfs:subClassOf cls_et_grp:GS_IAM_10577 .
+
+ruim:Substance_02372 rdfs:subClassOf cls_et_grp:GS_IAM_10577 .
+
+ruim:Substance_87182 rdfs:subClassOf cls_et_grp:GS_IAM_10577 .
+
+ruim:Substance_18055 rdfs:subClassOf cls_et_grp:GS_IAM_10577 .
+
+ruim:Substance_02376 rdfs:subClassOf cls_et_grp:GS_IAM_10578 .
+
+ruim:Substance_56570 rdfs:subClassOf cls_et_grp:GS_IAM_10579 .
+
+ruim:Substance_10091 rdfs:subClassOf cls_et_grp:GS_IAM_10579 .
+
+ruim:Substance_00933 rdfs:subClassOf cls_et_grp:GS_IAM_10579 .
+
+ruim:Substance_02382 rdfs:subClassOf cls_et_grp:GS_IAM_10580 .
+
+ruim:Substance_01188 rdfs:subClassOf cls_et_grp:GS_IAM_10580 .
+
+ruim:Substance_31591 rdfs:subClassOf cls_et_grp:GS_IAM_10581 .
+
+ruim:Substance_00924 rdfs:subClassOf cls_et_grp:GS_IAM_10582 .
+
+ruim:Substance_00602 rdfs:subClassOf cls_et_grp:GS_IAM_10583 .
+
+ruim:Substance_00600 rdfs:subClassOf cls_et_grp:GS_IAM_10584 .
+
+ruim:Substance_03026 rdfs:subClassOf cls_et_grp:GS_IAM_10584 .
+
+ruim:Substance_02667 rdfs:subClassOf cls_et_grp:GS_IAM_10585 .
+
+ruim:Substance_51868 rdfs:subClassOf cls_et_grp:GS_IAM_10585 .
+
+ruim:Substance_74801 rdfs:subClassOf cls_et_grp:GS_IAM_10586 .
+
+ruim:Substance_98763 rdfs:subClassOf cls_et_grp:GS_IAM_10587 .
+
+ruim:Substance_04235 rdfs:subClassOf cls_et_grp:GS_IAM_10588 .
+
+ruim:Substance_05651 rdfs:subClassOf cls_et_grp:GS_IAM_10588 .
+
+ruim:Substance_75210 rdfs:subClassOf cls_et_grp:GS_IAM_10589 .
+
+ruim:Substance_46403 rdfs:subClassOf cls_et_grp:GS_IAM_10589 .
+
+ruim:Substance_03401 rdfs:subClassOf cls_et_grp:GS_IAM_10590 .
+
+ruim:Substance_37703 rdfs:subClassOf cls_et_grp:GS_IAM_10590 .
+
+ruim:Substance_49118 rdfs:subClassOf cls_et_grp:GS_IAM_10591 .
+
+ruim:Substance_45485 rdfs:subClassOf cls_et_grp:GS_IAM_10592 .
+
+ruim:Substance_00582 rdfs:subClassOf cls_et_grp:GS_IAM_10593 .
+
+ruim:Substance_84359 rdfs:subClassOf cls_et_grp:GS_IAM_10594 .
+
+ruim:Substance_18851 rdfs:subClassOf cls_et_grp:GS_IAM_10595 .
+
+ruim:Substance_50405 rdfs:subClassOf cls_et_grp:GS_IAM_10595 .
+
+ruim:Substance_25017 rdfs:subClassOf cls_et_grp:GS_IAM_10596 .
+
+ruim:Substance_55432 rdfs:subClassOf cls_et_grp:GS_IAM_10596 .
+
+ruim:Substance_66292 rdfs:subClassOf cls_et_grp:GS_IAM_10597 .
+
+ruim:Substance_21102 rdfs:subClassOf cls_et_grp:GS_IAM_10598 .
+
+ruim:Substance_18254 rdfs:subClassOf cls_et_grp:GS_IAM_10599 .
+
+ruim:Substance_80137 rdfs:subClassOf cls_et_grp:GS_IAM_10600 .
+
+ruim:Substance_01328 rdfs:subClassOf cls_et_grp:GS_IAM_10601 .
+
+ruim:Substance_33681 rdfs:subClassOf cls_et_grp:GS_IAM_10602 .
+
+ruim:Substance_14446 rdfs:subClassOf cls_et_grp:GS_IAM_10602 .
+
+ruim:Substance_60922 rdfs:subClassOf cls_et_grp:GS_IAM_10603 .
+
+ruim:Substance_86162 rdfs:subClassOf cls_et_grp:GS_IAM_10604 .
+
+ruim:Substance_80102 rdfs:subClassOf cls_et_grp:GS_IAM_10604 .
+
+ruim:Substance_09798 rdfs:subClassOf cls_et_grp:GS_IAM_10605 .
+
+ruim:Substance_15686 rdfs:subClassOf cls_et_grp:GS_IAM_10606 .
+
+ruim:Substance_00585 rdfs:subClassOf cls_et_grp:GS_IAM_10606 .
+
+ruim:Substance_01099 rdfs:subClassOf cls_et_grp:GS_IAM_10606 .
+
+ruim:Substance_38193 rdfs:subClassOf cls_et_grp:GS_IAM_10607 .
+
+ruim:Substance_45328 rdfs:subClassOf cls_et_grp:GS_IAM_10607 .
+
+ruim:Substance_76840 rdfs:subClassOf cls_et_grp:GS_IAM_10608 .
+
+ruim:Substance_82477 rdfs:subClassOf cls_et_grp:GS_IAM_10609 .
+
+ruim:Substance_19698 rdfs:subClassOf cls_et_grp:GS_IAM_10609 .
+
+ruim:Substance_62257 rdfs:subClassOf cls_et_grp:GS_IAM_10610 .
+
+ruim:Substance_54655 rdfs:subClassOf cls_et_grp:GS_IAM_10611 .
+
+ruim:Substance_28609 rdfs:subClassOf cls_et_grp:GS_IAM_10612 .
+
+ruim:Substance_24513 rdfs:subClassOf cls_et_grp:GS_IAM_10613 .
+
+ruim:Substance_02338 rdfs:subClassOf cls_et_grp:GS_IAM_10614 .
+
+ruim:Substance_85057 rdfs:subClassOf cls_et_grp:GS_IAM_10615 .
+
+ruim:Substance_29165 rdfs:subClassOf cls_et_grp:GS_IAM_10615 .
+
+ruim:Substance_00861 rdfs:subClassOf cls_et_grp:GS_IAM_10616 .
+
+ruim:Substance_11396 rdfs:subClassOf cls_et_grp:GS_IAM_10617 .
+
+ruim:Substance_03933 rdfs:subClassOf cls_et_grp:GS_IAM_10618 .
+
+ruim:Substance_12855 rdfs:subClassOf cls_et_grp:GS_IAM_10619 .
+
+ruim:Substance_03271 rdfs:subClassOf cls_et_grp:GS_IAM_10619 .
+
+ruim:Substance_73086 rdfs:subClassOf cls_et_grp:GS_IAM_10620 .
+
+ruim:Substance_39704 rdfs:subClassOf cls_et_grp:GS_IAM_10620 .
+
+ruim:Substance_19872 rdfs:subClassOf cls_et_grp:GS_IAM_10621 .
+
+ruim:Substance_43863 rdfs:subClassOf cls_et_grp:GS_IAM_10622 .
+
+ruim:Substance_90670 rdfs:subClassOf cls_et_grp:GS_IAM_10623 .
+
+ruim:Substance_96027 rdfs:subClassOf cls_et_grp:GS_IAM_10623 .
+
+ruim:Substance_19859 rdfs:subClassOf cls_et_grp:GS_IAM_10624 .
+
+ruim:Substance_16279 rdfs:subClassOf cls_et_grp:GS_IAM_10625 .
+
+ruim:Substance_03637 rdfs:subClassOf cls_et_grp:GS_IAM_10626 .
+
+ruim:Substance_03633 rdfs:subClassOf cls_et_grp:GS_IAM_10626 .
+
+ruim:Substance_17814 rdfs:subClassOf cls_et_grp:GS_IAM_10627 .
+
+ruim:Substance_77886 rdfs:subClassOf cls_et_grp:GS_IAM_10627 .
+
+ruim:Substance_18426 rdfs:subClassOf cls_et_grp:GS_IAM_10628 .
+
+ruim:Substance_80180 rdfs:subClassOf cls_et_grp:GS_IAM_10628 .
+
+ruim:Substance_00152 rdfs:subClassOf cls_et_grp:GS_IAM_10629 .
+
+ruim:Substance_13709 rdfs:subClassOf cls_et_grp:GS_IAM_10630 .
+
+ruim:Substance_76057 rdfs:subClassOf cls_et_grp:GS_IAM_10631 .
+
+ruim:Substance_30981 rdfs:subClassOf cls_et_grp:GS_IAM_10632 .
+
+ruim:Substance_94037 rdfs:subClassOf cls_et_grp:GS_IAM_10632 .
+
+ruim:Substance_00842 rdfs:subClassOf cls_et_grp:GS_IAM_10633 .
+
+ruim:Substance_17445 rdfs:subClassOf cls_et_grp:GS_IAM_10634 .
+
+ruim:Substance_71030 rdfs:subClassOf cls_et_grp:GS_IAM_10634 .
+
+ruim:Substance_48903 rdfs:subClassOf cls_et_grp:GS_IAM_10635 .
+
+ruim:Substance_79486 rdfs:subClassOf cls_et_grp:GS_IAM_10636 .
+
+ruim:Substance_41187 rdfs:subClassOf cls_et_grp:GS_IAM_10637 .
+
+ruim:Substance_02471 rdfs:subClassOf cls_et_grp:GS_IAM_10638 .
+
+ruim:Substance_60311 rdfs:subClassOf cls_et_grp:GS_IAM_10639 .
+
+ruim:Substance_16591 rdfs:subClassOf cls_et_grp:GS_IAM_10640 .
+
+ruim:Substance_79487 rdfs:subClassOf cls_et_grp:GS_IAM_10641 .
+
+ruim:Substance_28293 rdfs:subClassOf cls_et_grp:GS_IAM_10642 .
+
+ruim:Substance_02487 rdfs:subClassOf cls_et_grp:GS_IAM_10644 .
+
+ruim:Substance_11760 rdfs:subClassOf cls_et_grp:GS_IAM_10645 .
+
+ruim:Substance_17048 rdfs:subClassOf cls_et_grp:GS_IAM_10646 .
+
+ruim:Substance_09745 rdfs:subClassOf cls_et_grp:GS_IAM_10647 .
+
+ruim:Substance_02493 rdfs:subClassOf cls_et_grp:GS_IAM_10648 .
+
+ruim:Substance_12499 rdfs:subClassOf cls_et_grp:GS_IAM_10649 .
+
+ruim:Substance_03940 rdfs:subClassOf cls_et_grp:GS_IAM_10649 .
+
+ruim:Substance_02494 rdfs:subClassOf cls_et_grp:GS_IAM_10649 .
+
+ruim:Substance_15372 rdfs:subClassOf cls_et_grp:GS_IAM_10650 .
+
+ruim:Substance_04400 rdfs:subClassOf cls_et_grp:GS_IAM_10651 .
+
+ruim:Substance_02506 rdfs:subClassOf cls_et_grp:GS_IAM_10653 .
+
+ruim:Substance_03202 rdfs:subClassOf cls_et_grp:GS_IAM_10653 .
+
+ruim:Substance_99417 rdfs:subClassOf cls_et_grp:GS_IAM_10654 .
+
+ruim:Substance_44322 rdfs:subClassOf cls_et_grp:GS_IAM_10655 .
+
+ruim:Substance_06494 rdfs:subClassOf cls_et_grp:GS_IAM_10655 .
+
+ruim:Substance_49243 rdfs:subClassOf cls_et_grp:GS_IAM_10656 .
+
+ruim:Substance_02754 rdfs:subClassOf cls_et_grp:GS_IAM_10657 .
+
+ruim:Substance_17723 rdfs:subClassOf cls_et_grp:GS_IAM_10658 .
+
+ruim:Substance_35487 rdfs:subClassOf cls_et_grp:GS_IAM_10659 .
+
+ruim:Substance_29486 rdfs:subClassOf cls_et_grp:GS_IAM_10660 .
+
+ruim:Substance_34720 rdfs:subClassOf cls_et_grp:GS_IAM_10661 .
+
+ruim:Substance_73141 rdfs:subClassOf cls_et_grp:GS_IAM_10662 .
+
+ruim:Substance_44028 rdfs:subClassOf cls_et_grp:GS_IAM_10662 .
+
+ruim:Substance_85275 rdfs:subClassOf cls_et_grp:GS_IAM_10663 .
+
+ruim:Substance_04773 rdfs:subClassOf cls_et_grp:GS_IAM_10664 .
+
+ruim:Substance_83438 rdfs:subClassOf cls_et_grp:GS_IAM_10664 .
+
+ruim:Substance_58713 rdfs:subClassOf cls_et_grp:GS_IAM_10664 .
+
+ruim:Substance_42537 rdfs:subClassOf cls_et_grp:GS_IAM_10665 .
+
+ruim:Substance_16951 rdfs:subClassOf cls_et_grp:GS_IAM_10665 .
+
+ruim:Substance_05084 rdfs:subClassOf cls_et_grp:GS_IAM_10666 .
+
+ruim:Substance_26718 rdfs:subClassOf cls_et_grp:GS_IAM_10666 .
+
+ruim:Substance_52590 rdfs:subClassOf cls_et_grp:GS_IAM_10666 .
+
+ruim:Substance_17760 rdfs:subClassOf cls_et_grp:GS_IAM_10667 .
+
+ruim:Substance_00974 rdfs:subClassOf cls_et_grp:GS_IAM_10668 .
+
+ruim:Substance_87878 rdfs:subClassOf cls_et_grp:GS_IAM_10669 .
+
+ruim:Substance_45893 rdfs:subClassOf cls_et_grp:GS_IAM_10669 .
+
+ruim:Substance_22956 rdfs:subClassOf cls_et_grp:GS_IAM_10670 .
+
+ruim:Substance_27707 rdfs:subClassOf cls_et_grp:GS_IAM_10671 .
+
+ruim:Substance_05465 rdfs:subClassOf cls_et_grp:GS_IAM_10671 .
+
+ruim:Substance_42430 rdfs:subClassOf cls_et_grp:GS_IAM_10672 .
+
+ruim:Substance_02533 rdfs:subClassOf cls_et_grp:GS_IAM_10673 .
+
+ruim:Substance_62004 rdfs:subClassOf cls_et_grp:GS_IAM_10674 .
+
+ruim:Substance_00111 rdfs:subClassOf cls_et_grp:GS_IAM_10675 .
+
+ruim:Substance_03354 rdfs:subClassOf cls_et_grp:GS_IAM_10676 .
+
+ruim:Substance_02543 rdfs:subClassOf cls_et_grp:GS_IAM_10677 .
+
+ruim:Substance_03616 rdfs:subClassOf cls_et_grp:GS_IAM_10678 .
+
+ruim:Substance_10876 rdfs:subClassOf cls_et_grp:GS_IAM_10679, cls_et_grp:GS_IAM_10847 .
+
+ruim:Substance_51254 rdfs:subClassOf cls_et_grp:GS_IAM_10680 .
+
+ruim:Substance_11401 rdfs:subClassOf cls_et_grp:GS_IAM_10680 .
+
+ruim:Substance_05087 rdfs:subClassOf cls_et_grp:GS_IAM_10681 .
+
+ruim:Substance_05080 rdfs:subClassOf cls_et_grp:GS_IAM_10682 .
+
+ruim:Substance_02196 rdfs:subClassOf cls_et_grp:GS_IAM_10683 .
+
+ruim:Substance_20651 rdfs:subClassOf cls_et_grp:GS_IAM_10683 .
+
+ruim:Substance_03955 rdfs:subClassOf cls_et_grp:GS_IAM_10683 .
+
+ruim:Substance_69076 rdfs:subClassOf cls_et_grp:GS_IAM_10684 .
+
+ruim:Substance_03484 rdfs:subClassOf cls_et_grp:GS_IAM_10684 .
+
+ruim:Substance_20030 rdfs:subClassOf cls_et_grp:GS_IAM_10685 .
+
+ruim:Substance_27104 rdfs:subClassOf cls_et_grp:GS_IAM_10686 .
+
+ruim:Substance_19944 rdfs:subClassOf cls_et_grp:GS_IAM_10686 .
+
+ruim:Substance_91298 rdfs:subClassOf cls_et_grp:GS_IAM_10687 .
+
+ruim:Substance_53428 rdfs:subClassOf cls_et_grp:GS_IAM_10688 .
+
+ruim:Substance_38524 rdfs:subClassOf cls_et_grp:GS_IAM_10689 .
+
+ruim:Substance_67373 rdfs:subClassOf cls_et_grp:GS_IAM_10689 .
+
+ruim:Substance_61182 rdfs:subClassOf cls_et_grp:GS_IAM_10689 .
+
+ruim:Substance_02202 rdfs:subClassOf cls_et_grp:GS_IAM_10690 .
+
+ruim:Substance_18620 rdfs:subClassOf cls_et_grp:GS_IAM_10691 .
+
+ruim:Substance_19236 rdfs:subClassOf cls_et_grp:GS_IAM_10691 .
+
+ruim:Substance_12566 rdfs:subClassOf cls_et_grp:GS_IAM_10691 .
+
+ruim:Substance_62228 rdfs:subClassOf cls_et_grp:GS_IAM_10692 .
+
+ruim:Substance_50124 rdfs:subClassOf cls_et_grp:GS_IAM_10692 .
+
+ruim:Substance_93622 rdfs:subClassOf cls_et_grp:GS_IAM_10693 .
+
+ruim:Substance_51891 rdfs:subClassOf cls_et_grp:GS_IAM_10694 .
+
+ruim:Substance_47018 rdfs:subClassOf cls_et_grp:GS_IAM_10694 .
+
+ruim:Substance_18265 rdfs:subClassOf cls_et_grp:GS_IAM_10694 .
+
+ruim:Substance_31513 rdfs:subClassOf cls_et_grp:GS_IAM_10694 .
+
+ruim:Substance_43910 rdfs:subClassOf cls_et_grp:GS_IAM_10695 .
+
+ruim:Substance_92248 rdfs:subClassOf cls_et_grp:GS_IAM_10695 .
+
+ruim:Substance_87477 rdfs:subClassOf cls_et_grp:GS_IAM_10696 .
+
+ruim:Substance_82348 rdfs:subClassOf cls_et_grp:GS_IAM_10696 .
+
+ruim:Substance_25282 rdfs:subClassOf cls_et_grp:GS_IAM_10697 .
+
+ruim:Substance_14129 rdfs:subClassOf cls_et_grp:GS_IAM_10697 .
+
+ruim:Substance_76196 rdfs:subClassOf cls_et_grp:GS_IAM_10698 .
+
+ruim:Substance_80413 rdfs:subClassOf cls_et_grp:GS_IAM_10699 .
+
+ruim:Substance_23684 rdfs:subClassOf cls_et_grp:GS_IAM_10700 .
+
+ruim:Substance_62047 rdfs:subClassOf cls_et_grp:GS_IAM_10700 .
+
+ruim:Substance_03492 rdfs:subClassOf cls_et_grp:GS_IAM_10701 .
+
+ruim:Substance_00390 rdfs:subClassOf cls_et_grp:GS_IAM_10702 .
+
+ruim:Substance_06375 rdfs:subClassOf cls_et_grp:GS_IAM_10703 .
+
+ruim:Substance_68172 rdfs:subClassOf cls_et_grp:GS_IAM_10704 .
+
+ruim:Substance_03511 rdfs:subClassOf cls_et_grp:GS_IAM_10705 .
+
+ruim:Substance_74405 rdfs:subClassOf cls_et_grp:GS_IAM_10706 .
+
+ruim:Substance_07327 rdfs:subClassOf cls_et_grp:GS_IAM_10707 .
+
+ruim:Substance_57067 rdfs:subClassOf cls_et_grp:GS_IAM_10707 .
+
+ruim:Substance_52431 rdfs:subClassOf cls_et_grp:GS_IAM_10708 .
+
+ruim:Substance_09586 rdfs:subClassOf cls_et_grp:GS_IAM_10708 .
+
+ruim:Substance_02799 rdfs:subClassOf cls_et_grp:GS_IAM_10709 .
+
+ruim:Substance_02822 rdfs:subClassOf cls_et_grp:GS_IAM_10710 .
+
+ruim:Substance_03460 rdfs:subClassOf cls_et_grp:GS_IAM_10711 .
+
+ruim:Substance_02825 rdfs:subClassOf cls_et_grp:GS_IAM_10712 .
+
+ruim:Substance_02826 rdfs:subClassOf cls_et_grp:GS_IAM_10712 .
+
+ruim:Substance_02836 rdfs:subClassOf cls_et_grp:GS_IAM_10713 .
+
+ruim:Substance_03495 rdfs:subClassOf cls_et_grp:GS_IAM_10713 .
+
+ruim:Substance_03504 rdfs:subClassOf cls_et_grp:GS_IAM_10713 .
+
+ruim:Substance_03088 rdfs:subClassOf cls_et_grp:GS_IAM_10714 .
+
+ruim:Substance_02438 rdfs:subClassOf cls_et_grp:GS_IAM_10714 .
+
+ruim:Substance_02845 rdfs:subClassOf cls_et_grp:GS_IAM_10715 .
+
+ruim:Substance_04053 rdfs:subClassOf cls_et_grp:GS_IAM_10715 .
+
+ruim:Substance_15814 rdfs:subClassOf cls_et_grp:GS_IAM_10715 .
+
+ruim:Substance_00381 rdfs:subClassOf cls_et_grp:GS_IAM_10716 .
+
+ruim:Substance_02107 rdfs:subClassOf cls_et_grp:GS_IAM_10716 .
+
+ruim:Substance_02109 rdfs:subClassOf cls_et_grp:GS_IAM_10717 .
+
+ruim:Substance_56593 rdfs:subClassOf cls_et_grp:GS_IAM_10718 .
+
+ruim:Substance_16025 rdfs:subClassOf cls_et_grp:GS_IAM_10719 .
+
+ruim:Substance_03085 rdfs:subClassOf cls_et_grp:GS_IAM_10719 .
+
+ruim:Substance_00077 rdfs:subClassOf cls_et_grp:GS_IAM_10719 .
+
+ruim:Substance_05613 rdfs:subClassOf cls_et_grp:GS_IAM_10720 .
+
+ruim:Substance_02126 rdfs:subClassOf cls_et_grp:GS_IAM_10721 .
+
+ruim:Substance_00078 rdfs:subClassOf cls_et_grp:GS_IAM_10722 .
+
+ruim:Substance_31147 rdfs:subClassOf cls_et_grp:GS_IAM_10723 .
+
+ruim:Substance_17092 rdfs:subClassOf cls_et_grp:GS_IAM_10723 .
+
+ruim:Substance_02130 rdfs:subClassOf cls_et_grp:GS_IAM_10724 .
+
+ruim:Substance_20950 rdfs:subClassOf cls_et_grp:GS_IAM_10724 .
+
+ruim:Substance_67102 rdfs:subClassOf cls_et_grp:GS_IAM_10725 .
+
+ruim:Substance_19437 rdfs:subClassOf cls_et_grp:GS_IAM_10725 .
+
+ruim:Substance_21697 rdfs:subClassOf cls_et_grp:GS_IAM_10726 .
+
+ruim:Substance_76779 rdfs:subClassOf cls_et_grp:GS_IAM_10726 .
+
+ruim:Substance_89272 rdfs:subClassOf cls_et_grp:GS_IAM_10727 .
+
+ruim:Substance_04470 rdfs:subClassOf cls_et_grp:GS_IAM_10727 .
+
+ruim:Substance_03483 rdfs:subClassOf cls_et_grp:GS_IAM_10727 .
+
+ruim:Substance_03470 rdfs:subClassOf cls_et_grp:GS_IAM_10727 .
+
+ruim:Substance_00081 rdfs:subClassOf cls_et_grp:GS_IAM_10728 .
+
+ruim:Substance_00082 rdfs:subClassOf cls_et_grp:GS_IAM_10729 .
+
+ruim:Substance_03498 rdfs:subClassOf cls_et_grp:GS_IAM_10729 .
+
+ruim:Substance_85116 rdfs:subClassOf cls_et_grp:GS_IAM_10730 .
+
+ruim:Substance_21875 rdfs:subClassOf cls_et_grp:GS_IAM_10731 .
+
+ruim:Substance_00630 rdfs:subClassOf cls_et_grp:GS_IAM_10732 .
+
+ruim:Substance_05751 rdfs:subClassOf cls_et_grp:GS_IAM_10732 .
+
+ruim:Substance_25336 rdfs:subClassOf cls_et_grp:GS_IAM_10733 .
+
+ruim:Substance_65918 rdfs:subClassOf cls_et_grp:GS_IAM_10734 .
+
+ruim:Substance_96697 rdfs:subClassOf cls_et_grp:GS_IAM_10735 .
+
+ruim:Substance_39413 rdfs:subClassOf cls_et_grp:GS_IAM_10735 .
+
+ruim:Substance_20754 rdfs:subClassOf cls_et_grp:GS_IAM_10736 .
+
+ruim:Substance_73219 rdfs:subClassOf cls_et_grp:GS_IAM_10737 .
+
+ruim:Substance_00086 rdfs:subClassOf cls_et_grp:GS_IAM_10738 .
+
+ruim:Substance_26562 rdfs:subClassOf cls_et_grp:GS_IAM_10738 .
+
+ruim:Substance_03434 rdfs:subClassOf cls_et_grp:GS_IAM_10739 .
+
+ruim:Substance_17908 rdfs:subClassOf cls_et_grp:GS_IAM_10739 .
+
+ruim:Substance_20433 rdfs:subClassOf cls_et_grp:GS_IAM_10740 .
+
+ruim:Substance_54201 rdfs:subClassOf cls_et_grp:GS_IAM_10741 .
+
+ruim:Substance_03456 rdfs:subClassOf cls_et_grp:GS_IAM_10742 .
+
+ruim:Substance_05095 rdfs:subClassOf cls_et_grp:GS_IAM_10742 .
+
+ruim:Substance_00093 rdfs:subClassOf cls_et_grp:GS_IAM_10742 .
+
+ruim:Substance_1000004 rdfs:subClassOf cls_et_grp:GS_IAM_10742 .
+
+ruim:Substance_30272 rdfs:subClassOf cls_et_grp:GS_IAM_10742 .
+
+ruim:Substance_00095 rdfs:subClassOf cls_et_grp:GS_IAM_10742 .
+
+ruim:Substance_05618 rdfs:subClassOf cls_et_grp:GS_IAM_10742 .
+
+ruim:Substance_00855 rdfs:subClassOf cls_et_grp:GS_IAM_10743 .
+
+ruim:Substance_19476 rdfs:subClassOf cls_et_grp:GS_IAM_10744 .
+
+ruim:Substance_03496 rdfs:subClassOf cls_et_grp:GS_IAM_10745 .
+
+ruim:Substance_47554 rdfs:subClassOf cls_et_grp:GS_IAM_10746 .
+
+ruim:Substance_18827 rdfs:subClassOf cls_et_grp:GS_IAM_10746 .
+
+ruim:Substance_30470 rdfs:subClassOf cls_et_grp:GS_IAM_10747 .
+
+ruim:Substance_80432 rdfs:subClassOf cls_et_grp:GS_IAM_10747 .
+
+ruim:Substance_73208 rdfs:subClassOf cls_et_grp:GS_IAM_10748 .
+
+ruim:Substance_02165 rdfs:subClassOf cls_et_grp:GS_IAM_10749 .
+
+ruim:Substance_13274 rdfs:subClassOf cls_et_grp:GS_IAM_10750 .
+
+ruim:Substance_53450 rdfs:subClassOf cls_et_grp:GS_IAM_10751 .
+
+ruim:Substance_00859 rdfs:subClassOf cls_et_grp:GS_IAM_10751 .
+
+ruim:Substance_03981 rdfs:subClassOf cls_et_grp:GS_IAM_10752 .
+
+ruim:Substance_02169 rdfs:subClassOf cls_et_grp:GS_IAM_10752 .
+
+ruim:Substance_03478 rdfs:subClassOf cls_et_grp:GS_IAM_10752 .
+
+ruim:Substance_29286 rdfs:subClassOf cls_et_grp:GS_IAM_10752 .
+
+ruim:Substance_00500 rdfs:subClassOf cls_et_grp:GS_IAM_10752 .
+
+ruim:Substance_66574 rdfs:subClassOf cls_et_grp:GS_IAM_10752 .
+
+ruim:Substance_03980 rdfs:subClassOf cls_et_grp:GS_IAM_10752 .
+
+ruim:Substance_02171 rdfs:subClassOf cls_et_grp:GS_IAM_10753 .
+
+ruim:Substance_39422 rdfs:subClassOf cls_et_grp:GS_IAM_10754 .
+
+ruim:Substance_85184 rdfs:subClassOf cls_et_grp:GS_IAM_10755 .
+
+ruim:Substance_05627 rdfs:subClassOf cls_et_grp:GS_IAM_10756 .
+
+ruim:Substance_02215 rdfs:subClassOf cls_et_grp:GS_IAM_10757 .
+
+ruim:Substance_02218 rdfs:subClassOf cls_et_grp:GS_IAM_10758 .
+
+ruim:Substance_79190 rdfs:subClassOf cls_et_grp:GS_IAM_10759 .
+
+ruim:Substance_04841 rdfs:subClassOf cls_et_grp:GS_IAM_10759 .
+
+ruim:Substance_02229 rdfs:subClassOf cls_et_grp:GS_IAM_10760 .
+
+ruim:Substance_30216 rdfs:subClassOf cls_et_grp:GS_IAM_10761 .
+
+ruim:Substance_26150 rdfs:subClassOf cls_et_grp:GS_IAM_10762 .
+
+ruim:Substance_00588 rdfs:subClassOf cls_et_grp:GS_IAM_10763 .
+
+ruim:Substance_02236 rdfs:subClassOf cls_et_grp:GS_IAM_10764 .
+
+ruim:Substance_03595 rdfs:subClassOf cls_et_grp:GS_IAM_10764 .
+
+ruim:Substance_05333 rdfs:subClassOf cls_et_grp:GS_IAM_10764 .
+
+ruim:Substance_28459 rdfs:subClassOf cls_et_grp:GS_IAM_10765 .
+
+ruim:Substance_02247 rdfs:subClassOf cls_et_grp:GS_IAM_10766 .
+
+ruim:Substance_02258 rdfs:subClassOf cls_et_grp:GS_IAM_10767 .
+
+ruim:Substance_21771 rdfs:subClassOf cls_et_grp:GS_IAM_10767 .
+
+ruim:Substance_93564 rdfs:subClassOf cls_et_grp:GS_IAM_10768 .
+
+ruim:Substance_17561 rdfs:subClassOf cls_et_grp:GS_IAM_10768 .
+
+ruim:Substance_90615 rdfs:subClassOf cls_et_grp:GS_IAM_10769 .
+
+ruim:Substance_43127 rdfs:subClassOf cls_et_grp:GS_IAM_10769 .
+
+ruim:Substance_02278 rdfs:subClassOf cls_et_grp:GS_IAM_10769 .
+
+ruim:Substance_28889 rdfs:subClassOf cls_et_grp:GS_IAM_10770 .
+
+ruim:Substance_02283 rdfs:subClassOf cls_et_grp:GS_IAM_10771 .
+
+ruim:Substance_02285 rdfs:subClassOf cls_et_grp:GS_IAM_10772 .
+
+ruim:Substance_59691 rdfs:subClassOf cls_et_grp:GS_IAM_10773 .
+
+ruim:Substance_38607 rdfs:subClassOf cls_et_grp:GS_IAM_10773 .
+
+ruim:Substance_78915 rdfs:subClassOf cls_et_grp:GS_IAM_10774 .
+
+ruim:Substance_64091 rdfs:subClassOf cls_et_grp:GS_IAM_10774 .
+
+ruim:Substance_87533 rdfs:subClassOf cls_et_grp:GS_IAM_10775 .
+
+ruim:Substance_08736 rdfs:subClassOf cls_et_grp:GS_IAM_10775 .
+
+ruim:Substance_26004 rdfs:subClassOf cls_et_grp:GS_IAM_10776 .
+
+ruim:Substance_23106 rdfs:subClassOf cls_et_grp:GS_IAM_10776 .
+
+ruim:Substance_02267 rdfs:subClassOf cls_et_grp:GS_IAM_10776 .
+
+ruim:Substance_04029 rdfs:subClassOf cls_et_grp:GS_IAM_10776 .
+
+ruim:Substance_00620 rdfs:subClassOf cls_et_grp:GS_IAM_10776 .
+
+ruim:Substance_05138 rdfs:subClassOf cls_et_grp:GS_IAM_10776 .
+
+ruim:Substance_03516 rdfs:subClassOf cls_et_grp:GS_IAM_10776 .
+
+ruim:Substance_69335 rdfs:subClassOf cls_et_grp:GS_IAM_10777 .
+
+ruim:Substance_05139 rdfs:subClassOf cls_et_grp:GS_IAM_10777 .
+
+ruim:Substance_05140 rdfs:subClassOf cls_et_grp:GS_IAM_10777 .
+
+ruim:Substance_04027 rdfs:subClassOf cls_et_grp:GS_IAM_10777 .
+
+ruim:Substance_00618 rdfs:subClassOf cls_et_grp:GS_IAM_10777 .
+
+ruim:Substance_41851 rdfs:subClassOf cls_et_grp:GS_IAM_10777 .
+
+ruim:Substance_00616 rdfs:subClassOf cls_et_grp:GS_IAM_10777 .
+
+ruim:Substance_85436 rdfs:subClassOf cls_et_grp:GS_IAM_10777 .
+
+ruim:Substance_00619 rdfs:subClassOf cls_et_grp:GS_IAM_10777 .
+
+ruim:Substance_48541 rdfs:subClassOf cls_et_grp:GS_IAM_10778 .
+
+ruim:Substance_42661 rdfs:subClassOf cls_et_grp:GS_IAM_10778 .
+
+ruim:Substance_33342 rdfs:subClassOf cls_et_grp:GS_IAM_10779 .
+
+ruim:Substance_67549 rdfs:subClassOf cls_et_grp:GS_IAM_10779 .
+
+ruim:Substance_73953 rdfs:subClassOf cls_et_grp:GS_IAM_10779 .
+
+ruim:Substance_93657 rdfs:subClassOf cls_et_grp:GS_IAM_10780 .
+
+ruim:Substance_50058 rdfs:subClassOf cls_et_grp:GS_IAM_10781 .
+
+ruim:Substance_77479 rdfs:subClassOf cls_et_grp:GS_IAM_10782 .
+
+ruim:Substance_11532 rdfs:subClassOf cls_et_grp:GS_IAM_10783 .
+
+ruim:Substance_16670 rdfs:subClassOf cls_et_grp:GS_IAM_10784 .
+
+ruim:Substance_49632 rdfs:subClassOf cls_et_grp:GS_IAM_10785 .
+
+ruim:Substance_25783 rdfs:subClassOf cls_et_grp:GS_IAM_10785 .
+
+ruim:Substance_52040 rdfs:subClassOf cls_et_grp:GS_IAM_10786 .
+
+ruim:Substance_48147 rdfs:subClassOf cls_et_grp:GS_IAM_10787 .
+
+ruim:Substance_64818 rdfs:subClassOf cls_et_grp:GS_IAM_10787 .
+
+ruim:Substance_84683 rdfs:subClassOf cls_et_grp:GS_IAM_10788 .
+
+ruim:Substance_00243 rdfs:subClassOf cls_et_grp:GS_IAM_10788 .
+
+ruim:Substance_00206 rdfs:subClassOf cls_et_grp:GS_IAM_10788 .
+
+ruim:Substance_86579 rdfs:subClassOf cls_et_grp:GS_IAM_10789 .
+
+ruim:Substance_20668 rdfs:subClassOf cls_et_grp:GS_IAM_10790 .
+
+ruim:Substance_85750 rdfs:subClassOf cls_et_grp:GS_IAM_10790 .
+
+ruim:Substance_55485 rdfs:subClassOf cls_et_grp:GS_IAM_10791 .
+
+ruim:Substance_02329 rdfs:subClassOf cls_et_grp:GS_IAM_10792 .
+
+ruim:Substance_84765 rdfs:subClassOf cls_et_grp:GS_IAM_10793 .
+
+ruim:Substance_64569 rdfs:subClassOf cls_et_grp:GS_IAM_10794 .
+
+ruim:Substance_99948 rdfs:subClassOf cls_et_grp:GS_IAM_10795 .
+
+ruim:Substance_73376 rdfs:subClassOf cls_et_grp:GS_IAM_10796 .
+
+ruim:Substance_00865 rdfs:subClassOf cls_et_grp:GS_IAM_10796 .
+
+ruim:Substance_15711 rdfs:subClassOf cls_et_grp:GS_IAM_10797 .
+
+ruim:Substance_04324 rdfs:subClassOf cls_et_grp:GS_IAM_10798 .
+
+ruim:Substance_10644 rdfs:subClassOf cls_et_grp:GS_IAM_10799 .
+
+ruim:Substance_88125 rdfs:subClassOf cls_et_grp:GS_IAM_10800 .
+
+ruim:Substance_22748 rdfs:subClassOf cls_et_grp:GS_IAM_10801 .
+
+ruim:Substance_02332 rdfs:subClassOf cls_et_grp:GS_IAM_10801 .
+
+ruim:Substance_02633 rdfs:subClassOf cls_et_grp:GS_IAM_10802 .
+
+ruim:Substance_66240 rdfs:subClassOf cls_et_grp:GS_IAM_10802 .
+
+ruim:Substance_27775 rdfs:subClassOf cls_et_grp:GS_IAM_10803 .
+
+ruim:Substance_94011 rdfs:subClassOf cls_et_grp:GS_IAM_10803 .
+
+ruim:Substance_82922 rdfs:subClassOf cls_et_grp:GS_IAM_10804 .
+
+ruim:Substance_37430 rdfs:subClassOf cls_et_grp:GS_IAM_10805 .
+
+ruim:Substance_53415 rdfs:subClassOf cls_et_grp:GS_IAM_10806 .
+
+ruim:Substance_45082 rdfs:subClassOf cls_et_grp:GS_IAM_10807 .
+
+ruim:Substance_43633 rdfs:subClassOf cls_et_grp:GS_IAM_10808 .
+
+ruim:Substance_37973 rdfs:subClassOf cls_et_grp:GS_IAM_10809 .
+
+ruim:Substance_55512 rdfs:subClassOf cls_et_grp:GS_IAM_10809 .
+
+ruim:Substance_66038 rdfs:subClassOf cls_et_grp:GS_IAM_10810 .
+
+ruim:Substance_32627 rdfs:subClassOf cls_et_grp:GS_IAM_10810 .
+
+ruim:Substance_16496 rdfs:subClassOf cls_et_grp:GS_IAM_10811 .
+
+ruim:Substance_47638 rdfs:subClassOf cls_et_grp:GS_IAM_10812 .
+
+ruim:Substance_62155 rdfs:subClassOf cls_et_grp:GS_IAM_10813 .
+
+ruim:Substance_35876 rdfs:subClassOf cls_et_grp:GS_IAM_10813 .
+
+ruim:Substance_26727 rdfs:subClassOf cls_et_grp:GS_IAM_10814 .
+
+ruim:Substance_33207 rdfs:subClassOf cls_et_grp:GS_IAM_10814, cls_et_grp:GS_IAM_11017 .
+
+ruim:Substance_99567 rdfs:subClassOf cls_et_grp:GS_IAM_10815 .
+
+ruim:Substance_46263 rdfs:subClassOf cls_et_grp:GS_IAM_10815 .
+
+ruim:Substance_20262 rdfs:subClassOf cls_et_grp:GS_IAM_10815 .
+
+ruim:Substance_36354 rdfs:subClassOf cls_et_grp:GS_IAM_10815 .
+
+ruim:Substance_57655 rdfs:subClassOf cls_et_grp:GS_IAM_10815 .
+
+ruim:Substance_55910 rdfs:subClassOf cls_et_grp:GS_IAM_10816 .
+
+ruim:Substance_05621 rdfs:subClassOf cls_et_grp:GS_IAM_10817 .
+
+ruim:Substance_45638 rdfs:subClassOf cls_et_grp:GS_IAM_10818 .
+
+ruim:Substance_23010 rdfs:subClassOf cls_et_grp:GS_IAM_10819 .
+
+ruim:Substance_36083 rdfs:subClassOf cls_et_grp:GS_IAM_10819 .
+
+ruim:Substance_42140 rdfs:subClassOf cls_et_grp:GS_IAM_10820 .
+
+ruim:Substance_38893 rdfs:subClassOf cls_et_grp:GS_IAM_10820 .
+
+ruim:Substance_78789 rdfs:subClassOf cls_et_grp:GS_IAM_10821 .
+
+ruim:Substance_00626 rdfs:subClassOf cls_et_grp:GS_IAM_10822 .
+
+ruim:Substance_03559 rdfs:subClassOf cls_et_grp:GS_IAM_10822 .
+
+ruim:Substance_93351 rdfs:subClassOf cls_et_grp:GS_IAM_10823 .
+
+ruim:Substance_57781 rdfs:subClassOf cls_et_grp:GS_IAM_10823 .
+
+ruim:Substance_94741 rdfs:subClassOf cls_et_grp:GS_IAM_10824 .
+
+ruim:Substance_28784 rdfs:subClassOf cls_et_grp:GS_IAM_10824 .
+
+ruim:Substance_45154 rdfs:subClassOf cls_et_grp:GS_IAM_10825 .
+
+ruim:Substance_27375 rdfs:subClassOf cls_et_grp:GS_IAM_10825 .
+
+ruim:Substance_25938 rdfs:subClassOf cls_et_grp:GS_IAM_10826 .
+
+ruim:Substance_00753 rdfs:subClassOf cls_et_grp:GS_IAM_10826 .
+
+ruim:Substance_29848 rdfs:subClassOf cls_et_grp:GS_IAM_10826 .
+
+ruim:Substance_03068 rdfs:subClassOf cls_et_grp:GS_IAM_10826 .
+
+ruim:Substance_05551 rdfs:subClassOf cls_et_grp:GS_IAM_10826 .
+
+ruim:Substance_12345 rdfs:subClassOf cls_et_grp:GS_IAM_10827 .
+
+ruim:Substance_60921 rdfs:subClassOf cls_et_grp:GS_IAM_10828 .
+
+ruim:Substance_16245 rdfs:subClassOf cls_et_grp:GS_IAM_10828 .
+
+ruim:Substance_75398 rdfs:subClassOf cls_et_grp:GS_IAM_10829 .
+
+ruim:Substance_54660 rdfs:subClassOf cls_et_grp:GS_IAM_10829 .
+
+ruim:Substance_08970 rdfs:subClassOf cls_et_grp:GS_IAM_10829 .
+
+ruim:Substance_00183 rdfs:subClassOf cls_et_grp:GS_IAM_10829 .
+
+ruim:Substance_00213 rdfs:subClassOf cls_et_grp:GS_IAM_10829 .
+
+ruim:Substance_97684 rdfs:subClassOf cls_et_grp:GS_IAM_10829 .
+
+ruim:Substance_78303 rdfs:subClassOf cls_et_grp:GS_IAM_10830 .
+
+ruim:Substance_91952 rdfs:subClassOf cls_et_grp:GS_IAM_10830 .
+
+ruim:Substance_67389 rdfs:subClassOf cls_et_grp:GS_IAM_10830 .
+
+ruim:Substance_42406 rdfs:subClassOf cls_et_grp:GS_IAM_10831 .
+
+ruim:Substance_97603 rdfs:subClassOf cls_et_grp:GS_IAM_10831 .
+
+ruim:Substance_76741 rdfs:subClassOf cls_et_grp:GS_IAM_10832 .
+
+ruim:Substance_44677 rdfs:subClassOf cls_et_grp:GS_IAM_10832 .
+
+ruim:Substance_77978 rdfs:subClassOf cls_et_grp:GS_IAM_10833 .
+
+ruim:Substance_34251 rdfs:subClassOf cls_et_grp:GS_IAM_10834 .
+
+ruim:Substance_67717 rdfs:subClassOf cls_et_grp:GS_IAM_10834 .
+
+ruim:Substance_50540 rdfs:subClassOf cls_et_grp:GS_IAM_10836 .
+
+ruim:Substance_94406 rdfs:subClassOf cls_et_grp:GS_IAM_10837 .
+
+ruim:Substance_10171 rdfs:subClassOf cls_et_grp:GS_IAM_10838, cls_et_grp:GS_IAM_11016 .
+
+ruim:Substance_59394 rdfs:subClassOf cls_et_grp:GS_IAM_10839 .
+
+ruim:Substance_20740 rdfs:subClassOf cls_et_grp:GS_IAM_10840 .
+
+ruim:Substance_21050 rdfs:subClassOf cls_et_grp:GS_IAM_10840 .
+
+ruim:Substance_00899 rdfs:subClassOf cls_et_grp:GS_IAM_10841 .
+
+ruim:Substance_00901 rdfs:subClassOf cls_et_grp:GS_IAM_10842 .
+
+ruim:Substance_27812 rdfs:subClassOf cls_et_grp:GS_IAM_10843 .
+
+ruim:Substance_00633 rdfs:subClassOf cls_et_grp:GS_IAM_10843, cls_et_grp:GS_IAM_10844 .
+
+ruim:Substance_04155 rdfs:subClassOf cls_et_grp:GS_IAM_10843 .
+
+ruim:Substance_03063 rdfs:subClassOf cls_et_grp:GS_IAM_10845 .
+
+ruim:Substance_00801 rdfs:subClassOf cls_et_grp:GS_IAM_10846 .
+
+ruim:Substance_47933 rdfs:subClassOf cls_et_grp:GS_IAM_10848 .
+
+ruim:Substance_14830 rdfs:subClassOf cls_et_grp:GS_IAM_10849 .
+
+ruim:Substance_83492 rdfs:subClassOf cls_et_grp:GS_IAM_10850 .
+
+ruim:Substance_72550 rdfs:subClassOf cls_et_grp:GS_IAM_10851 .
+
+ruim:Substance_32050 rdfs:subClassOf cls_et_grp:GS_IAM_10851 .
+
+ruim:Substance_89477 rdfs:subClassOf cls_et_grp:GS_IAM_10852 .
+
+ruim:Substance_27352 rdfs:subClassOf cls_et_grp:GS_IAM_10852 .
+
+ruim:Substance_1000003 rdfs:subClassOf cls_et_grp:GS_IAM_10853 .
+
+ruim:Substance_18343 rdfs:subClassOf cls_et_grp:GS_IAM_10853 .
+
+ruim:Substance_00640 rdfs:subClassOf cls_et_grp:GS_IAM_10853 .
+
+ruim:Substance_01436 rdfs:subClassOf cls_et_grp:GS_IAM_10853 .
+
+ruim:Substance_00970 rdfs:subClassOf cls_et_grp:GS_IAM_10854 .
+
+ruim:Substance_98616 rdfs:subClassOf cls_et_grp:GS_IAM_10855 .
+
+ruim:Substance_00973 rdfs:subClassOf cls_et_grp:GS_IAM_10855 .
+
+ruim:Substance_00335 rdfs:subClassOf cls_et_grp:GS_IAM_10856 .
+
+ruim:Substance_00975 rdfs:subClassOf cls_et_grp:GS_IAM_10856 .
+
+ruim:Substance_00977 rdfs:subClassOf cls_et_grp:GS_IAM_10857 .
+
+ruim:Substance_93467 rdfs:subClassOf cls_et_grp:GS_IAM_10858 .
+
+ruim:Substance_52513 rdfs:subClassOf cls_et_grp:GS_IAM_10859 .
+
+ruim:Substance_02848 rdfs:subClassOf cls_et_grp:GS_IAM_10860 .
+
+ruim:Substance_04068 rdfs:subClassOf cls_et_grp:GS_IAM_10861 .
+
+ruim:Substance_38447 rdfs:subClassOf cls_et_grp:GS_IAM_10861 .
+
+ruim:Substance_10235 rdfs:subClassOf cls_et_grp:GS_IAM_10862 .
+
+ruim:Substance_67089 rdfs:subClassOf cls_et_grp:GS_IAM_10863 .
+
+ruim:Substance_03563 rdfs:subClassOf cls_et_grp:GS_IAM_10864 .
+
+ruim:Substance_48856 rdfs:subClassOf cls_et_grp:GS_IAM_10865 .
+
+ruim:Substance_34909 rdfs:subClassOf cls_et_grp:GS_IAM_10865 .
+
+ruim:Substance_02867 rdfs:subClassOf cls_et_grp:GS_IAM_10866 .
+
+ruim:Substance_00617 rdfs:subClassOf cls_et_grp:GS_IAM_10866 .
+
+ruim:Substance_00645 rdfs:subClassOf cls_et_grp:GS_IAM_10867 .
+
+ruim:Substance_02873 rdfs:subClassOf cls_et_grp:GS_IAM_10868 .
+
+ruim:Substance_02874 rdfs:subClassOf cls_et_grp:GS_IAM_10869 .
+
+ruim:Substance_27539 rdfs:subClassOf cls_et_grp:GS_IAM_10869 .
+
+ruim:Substance_02877 rdfs:subClassOf cls_et_grp:GS_IAM_10870 .
+
+ruim:Substance_02878 rdfs:subClassOf cls_et_grp:GS_IAM_10871 .
+
+ruim:Substance_00947 rdfs:subClassOf cls_et_grp:GS_IAM_10872 .
+
+ruim:Substance_02902 rdfs:subClassOf cls_et_grp:GS_IAM_10873 .
+
+ruim:Substance_00216 rdfs:subClassOf cls_et_grp:GS_IAM_10874 .
+
+ruim:Substance_02914 rdfs:subClassOf cls_et_grp:GS_IAM_10875 .
+
+ruim:Substance_15562 rdfs:subClassOf cls_et_grp:GS_IAM_10876 .
+
+ruim:Substance_89266 rdfs:subClassOf cls_et_grp:GS_IAM_10876 .
+
+ruim:Substance_41239 rdfs:subClassOf cls_et_grp:GS_IAM_10877 .
+
+ruim:Substance_29335 rdfs:subClassOf cls_et_grp:GS_IAM_10877 .
+
+ruim:Substance_04653 rdfs:subClassOf cls_et_grp:GS_IAM_10878 .
+
+ruim:Substance_05162 rdfs:subClassOf cls_et_grp:GS_IAM_10879 .
+
+ruim:Substance_05181 rdfs:subClassOf cls_et_grp:GS_IAM_10879 .
+
+ruim:Substance_98322 rdfs:subClassOf cls_et_grp:GS_IAM_10880 .
+
+ruim:Substance_98159 rdfs:subClassOf cls_et_grp:GS_IAM_10881 .
+
+ruim:Substance_00126 rdfs:subClassOf cls_et_grp:GS_IAM_10882 .
+
+ruim:Substance_35166 rdfs:subClassOf cls_et_grp:GS_IAM_10882 .
+
+ruim:Substance_64851 rdfs:subClassOf cls_et_grp:GS_IAM_10883 .
+
+ruim:Substance_66494 rdfs:subClassOf cls_et_grp:GS_IAM_10883 .
+
+ruim:Substance_24583 rdfs:subClassOf cls_et_grp:GS_IAM_10884 .
+
+ruim:Substance_22322 rdfs:subClassOf cls_et_grp:GS_IAM_10884 .
+
+ruim:Substance_88022 rdfs:subClassOf cls_et_grp:GS_IAM_10885 .
+
+ruim:Substance_09967 rdfs:subClassOf cls_et_grp:GS_IAM_10886 .
+
+ruim:Substance_26938 rdfs:subClassOf cls_et_grp:GS_IAM_10887 .
+
+ruim:Substance_24568 rdfs:subClassOf cls_et_grp:GS_IAM_10888 .
+
+ruim:Substance_55715 rdfs:subClassOf cls_et_grp:GS_IAM_10889 .
+
+ruim:Substance_71153 rdfs:subClassOf cls_et_grp:GS_IAM_10890 .
+
+ruim:Substance_55062 rdfs:subClassOf cls_et_grp:GS_IAM_10891 .
+
+ruim:Substance_31246 rdfs:subClassOf cls_et_grp:GS_IAM_10892 .
+
+ruim:Substance_27660 rdfs:subClassOf cls_et_grp:GS_IAM_10893 .
+
+ruim:Substance_38167 rdfs:subClassOf cls_et_grp:GS_IAM_10894 .
+
+ruim:Substance_98937 rdfs:subClassOf cls_et_grp:GS_IAM_10895 .
+
+ruim:Substance_29337 rdfs:subClassOf cls_et_grp:GS_IAM_10896 .
+
+ruim:Substance_89901 rdfs:subClassOf cls_et_grp:GS_IAM_10896 .
+
+ruim:Substance_02710 rdfs:subClassOf cls_et_grp:GS_IAM_10897 .
+
+ruim:Substance_08751 rdfs:subClassOf cls_et_grp:GS_IAM_10898 .
+
+ruim:Substance_60254 rdfs:subClassOf cls_et_grp:GS_IAM_10899 .
+
+ruim:Substance_53913 rdfs:subClassOf cls_et_grp:GS_IAM_10899 .
+
+ruim:Substance_72481 rdfs:subClassOf cls_et_grp:GS_IAM_10900 .
+
+ruim:Substance_32925 rdfs:subClassOf cls_et_grp:GS_IAM_10900 .
+
+ruim:Substance_04857 rdfs:subClassOf cls_et_grp:GS_IAM_10901 .
+
+ruim:Substance_17098 rdfs:subClassOf cls_et_grp:GS_IAM_10902 .
+
+ruim:Substance_00651 rdfs:subClassOf cls_et_grp:GS_IAM_10903 .
+
+ruim:Substance_46674 rdfs:subClassOf cls_et_grp:GS_IAM_10904 .
+
+ruim:Substance_10791 rdfs:subClassOf cls_et_grp:GS_IAM_10905 .
+
+ruim:Substance_09542 rdfs:subClassOf cls_et_grp:GS_IAM_10906 .
+
+ruim:Substance_22217 rdfs:subClassOf cls_et_grp:GS_IAM_10907 .
+
+ruim:Substance_05477 rdfs:subClassOf cls_et_grp:GS_IAM_10907 .
+
+ruim:Substance_02934 rdfs:subClassOf cls_et_grp:GS_IAM_10907 .
+
+ruim:Substance_71395 rdfs:subClassOf cls_et_grp:GS_IAM_10908 .
+
+ruim:Substance_01836 rdfs:subClassOf cls_et_grp:GS_IAM_10909 .
+
+ruim:Substance_04630 rdfs:subClassOf cls_et_grp:GS_IAM_10910 .
+
+ruim:Substance_01837 rdfs:subClassOf cls_et_grp:GS_IAM_10910 .
+
+ruim:Substance_01840 rdfs:subClassOf cls_et_grp:GS_IAM_10911 .
+
+ruim:Substance_00109 rdfs:subClassOf cls_et_grp:GS_IAM_10912 .
+
+ruim:Substance_69479 rdfs:subClassOf cls_et_grp:GS_IAM_10913 .
+
+ruim:Substance_03417 rdfs:subClassOf cls_et_grp:GS_IAM_10914 .
+
+ruim:Substance_42599 rdfs:subClassOf cls_et_grp:GS_IAM_10915 .
+
+ruim:Substance_15078 rdfs:subClassOf cls_et_grp:GS_IAM_10915 .
+
+ruim:Substance_00655 rdfs:subClassOf cls_et_grp:GS_IAM_10915 .
+
+ruim:Substance_05272 rdfs:subClassOf cls_et_grp:GS_IAM_10916 .
+
+ruim:Substance_03599 rdfs:subClassOf cls_et_grp:GS_IAM_10917 .
+
+ruim:Substance_42608 rdfs:subClassOf cls_et_grp:GS_IAM_10917 .
+
+ruim:Substance_02751 rdfs:subClassOf cls_et_grp:GS_IAM_10918 .
+
+ruim:Substance_00659 rdfs:subClassOf cls_et_grp:GS_IAM_10919 .
+
+ruim:Substance_25272 rdfs:subClassOf cls_et_grp:GS_IAM_10921 .
+
+ruim:Substance_40435 rdfs:subClassOf cls_et_grp:GS_IAM_10922 .
+
+ruim:Substance_83209 rdfs:subClassOf cls_et_grp:GS_IAM_10922 .
+
+ruim:Substance_08215 rdfs:subClassOf cls_et_grp:GS_IAM_10923 .
+
+ruim:Substance_89551 rdfs:subClassOf cls_et_grp:GS_IAM_10924 .
+
+ruim:Substance_05765 rdfs:subClassOf cls_et_grp:GS_IAM_10924 .
+
+ruim:Substance_81834 rdfs:subClassOf cls_et_grp:GS_IAM_10925 .
+
+ruim:Substance_37533 rdfs:subClassOf cls_et_grp:GS_IAM_10926 .
+
+ruim:Substance_28408 rdfs:subClassOf cls_et_grp:GS_IAM_10927 .
+
+ruim:Substance_15487 rdfs:subClassOf cls_et_grp:GS_IAM_10927 .
+
+ruim:Substance_00783 rdfs:subClassOf cls_et_grp:GS_IAM_10928 .
+
+ruim:Substance_91931 rdfs:subClassOf cls_et_grp:GS_IAM_10929 .
+
+ruim:Substance_00200 rdfs:subClassOf cls_et_grp:GS_IAM_10930 .
+
+ruim:Substance_15009 rdfs:subClassOf cls_et_grp:GS_IAM_10930 .
+
+ruim:Substance_03611 rdfs:subClassOf cls_et_grp:GS_IAM_10931 .
+
+ruim:Substance_34647 rdfs:subClassOf cls_et_grp:GS_IAM_10932 .
+
+ruim:Substance_98196 rdfs:subClassOf cls_et_grp:GS_IAM_10933 .
+
+ruim:Substance_44704 rdfs:subClassOf cls_et_grp:GS_IAM_10934 .
+
+ruim:Substance_03037 rdfs:subClassOf cls_et_grp:GS_IAM_10935 .
+
+ruim:Substance_41192 rdfs:subClassOf cls_et_grp:GS_IAM_10936 .
+
+ruim:Substance_46261 rdfs:subClassOf cls_et_grp:GS_IAM_10936 .
+
+ruim:Substance_23654 rdfs:subClassOf cls_et_grp:GS_IAM_10937 .
+
+ruim:Substance_04926 rdfs:subClassOf cls_et_grp:GS_IAM_10937 .
+
+ruim:Substance_52857 rdfs:subClassOf cls_et_grp:GS_IAM_10938 .
+
+ruim:Substance_36776 rdfs:subClassOf cls_et_grp:GS_IAM_10939 .
+
+ruim:Substance_41652 rdfs:subClassOf cls_et_grp:GS_IAM_10940 .
+
+ruim:Substance_54371 rdfs:subClassOf cls_et_grp:GS_IAM_10940 .
+
+ruim:Substance_20890 rdfs:subClassOf cls_et_grp:GS_IAM_10941 .
+
+ruim:Substance_93066 rdfs:subClassOf cls_et_grp:GS_IAM_10942 .
+
+ruim:Substance_87746 rdfs:subClassOf cls_et_grp:GS_IAM_10942 .
+
+ruim:Substance_13942 rdfs:subClassOf cls_et_grp:GS_IAM_10943 .
+
+ruim:Substance_99842 rdfs:subClassOf cls_et_grp:GS_IAM_10944 .
+
+ruim:Substance_35415 rdfs:subClassOf cls_et_grp:GS_IAM_10945 .
+
+ruim:Substance_86571 rdfs:subClassOf cls_et_grp:GS_IAM_10945 .
+
+ruim:Substance_70833 rdfs:subClassOf cls_et_grp:GS_IAM_10946 .
+
+ruim:Substance_97773 rdfs:subClassOf cls_et_grp:GS_IAM_10947 .
+
+ruim:Substance_79507 rdfs:subClassOf cls_et_grp:GS_IAM_10948 .
+
+ruim:Substance_23185 rdfs:subClassOf cls_et_grp:GS_IAM_10949 .
+
+ruim:Substance_00535 rdfs:subClassOf cls_et_grp:GS_IAM_10950 .
+
+ruim:Substance_05209 rdfs:subClassOf cls_et_grp:GS_IAM_10951 .
+
+ruim:Substance_05480 rdfs:subClassOf cls_et_grp:GS_IAM_10951 .
+
+ruim:Substance_00313 rdfs:subClassOf cls_et_grp:GS_IAM_10952 .
+
+ruim:Substance_02428 rdfs:subClassOf cls_et_grp:GS_IAM_10953 .
+
+ruim:Substance_00264 rdfs:subClassOf cls_et_grp:GS_IAM_10954 .
+
+ruim:Substance_00342 rdfs:subClassOf cls_et_grp:GS_IAM_10955 .
+
+ruim:Substance_00360 rdfs:subClassOf cls_et_grp:GS_IAM_10956 .
+
+ruim:Substance_05481 rdfs:subClassOf cls_et_grp:GS_IAM_10956 .
+
+ruim:Substance_85758 rdfs:subClassOf cls_et_grp:GS_IAM_10956 .
+
+ruim:Substance_04458 rdfs:subClassOf cls_et_grp:GS_IAM_10957 .
+
+ruim:Substance_29878 rdfs:subClassOf cls_et_grp:GS_IAM_10957 .
+
+ruim:Substance_05483 rdfs:subClassOf cls_et_grp:GS_IAM_10958 .
+
+ruim:Substance_00357 rdfs:subClassOf cls_et_grp:GS_IAM_10959 .
+
+ruim:Substance_00356 rdfs:subClassOf cls_et_grp:GS_IAM_10959 .
+
+ruim:Substance_03610 rdfs:subClassOf cls_et_grp:GS_IAM_10960 .
+
+ruim:Substance_00358 rdfs:subClassOf cls_et_grp:GS_IAM_10961 .
+
+ruim:Substance_04511 rdfs:subClassOf cls_et_grp:GS_IAM_10962 .
+
+ruim:Substance_05493 rdfs:subClassOf cls_et_grp:GS_IAM_10963 .
+
+ruim:Substance_52476 rdfs:subClassOf cls_et_grp:GS_IAM_10964 .
+
+ruim:Substance_11673 rdfs:subClassOf cls_et_grp:GS_IAM_10965 .
+
+ruim:Substance_08744 rdfs:subClassOf cls_et_grp:GS_IAM_10965 .
+
+ruim:Substance_00376 rdfs:subClassOf cls_et_grp:GS_IAM_10966 .
+
+ruim:Substance_71179 rdfs:subClassOf cls_et_grp:GS_IAM_10967 .
+
+ruim:Substance_92734 rdfs:subClassOf cls_et_grp:GS_IAM_10968 .
+
+ruim:Substance_36192 rdfs:subClassOf cls_et_grp:GS_IAM_10968 .
+
+ruim:Substance_37670 rdfs:subClassOf cls_et_grp:GS_IAM_10969 .
+
+ruim:Substance_89161 rdfs:subClassOf cls_et_grp:GS_IAM_10970 .
+
+ruim:Substance_36874 rdfs:subClassOf cls_et_grp:GS_IAM_10970 .
+
+ruim:Substance_00547 rdfs:subClassOf cls_et_grp:GS_IAM_10971 .
+
+ruim:Substance_15734 rdfs:subClassOf cls_et_grp:GS_IAM_10972 .
+
+ruim:Substance_10157 rdfs:subClassOf cls_et_grp:GS_IAM_10973 .
+
+ruim:Substance_28416 rdfs:subClassOf cls_et_grp:GS_IAM_10973 .
+
+ruim:Substance_87461 rdfs:subClassOf cls_et_grp:GS_IAM_10974 .
+
+ruim:Substance_32308 rdfs:subClassOf cls_et_grp:GS_IAM_10975 .
+
+ruim:Substance_32500 rdfs:subClassOf cls_et_grp:GS_IAM_10975 .
+
+ruim:Substance_12094 rdfs:subClassOf cls_et_grp:GS_IAM_10976 .
+
+ruim:Substance_53209 rdfs:subClassOf cls_et_grp:GS_IAM_10977 .
+
+ruim:Substance_68718 rdfs:subClassOf cls_et_grp:GS_IAM_10978 .
+
+ruim:Substance_20256 rdfs:subClassOf cls_et_grp:GS_IAM_10979 .
+
+ruim:Substance_26322 rdfs:subClassOf cls_et_grp:GS_IAM_10979 .
+
+ruim:Substance_05242 rdfs:subClassOf cls_et_grp:GS_IAM_10980 .
+
+ruim:Substance_05878 rdfs:subClassOf cls_et_grp:GS_IAM_10981 .
+
+ruim:Substance_43710 rdfs:subClassOf cls_et_grp:GS_IAM_10981 .
+
+ruim:Substance_20544 rdfs:subClassOf cls_et_grp:GS_IAM_10981 .
+
+ruim:Substance_31103 rdfs:subClassOf cls_et_grp:GS_IAM_10982 .
+
+ruim:Substance_40035 rdfs:subClassOf cls_et_grp:GS_IAM_10983 .
+
+ruim:Substance_04230 rdfs:subClassOf cls_et_grp:GS_IAM_10984 .
+
+ruim:Substance_62283 rdfs:subClassOf cls_et_grp:GS_IAM_10984 .
+
+ruim:Substance_00388 rdfs:subClassOf cls_et_grp:GS_IAM_10985 .
+
+ruim:Substance_05113 rdfs:subClassOf cls_et_grp:GS_IAM_10986 .
+
+ruim:Substance_00882 rdfs:subClassOf cls_et_grp:GS_IAM_10987 .
+
+ruim:Substance_62794 rdfs:subClassOf cls_et_grp:GS_IAM_10988 .
+
+ruim:Substance_53859 rdfs:subClassOf cls_et_grp:GS_IAM_10988 .
+
+ruim:Substance_40054 rdfs:subClassOf cls_et_grp:GS_IAM_10989 .
+
+ruim:Substance_66304 rdfs:subClassOf cls_et_grp:GS_IAM_10989 .
+
+ruim:Substance_00751 rdfs:subClassOf cls_et_grp:GS_IAM_10990 .
+
+ruim:Substance_85085 rdfs:subClassOf cls_et_grp:GS_IAM_10991 .
+
+ruim:Substance_47161 rdfs:subClassOf cls_et_grp:GS_IAM_10991 .
+
+ruim:Substance_69186 rdfs:subClassOf cls_et_grp:GS_IAM_10992 .
+
+ruim:Substance_28603 rdfs:subClassOf cls_et_grp:GS_IAM_10992 .
+
+ruim:Substance_68555 rdfs:subClassOf cls_et_grp:GS_IAM_10992 .
+
+ruim:Substance_97753 rdfs:subClassOf cls_et_grp:GS_IAM_10993 .
+
+ruim:Substance_05239 rdfs:subClassOf cls_et_grp:GS_IAM_10993 .
+
+ruim:Substance_96983 rdfs:subClassOf cls_et_grp:GS_IAM_10994 .
+
+ruim:Substance_18561 rdfs:subClassOf cls_et_grp:GS_IAM_10995 .
+
+ruim:Substance_51135 rdfs:subClassOf cls_et_grp:GS_IAM_10996 .
+
+ruim:Substance_77887 rdfs:subClassOf cls_et_grp:GS_IAM_10997 .
+
+ruim:Substance_00622 rdfs:subClassOf cls_et_grp:GS_IAM_10997 .
+
+ruim:Substance_60202 rdfs:subClassOf cls_et_grp:GS_IAM_10997 .
+
+ruim:Substance_51458 rdfs:subClassOf cls_et_grp:GS_IAM_10998 .
+
+ruim:Substance_39841 rdfs:subClassOf cls_et_grp:GS_IAM_10999 .
+
+ruim:Substance_00678 rdfs:subClassOf cls_et_grp:GS_IAM_11000 .
+
+ruim:Substance_03626 rdfs:subClassOf cls_et_grp:GS_IAM_11001 .
+
+ruim:Substance_23061 rdfs:subClassOf cls_et_grp:GS_IAM_11002 .
+
+ruim:Substance_18864 rdfs:subClassOf cls_et_grp:GS_IAM_11003 .
+
+ruim:Substance_09122 rdfs:subClassOf cls_et_grp:GS_IAM_11004 .
+
+ruim:Substance_24778 rdfs:subClassOf cls_et_grp:GS_IAM_11005 .
+
+ruim:Substance_05246 rdfs:subClassOf cls_et_grp:GS_IAM_11005 .
+
+ruim:Substance_05247 rdfs:subClassOf cls_et_grp:GS_IAM_11005 .
+
+ruim:Substance_00930 rdfs:subClassOf cls_et_grp:GS_IAM_11005 .
+
+ruim:Substance_00928 rdfs:subClassOf cls_et_grp:GS_IAM_11005 .
+
+ruim:Substance_00929 rdfs:subClassOf cls_et_grp:GS_IAM_11005 .
+
+ruim:Substance_03627 rdfs:subClassOf cls_et_grp:GS_IAM_11005 .
+
+ruim:Substance_98774 rdfs:subClassOf cls_et_grp:GS_IAM_11005 .
+
+ruim:Substance_00931 rdfs:subClassOf cls_et_grp:GS_IAM_11005 .
+
+ruim:Substance_96774 rdfs:subClassOf cls_et_grp:GS_IAM_11005 .
+
+ruim:Substance_01473 rdfs:subClassOf cls_et_grp:GS_IAM_11005 .
+
+ruim:Substance_65684 rdfs:subClassOf cls_et_grp:GS_IAM_11005 .
+
+ruim:Substance_27299 rdfs:subClassOf cls_et_grp:GS_IAM_11005 .
+
+ruim:Substance_69380 rdfs:subClassOf cls_et_grp:GS_IAM_11005 .
+
+ruim:Substance_04456 rdfs:subClassOf cls_et_grp:GS_IAM_11005 .
+
+ruim:Substance_01119 rdfs:subClassOf cls_et_grp:GS_IAM_11005 .
+
+ruim:Substance_96648 rdfs:subClassOf cls_et_grp:GS_IAM_11006 .
+
+ruim:Substance_66422 rdfs:subClassOf cls_et_grp:GS_IAM_11006 .
+
+ruim:Substance_78975 rdfs:subClassOf cls_et_grp:GS_IAM_11007 .
+
+ruim:Substance_12999 rdfs:subClassOf cls_et_grp:GS_IAM_11008, cls_et_grp:GS_IAM_11010 .
+
+ruim:Substance_25975 rdfs:subClassOf cls_et_grp:GS_IAM_11008 .
+
+ruim:Substance_24996 rdfs:subClassOf cls_et_grp:GS_IAM_11009 .
+
+ruim:Substance_09182 rdfs:subClassOf cls_et_grp:GS_IAM_11011 .
+
+ruim:Substance_08137 rdfs:subClassOf cls_et_grp:GS_IAM_11011 .
+
+ruim:Substance_91930 rdfs:subClassOf cls_et_grp:GS_IAM_11011 .
+
+ruim:Substance_06941 rdfs:subClassOf cls_et_grp:GS_IAM_11011 .
+
+ruim:Substance_00204 rdfs:subClassOf cls_et_grp:GS_IAM_11012 .

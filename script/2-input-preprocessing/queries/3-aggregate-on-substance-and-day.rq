@@ -1,0 +1,32 @@
+PREFIX ruim: <http://data.esante.gouv.fr/ansm/medicament/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX r: <http://www.limics.org/remiames_ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dct: <http://purl.org/dc/terms/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xyz: <http://sparql.xyz/facade-x/data/>
+PREFIX fx: <http://sparql.xyz/facade-x/ns/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?ID_patient ?ID_sejour ?date ?codeSubstance (GROUP_CONCAT(?labelUCD;separator=",") AS ?labelsUCD) (SUM(?quantiteSubstance) AS ?sum_quantite_substance)
+	WHERE {
+	SERVICE <x-sparql-anything:location=work/2.csv,csv.headers=true> { 
+	 	?line xyz:ID_patient ?ID_patient .
+	 	?line xyz:ID_sejour ?ID_sejour .
+	 	?line xyz:date ?date .
+	 	?line xyz:heure ?heure .
+	 	?line xyz:UCD ?UCD_string .
+	 	?line xyz:labelUCD ?labelUCD .
+	 	?line xyz:quantite ?quantite_string .
+	 	?line xyz:unite_de_prise ?unite_de_prise .
+	 	?line xyz:codeSubstance ?codeSubstance .
+	 	?line xyz:quantiteSubstance ?quantiteSubstance_string .
+	 	?line xyz:target_unit ?target_unit .
+
+	 	BIND(IRI(?UCD_string) AS ?UCD)
+	 	BIND(xsd:decimal(?quantite_string) AS ?quantite)
+	 	BIND(xsd:decimal(?quantiteSubstance_string) AS ?quantiteSubstance)
+	}
+}
+GROUP BY ?ID_patient ?ID_sejour ?date ?codeSubstance

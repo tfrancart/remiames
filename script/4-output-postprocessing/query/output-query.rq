@@ -1,0 +1,35 @@
+PREFIX remiames: <http://www.limics.org/remiames_ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dct: <http://purl.org/dc/terms/> 
+SELECT 
+	?administrationsPatient
+	?patientID
+	?sejourID
+	(STR(?dateTyped) AS ?date)
+	?typeInteraction
+	?labelInteraction
+WHERE {
+	# interaction avec son libellé
+	?administrationsPatient a ?typeInteraction .
+	?typeInteraction rdfs:subClassOf remiames:Interaction .
+	?typeInteraction rdfs:label ?labelInteraction .
+
+	# ID Patient
+	OPTIONAL {
+		?administrationsPatient dct:isPartOf ?sejour .
+		?sejour remiames:patient ?patient .
+		?patient dct:identifier ?patientID
+	}
+
+	# ID sejour
+	OPTIONAL {
+		?administrationsPatient dct:isPartOf ?sejour .
+		?sejour dct:identifier ?sejourID .
+	}
+
+	# jour
+	OPTIONAL {
+		?administrationsPatient dct:date ?dateTyped
+	}
+
+}

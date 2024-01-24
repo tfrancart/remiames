@@ -1,0 +1,63 @@
+PREFIX ruim: <http://data.esante.gouv.fr/ansm/medicament/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX r: <http://www.limics.org/remiames_ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dct: <http://purl.org/dc/terms/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xyz: <http://sparql.xyz/facade-x/data/>
+PREFIX fx: <http://sparql.xyz/facade-x/ns/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?ID_patient ?ID_sejour ?date ?heure ?UCD ?quantite ?unite_de_prise ?labelUCD ?codeSubstance ?quantiteSubstance ?target_unit
+WHERE{ 
+
+	# Lire les administrations de substance, contenant les codes substances
+	# issus du RUIM
+	{
+		SELECT ?ID_patient ?ID_sejour ?date ?heure ?UCD ?quantite ?unite_de_prise ?labelUCD ?codeSubstance
+			WHERE {
+			SERVICE <x-sparql-anything:location=work/1.csv,csv.headers=true> { 
+			 	?line xyz:ID_patient ?ID_patient .
+			 	?line xyz:ID_sejour ?ID_sejour .
+			 	?line xyz:date ?date .
+			 	?line xyz:heure ?heure .
+			 	?line xyz:UCD ?UCD_string .
+			 	?line xyz:labelUCD ?labelUCD .
+			 	?line xyz:quantite ?quantite_string .
+			 	?line xyz:unite_de_prise ?unite_de_prise .
+			 	?line xyz:codeSubstance ?codeSubstance .
+
+			 	BIND(IRI(?UCD_string) AS ?UCD)
+			 	BIND(xsd:decimal(?quantite_string) AS ?quantite)
+			}
+		}
+	}
+
+	OPTIONAL {
+		# Lire le fichier de conversion de dose contenant les multiplicateurs
+		# pour se ramener à une unité cible
+		# La jointure se fera sur UCD + codeSubstance
+		SELECT ?UCD ?codeSubstance ?conversion_rate ?target_unit
+			WHERE {
+			SERVICE <x-sparql-anything:location=data/CONVERSION_DOSE.csv,csv.headers=true> { 
+			 	?line xyz:UCD ?UCD_string .
+			 	?line xyz:code_substance ?code_substance .
+			 	?line xyz:conversion%20rate ?conversion_rate_string .
+			 	?line xyz:Target%20Unit ?target_unit .
+			 	?line xyz:Admin%20Unit ?admin_unit .
+
+
+			 	BIND("http://data.esante.gouv.fr/ansm/medicament/" AS ?RUIM_NAMESPACE)
+			 	BIND(IRI(CONCAT(?RUIM_NAMESPACE,"UCD_",STR(?UCD_string))) AS ?UCD)
+			 	BIND(xsd:decimal(?conversion_rate_string) AS ?conversion_rate)
+			 	# bien utiliser le même nom de variable que la première partie de la query
+			 	BIND(?code_substance AS ?codeSubstance)
+			}
+		}
+	}
+
+	# Faire la multiplication entre le ratio de conversion et la quantité administré
+	# Ce qui donne la quantité totale de substance administrée
+	BIND(?quantite*COALESCE(?conversion_rate,0) AS ?quantiteSubstance)
+}

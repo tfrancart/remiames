@@ -1,0 +1,4 @@
+﻿ID_patient,ID_sejour,date,heure,UCD,quantite,unite_de_prise
+123456,ABC,04.01.2024,8:59:00,3400890072977,1,comprimé
+123456,ABC,04.01.2024,8:59:00,3400890263665,1,poudre et solvant
+123456,ABC,04.01.2024,8:59:00,3400891569339,2,comprimé

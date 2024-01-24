@@ -1,0 +1,106 @@
+PREFIX ruim: <http://data.esante.gouv.fr/ansm/medicament/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX r: <http://www.limics.org/remiames_ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dct: <http://purl.org/dc/terms/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xyz: <http://sparql.xyz/facade-x/data/>
+PREFIX fx: <http://sparql.xyz/facade-x/ns/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+CONSTRUCT {
+	?ontologie a owl:Ontology .
+	?ontologie owl:imports
+	    <http://www.limics.org/remiames_ontology>,
+	    <http://www.limics.org/remiames_ontology/classes_et_groupes_substances>,
+	    <http://www.limics.org/remiames_ontology/administrations>,
+	    <http://www.limics.org/remiames_ontology/thesaurus_interactions>,
+	    <http://www.limics.org/remiames_ontology/substances_ansm>    
+	.
+
+	?administration a r:Administration . 
+	?administration r:substance ?substanceInstance .
+	?substanceInstance a ?substance .
+	?administration r:literal_qtt_jour_mg ?sum_quantite_substance .
+	?administration rdfs:label ?labelsUCD .
+
+	?journeeDeSejour a r:AdministrationsPatient .
+	?journeeDeSejour r:administration ?administration .
+	?journeeDeSejour dct:isPartOf ?sejour .
+	?journeeDeSejour dct:date ?date .
+
+	?sejour a r:Sejour .
+	?sejour dct:identifier ?ID_sejour .
+	?sejour r:patient ?patient .
+
+	?patient a r:Patient .
+	?patient dct:identifier ?ID_patient .
+} WHERE {
+	SERVICE <x-sparql-anything:location=work/3.csv,csv.headers=true> { 
+	 	?line xyz:ID_patient ?ID_patient .
+	 	?line xyz:ID_sejour ?ID_sejour .
+	 	?line xyz:date ?date .
+	 	?line xyz:codeSubstance ?codeSubstance .
+	 	?line xyz:labelsUCD ?labelsUCD .
+	 	?line xyz:sum_quantite_substance ?sum_quantite_substance_string .
+
+	 	BIND(xsd:decimal(?sum_quantite_substance_string) AS ?sum_quantite_substance)
+
+	 	BIND("http://www.limics.org/remiames_ontology/data#" AS ?NAMESPACE)
+	 	BIND("http://data.esante.gouv.fr/ansm/medicament/" AS ?RUIM)
+	 	
+	 	# Administration
+	 	BIND(IRI(CONCAT(
+	 		?NAMESPACE,
+	 		"Administration-",
+	 		?ID_sejour,
+	 		"-",
+	 		?date,
+	 		"-",
+	 		?codeSubstance
+	 	)) AS ?administration)
+
+	 	# Journée de séjour
+	 	BIND(IRI(CONCAT(
+	 		?NAMESPACE,
+	 		"JourneeDeSejour-",
+	 		?ID_sejour,
+	 		"-",
+	 		?date
+	 	)) AS ?journeeDeSejour)
+
+	 	# Séjour
+	 	BIND(IRI(CONCAT(
+	 		?NAMESPACE,
+	 		"Sejour-",
+	 		?ID_sejour
+	 	)) AS ?sejour)
+
+	 	# Patient
+	 	BIND(IRI(CONCAT(
+	 		?NAMESPACE,
+	 		"Patient-",
+	 		?ID_patient
+	 	)) AS ?patient)
+
+	 	# Substance + instance
+	 	BIND(IRI(CONCAT(
+	 		?RUIM,
+	 		"Substance_",
+	 		?codeSubstance
+	 	)) AS ?substance)
+
+	 	BIND(IRI(CONCAT(
+	 		?NAMESPACE,
+	 		"SubstanceInstance_",
+	 		?codeSubstance
+	 	)) AS ?substanceInstance)
+
+	 	# Ontologie
+	 	BIND(IRI(CONCAT(
+	 		?NAMESPACE,
+	 		"Instances"
+	 	)) AS ?ontologie)
+	}
+}
