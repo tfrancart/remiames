@@ -9,15 +9,15 @@ PREFIX xyz: <http://sparql.xyz/facade-x/data/>
 PREFIX fx: <http://sparql.xyz/facade-x/ns/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-SELECT ?ID_patient ?ID_sejour ?date ?heure ?UCD ?quantite ?unite_de_prise ?labelUCD ?codeSubstance ?quantiteSubstanceTotale ?unite
+SELECT ?ID_patient ?ID_sejour ?date ?heure ?UCD ?quantite ?unite_de_prise ?labelUCD (?code_substance_target AS ?codeSubstance) ?quantiteSubstanceTotale ?unite
 WHERE{ 
 
 	# Lire les administrations de substance, contenant les codes substances
 	# issus du RUIM
 	{
-		SELECT ?ID_patient ?ID_sejour ?date ?heure ?UCD ?quantite ?unite_de_prise ?labelUCD ?codeSubstance
+		SELECT ?ID_patient ?ID_sejour ?date ?heure ?UCD ?quantite ?unite_de_prise ?labelUCD ?code_substance_input ?quantiteSubstanceTotale_input ?unite
 			WHERE {
-			SERVICE <x-sparql-anything:location=work/1.csv,csv.headers=true> { 
+			SERVICE <x-sparql-anything:location=work/2.csv,csv.headers=true> { 
 			 	?line xyz:ID_patient ?ID_patient .
 			 	?line xyz:ID_sejour ?ID_sejour .
 			 	?line xyz:date ?date .
@@ -26,36 +26,34 @@ WHERE{
 			 	?line xyz:labelUCD ?labelUCD .
 			 	?line xyz:quantite ?quantite_string .
 			 	?line xyz:unite_de_prise ?unite_de_prise .
-			 	?line xyz:codeSubstance ?codeSubstance .
+			 	# bien utiliser le meme nom de variable que dans l'autre partie de la query
+			 	?line xyz:codeSubstance ?code_substance_input .
+			 	?line xyz:quantiteSubstanceTotale ?quantiteSubstanceTotale_string .
+	 			?line xyz:unite ?unite .
 
 			 	BIND(IRI(?UCD_string) AS ?UCD)
 			 	BIND(xsd:decimal(?quantite_string) AS ?quantite)
+			 	BIND(xsd:decimal(?quantiteSubstanceTotale_string) AS ?quantiteSubstanceTotale_input)
 			}
 		}
 	}
 
-	OPTIONAL {
+	{
 		# Lire le fichier de quantite de substance qui simule les dosages du RUIM
 		# La jointure se fera sur UCD + codeSubstance
-		SELECT ?UCD ?codeSubstance ?quantiteSubstance ?unite
+		SELECT ?code_substance_input ?code_substance_target ?multiplicateur
 			WHERE {
-			SERVICE <x-sparql-anything:location=data/RUIM_dosages.csv,csv.headers=true> { 
-			 	?line xyz:UCD ?UCD_string .
-			 	?line xyz:code_substance ?code_substance .
-			 	?line xyz:quantiteSubstance ?quantiteSubstance_string .
-			 	?line xyz:unite ?unite .
+			SERVICE <x-sparql-anything:location=data/CONVERSION_substances.csv,csv.headers=true> { 
+			 	?line xyz:code_substance_input ?code_substance_input .
+			 	?line xyz:code_substance_target ?code_substance_target .
+			 	?line xyz:multiplicateur ?multiplicateur_string .
 
-
-			 	BIND("http://data.esante.gouv.fr/ansm/medicament/" AS ?RUIM_NAMESPACE)
-			 	BIND(IRI(CONCAT(?RUIM_NAMESPACE,"UCD_",STR(?UCD_string))) AS ?UCD)
-			 	BIND(xsd:decimal(?quantiteSubstance_string) AS ?quantiteSubstance)
-			 	# bien utiliser le même nom de variable que la première partie de la query
-			 	BIND(?code_substance AS ?codeSubstance)
+			 	BIND(xsd:decimal(?multiplicateur_string) AS ?multiplicateur)
 			}
 		}
 	}
 
 	# Faire la multiplication entre la quantite de substance et la quantite administree
 	# Ce qui donne la quantité totale de substance administrée
-	BIND(?quantite*COALESCE(?quantiteSubstance,0) AS ?quantiteSubstanceTotale)
+	BIND(?quantiteSubstanceTotale_input*COALESCE(?multiplicateur,0) AS ?quantiteSubstanceTotale)
 }

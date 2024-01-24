@@ -24,14 +24,25 @@ java -jar sparql-anything-0.9.0.jar \
 > work/2.csv
 
 # Expects the result of previous query in work/2.csv
-echo 'Step 3 : 3-aggregate-on-substance-and-day.rq'
+echo 'Step 3 : 3-translate-to-other-susbtances.rq.rq'
 java -jar sparql-anything-0.9.0.jar \
--q queries/3-aggregate-on-substance-and-day.rq \
+-q queries/3-translate-to-other-susbtances.rq \
 > work/3.csv
 
-# Expects the result of previous query in work/2.csv
-echo 'Step 4 : 4-convert-to-rdf.rq'
+# cat the 2 and 3
+echo 'Step 3bis : Concat 2+3...'
+cat work/2.csv >> work/2_and_3.csv 
+tail -n +2 "work/3.csv" >> work/2_and_3.csv 
+
+# Expects the result of previous query in work/2_and_3.csv
+echo 'Step 4 : 4-aggregate-on-substance-and-day.rq'
 java -jar sparql-anything-0.9.0.jar \
--q queries/4-convert-to-rdf.rq \
+-q queries/4-aggregate-on-substance-and-day.rq \
+> work/4.csv
+
+# Expects the result of previous query in work/4.csv
+echo 'Step 5 : 5-convert-to-rdf.rq'
+java -jar sparql-anything-0.9.0.jar \
+-q queries/5-convert-to-rdf.rq \
 > $OUTPUT_RDF
 

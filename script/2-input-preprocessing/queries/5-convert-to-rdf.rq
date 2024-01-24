@@ -37,7 +37,7 @@ CONSTRUCT {
 	?patient a r:Patient .
 	?patient dct:identifier ?ID_patient .
 } WHERE {
-	SERVICE <x-sparql-anything:location=work/3.csv,csv.headers=true> { 
+	SERVICE <x-sparql-anything:location=work/4.csv,csv.headers=true> { 
 	 	?line xyz:ID_patient ?ID_patient .
 	 	?line xyz:ID_sejour ?ID_sejour .
 	 	?line xyz:date ?date .
