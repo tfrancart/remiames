@@ -54,6 +54,11 @@ remiames:patient rdf:type owl:ObjectProperty ;
                  rdfs:range remiames:Patient .
 
 
+###  http://www.limics.org/remiames_ontology#substance
+remiames:substance rdf:type owl:ObjectProperty ;
+                   rdfs:range remiames:Substance .
+
+
 ###  http://www.limics.org/remiames_ontology#ucd
 remiames:ucd rdf:type owl:ObjectProperty ;
              rdfs:domain remiames:Administration ;
@@ -145,11 +150,6 @@ remiames:voie rdf:type owl:ObjectProperty ;
                                                              rdfs:range <http://www.limics.org/remiames_ontology/Valeur> .
 
 
-###  http://www.limics.org/remiames_ontology/substance
-<http://www.limics.org/remiames_ontology/substance> rdf:type owl:ObjectProperty ;
-                                                    rdfs:range remiames:Substance .
-
-
 ###  http://www.limics.org/remiames_ontology/sujetAge
 <http://www.limics.org/remiames_ontology/sujetAge> rdf:type owl:ObjectProperty ;
                                                    rdfs:subPropertyOf <http://www.limics.org/remiames_ontology/caracteristiquePatient> ;
@@ -194,16 +194,16 @@ remiames:ASDEC rdf:type owl:Class ;
 ###  http://www.limics.org/remiames_ontology#Administration
 remiames:Administration rdf:type owl:Class ;
                         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                          owl:onProperty remiames:substance ;
+                                          owl:someValuesFrom remiames:Substance
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
                                           owl:onProperty remiames:ucd ;
                                           owl:someValuesFrom remiames:UCD
                                         ] ,
                                         [ rdf:type owl:Restriction ;
                                           owl:onProperty remiames:voie ;
                                           owl:someValuesFrom remiames:Voie
-                                        ] ,
-                                        [ rdf:type owl:Restriction ;
-                                          owl:onProperty <http://www.limics.org/remiames_ontology/substance> ;
-                                          owl:someValuesFrom remiames:Substance
                                         ] .
 
 
@@ -267,7 +267,7 @@ remiames:SubstanceANSM rdf:type owl:Class ;
 ###  http://www.limics.org/remiames_ontology#UCD
 remiames:UCD rdf:type owl:Class ;
              rdfs:subClassOf [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://www.limics.org/remiames_ontology/substance> ;
+                               owl:onProperty remiames:substance ;
                                owl:allValuesFrom remiames:SubstanceANSM
                              ] .
 
