@@ -85,11 +85,12 @@ CONSTRUCT {
 	 	)) AS ?patient)
 
 	 	# Substance + instance
-	 	BIND(IRI(CONCAT(
-	 		?RUIM,
-	 		"Substance_",
-	 		?codeSubstance
-	 	)) AS ?substance)
+	 	BIND(IRI(
+	 		IF(STRSTARTS(?codeSubstance, "GS_IAM") || STRSTARTS(?codeSubstance, "C_IAM"),
+	 			CONCAT("http://www.limics.org/remiames_ontology/classes_et_groupes_substances#",?codeSubstance),
+	 			CONCAT(?RUIM,"Substance_",?codeSubstance)
+	 		)
+	 	) AS ?substance)
 
 	 	BIND(IRI(CONCAT(
 	 		?NAMESPACE,

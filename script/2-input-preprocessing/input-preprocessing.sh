@@ -24,9 +24,9 @@ java -jar sparql-anything-0.9.0.jar \
 > work/2.csv
 
 # Expects the result of previous query in work/2.csv
-echo 'Step 3 : 3-translate-to-other-susbtances.rq.rq'
+echo 'Step 3 : 3-convert-to-other-susbtances.rq'
 java -jar sparql-anything-0.9.0.jar \
--q queries/3-translate-to-other-susbtances.rq \
+-q queries/3-convert-to-other-susbtances.rq \
 > work/3.csv
 
 # cat the 2 and 3

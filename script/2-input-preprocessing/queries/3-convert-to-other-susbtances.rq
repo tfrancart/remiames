@@ -15,7 +15,7 @@ WHERE{
 	# Lire les administrations de substance, contenant les codes substances
 	# issus du RUIM
 	{
-		SELECT ?ID_patient ?ID_sejour ?date ?heure ?UCD ?quantite ?unite_de_prise ?labelUCD ?code_substance_input ?quantiteSubstanceTotale_input ?unite
+		SELECT ?ID_patient ?ID_sejour ?date ?heure ?UCD ?quantite ?unite_de_prise ?labelUCD ?codeSubstance_input ?quantiteSubstanceTotale_input ?unite
 			WHERE {
 			SERVICE <x-sparql-anything:location=work/2.csv,csv.headers=true> { 
 			 	?line xyz:ID_patient ?ID_patient .
@@ -27,7 +27,7 @@ WHERE{
 			 	?line xyz:quantite ?quantite_string .
 			 	?line xyz:unite_de_prise ?unite_de_prise .
 			 	# bien utiliser le meme nom de variable que dans l'autre partie de la query
-			 	?line xyz:codeSubstance ?code_substance_input .
+			 	?line xyz:codeSubstance ?codeSubstance_input .
 			 	?line xyz:quantiteSubstanceTotale ?quantiteSubstanceTotale_string .
 	 			?line xyz:unite ?unite .
 
@@ -41,19 +41,20 @@ WHERE{
 	{
 		# Lire le fichier de quantite de substance qui simule les dosages du RUIM
 		# La jointure se fera sur UCD + codeSubstance
-		SELECT ?code_substance_input ?code_substance_target ?multiplicateur
+		SELECT ?codeSubstance_input ?code_substance_target ?conversion
 			WHERE {
-			SERVICE <x-sparql-anything:location=data/CONVERSION_substances.csv,csv.headers=true> { 
-			 	?line xyz:code_substance_input ?code_substance_input .
-			 	?line xyz:code_substance_target ?code_substance_target .
-			 	?line xyz:multiplicateur ?multiplicateur_string .
+			SERVICE <x-sparql-anything:location=data/ConversionSUBSTANCE_DOSE.csv,csv.headers=true> { 
+			 	# bien utiliser le meme nom de variable que dans l'autre partie de la query
+			 	?line xyz:id%20substance ?codeSubstance_input .
+			 	?line xyz:substance%20cible ?code_substance_target .
+			 	?line xyz:conversion ?conversion_string .
 
-			 	BIND(xsd:decimal(?multiplicateur_string) AS ?multiplicateur)
+			 	BIND(xsd:decimal(?conversion_string) AS ?conversion)
 			}
 		}
 	}
 
 	# Faire la multiplication entre la quantite de substance et la quantite administree
 	# Ce qui donne la quantité totale de substance administrée
-	BIND(?quantiteSubstanceTotale_input*COALESCE(?multiplicateur,0) AS ?quantiteSubstanceTotale)
+	BIND(?quantiteSubstanceTotale_input*COALESCE(?conversion,0) AS ?quantiteSubstanceTotale)
 }

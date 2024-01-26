@@ -1,0 +1,53 @@
+﻿id substance,label substance,conversion,substance cible,label substance cible
+00090,sulfate de potassium,0.44873692999999998,GS_IAM_10742,potassium
+00096,hydroxyde de potassium,0.69687193700000005,GS_IAM_10742,potassium
+00217,magnésium (aspartate de) et de potassium,0.37363761000000001,GS_IAM_10742,potassium
+01507,clorazépate dipotassique,0.191224265,GS_IAM_10742,potassium
+02905,gaïacolsulfonate de potassium,0.16136727584897601,GS_IAM_10742,potassium
+03102,canrénoate de potassium,0.098590910000000004,GS_IAM_10742,potassium
+03455,acétate de potassium,0.39838193599999999,GS_IAM_10742,potassium
+04468,potassium (bicarbonate de),0.39053479000000002,GS_IAM_10742,potassium
+05094,potassium (tartrate acide de),0.34559324000000002,GS_IAM_10742,potassium
+05616,bromure de potassium,0.32854909999999998,GS_IAM_10742,potassium
+12155,phosphate dipotassique,0.44895334599999998,GS_IAM_10742,potassium
+21863,citrate dipotassique anhydre,0.292545689,GS_IAM_10742,potassium
+22650,phosphate monopotassique,0.28730783900000001,GS_IAM_10742,potassium
+29442,clavulanate de potassium,0.16479523900000001,GS_IAM_10742,potassium
+48528,losartan potassique,0.084624408999999998,GS_IAM_10742,potassium
+50993,citrate monopotassique anhydre,0.169834023,GS_IAM_10742,potassium
+73622,raltégravir potassique,0.081030949000000005,GS_IAM_10742,potassium
+78337,sous-citrate de bismuth potassique,0.249773723,GS_IAM_10742,potassium
+94194,potassium (dichromate de),0.26580914500000002,GS_IAM_10742,potassium
+00093,potassium (chlorure de),0.52444599999999997,GS_IAM_10742,potassium
+00095,iodure de potassium,0.23552600000000001,GS_IAM_10742,potassium
+03456,potassium (gluconate de),0.16691,GS_IAM_10742,potassium
+05095,potassium (tartrate de) neutre,0.17279700000000001,GS_IAM_10742,potassium
+05618,potassium (glycérophosphate de),0.31498500000000001,GS_IAM_10742,potassium
+30272,potassium,1,GS_IAM_10742,potassium
+00005,acétylsalicylique (acide),1,GS_IAM_10012,acide acetylsalicylique
+03107,dl-lysine (acétylsalicylate de),0.55600000000000005,GS_IAM_10012,acide acetylsalicylique
+03582,carbasalate calcique,0.78600000000000003,GS_IAM_10012,acide acetylsalicylique
+01221,bénorilate,0.57499999999999996,GS_IAM_10012,acide acetylsalicylique
+02345,méthotrexate,1,GS_IAM_10569,methotrexate
+77887,"concentrat de vitamine a synthétique, forme huileuse",1,GS_IAM_10997,vitamine A
+00622,rétinol,1,GS_IAM_10997,vitamine A
+60202,"vitamine a synthétique (concentrat de), forme pulvérulente",1,GS_IAM_10997,vitamine A
+33207,rosuvastatine,1,GS_IAM_10814,rosuvastatine
+01261,bétaméthasone,6.6699999999999999,GS_IAM_10753,prednisone 
+00445,acétate de bétaméthasone,6.0030000000000001,GS_IAM_10753,prednisone 
+04730,bétaméthasone (dipropionate de),5.1866000000000003,GS_IAM_10753,prednisone 
+04184,valérate de bétaméthasone,5.4669999999999996,GS_IAM_10753,prednisone 
+01608,dexaméthasone,6.6699999999999999,GS_IAM_10753,prednisone 
+04429,dexaméthasone (métasulfobenzoate sodique de),4.3700000000000001,GS_IAM_10753,prednisone 
+73377,phosphate de dexaméthasone,5.5410000000000004,GS_IAM_10753,prednisone 
+03675,phosphate sodique de dexaméthasone,6.6699999999999999,GS_IAM_10753,prednisone 
+03673,acétate de dexaméthasone,6.0225999999999997,GS_IAM_10753,prednisone ,,,,,
+02361,méthylprednisolone ,1.25,GS_IAM_10753,prednisone ,,,,,
+03697,méthylprednisolone (hydrogénosuccinate sodique de),0.94269999999999998,GS_IAM_10753,prednisone ,,,,,
+03927,acétate de méthylprednisolone,1.1200000000000001,GS_IAM_10753,prednisone ,,,,,
+07032,hémisuccinate de méthylprednisolone,0.98660000000000003,GS_IAM_10753,prednisone ,,,,,
+05209,triamcinolone (acétonide de),1.1299999999999999,GS_IAM_10753,prednisone ,,,,,
+05480,triamcinolone (hexacétonide de),0.92000000000000004,GS_IAM_10753,prednisone ,,,,,
+03609,triamcinolone (diacetate de),1.03,GS_IAM_10753,prednisone ,,,,,
+24381,Budesonide ,4.4400000000000004,GS_IAM_10753,prednisone ,,,,,
+01836,tétracosactide,1,GS_IAM_10753,prednisone 
