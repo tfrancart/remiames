@@ -1,6 +1,8 @@
-﻿ID_patient,ID_sejour,date,heure,UCD,quantite,unite_de_prise
-123456,ABC,04.01.2024,8:59:00,3400890072977,1,comprimé
-123456,ABC,04.01.2024,8:59:00,3400890263665,1,poudre et solvant
-123456,ABC,04.01.2024,8:59:00,3400891569339,2,comprimé
-123456,ABC,04.01.2024,8:59:00,3400893448182,2,comprimé
-123456,ABC,04.01.2024,8:59:00,3400890571777,1,collyre
+﻿ID_patient,ID_sejour,date,heure,UCD,quantite,unite_de_prise,commentaire
+123456,ABC,04.01.2024,8:59:00,3400890072977,1,comprimé,
+123456,ABC,04.01.2024,8:59:00,3400890263665,1,poudre et solvant,
+123456,ABC,04.01.2024,8:59:00,3400891569339,4,comprimé,dose acide acétylsalicilyque anti-inflamatoire
+123456,ABC,04.01.2024,8:59:00,3400893448182,2,comprimé,losartan
+123456,ABC,04.01.2024,8:59:00,3400890571777,1,collyre,
+DOSE-NEGATIF,ABC,04.01.2024,8:59:00,3400891569339,1,comprimé,dose acide acétylsalicilyque faible
+DOSE-NEGATIF,ABC,04.01.2024,8:59:00,3400893448182,1,comprimé,losartan

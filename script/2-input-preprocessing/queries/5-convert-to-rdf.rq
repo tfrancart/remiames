@@ -54,6 +54,8 @@ CONSTRUCT {
 	 	BIND(IRI(CONCAT(
 	 		?NAMESPACE,
 	 		"Administration-",
+	 		?ID_patient,
+	 		"-",
 	 		?ID_sejour,
 	 		"-",
 	 		?date,
@@ -65,6 +67,8 @@ CONSTRUCT {
 	 	BIND(IRI(CONCAT(
 	 		?NAMESPACE,
 	 		"JourneeDeSejour-",
+	 		?ID_patient,
+	 		"-",
 	 		?ID_sejour,
 	 		"-",
 	 		?date
@@ -74,6 +78,8 @@ CONSTRUCT {
 	 	BIND(IRI(CONCAT(
 	 		?NAMESPACE,
 	 		"Sejour-",
+	 		?ID_patient,
+	 		"-",
 	 		?ID_sejour
 	 	)) AS ?sejour)
 
